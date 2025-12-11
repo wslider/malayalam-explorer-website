@@ -1,0 +1,288 @@
+    :root {
+      --keralaGreen: #004700; 
+      --keralaNight: #000d08;
+      --keralaShade: #001d08;
+      --munnarTeaGarden: #00aa00;
+      --ripeMango: #ff6600; 
+      --mountainFog: #f0fff8; 
+      --monsoonCloud: #333849;
+      --backwaterBlue: #032094;
+    }
+
+    body {
+        background-color: var(--keralaGreen);
+        color: var(--mountainFog); 
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 5%; 
+        margin: 0; 
+    }
+
+/* Navigation menu */
+    .topnav {
+        grid-area: navBar;
+        overflow: hidden;
+        background-color: var(--keralaNight);
+        width: 100%;
+    }
+
+        .topnav #myLinks {
+            display: none; /* Hidden by default */
+            flex-direction: column;
+            background-color: var(--keralaShade);  
+        }
+
+        .topnav a {
+            color: var(--mountainFog);
+            padding: 0.8rem; 
+            font-size: 1.5rem; 
+            display: block;
+            text-align: center;
+        }
+
+        .active {
+            background-color: var(--keralaNight);
+            font-weight: 600;
+            color: var(--mountainFog);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--mountainFog);
+        }
+
+        a:hover {
+            text-decoration: none;
+            font-weight: 700;
+            color: var(--ripeMango);
+        }
+
+        .hiddenContent {
+            display: none;
+        }
+
+
+    .mainContainer {
+      display: flex; 
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 2vh; 
+    }
+
+    .cardContainer {
+      min-height: 50vh; 
+      max-height: fit-content; 
+      width: 95vw; 
+      margin-top: 3vh; 
+      border: 3px solid var(--mountainFog);
+      box-shadow: 5px 5px var(--keralaShade);
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .cardContainer#engCardContent {
+      padding-top: 7vh; 
+    }
+
+    .cardContainer#engCardContent *:nth-child(2) {
+      margin-top: 7vh;
+    }
+
+  
+    .cardItem {
+      margin-top: 20px;
+      margin-bottom: 20px; 
+      margin-left: 4vw; 
+      margin-right: 4vw;
+    }
+
+    .engCardItem {
+      font-size: 1.4rem;
+    }
+
+    .malCardItem {
+      font-size: 1.2rem;
+    }
+
+    .cardItem.top{
+      margin-top: 40px; 
+    }
+
+    .cardItem#category {
+      font-size: 1rem; 
+    }
+
+    i.cardItem {
+      font-size: 0.9rem; 
+      margin-top: 20vh; 
+    }
+
+    .cardButtons {
+      display: flex; 
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 5px;
+      width: 95vw; 
+    } 
+
+    #newCardForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 95vw;
+      border: solid var(--mountainFog) 3px; 
+      box-shadow: 5px 5px var(--keralaShade);
+    }
+
+      .cardButtons > button {
+        font-size: 1.25rem;
+        box-shadow: 5px 5px var(--keralaShade);
+      }
+      
+      .form > input {
+        font-size: 1.25rem;
+        padding: 1%;
+        margin: 2%;
+        box-shadow: 5px 5px var(--keralaShade); 
+      }
+      .form > button {
+        font-size: 1.5rem;
+        padding: 1%; 
+        margin:2%;
+        box-shadow: 5px 5px var(--keralaShade); 
+      }
+
+      .footer {
+        margin: 20px; 
+        box-sizing: border-box;
+        text-align: center;
+      }
+  /* Tablet & Larger */
+
+  @media only screen and (min-width: 768px) {
+    .topNav {
+        display: flex; 
+        flex-direction: row;
+      font-size: 1.5rem;
+    }
+
+      .topnav > a {
+          text-align: left;
+      }
+    
+    .cardContainer {
+      font-size: 1.4rem;
+    }
+
+      .engCardItem {
+        font-size: 1.7rem;
+      }
+
+      .malCardItem {
+        font-size: 1.5rem;
+      }
+    
+    .cardContainer *:last-child{
+        margin-top: 7vh;
+        margin-bottom: 3vh; 
+      }
+
+    .cardButtons {
+      grid-area: cardButtons; 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+      .cardButtons > button {
+        font-size: 1.5rem;
+      }
+
+      .form > input {
+        font-size: 1.25rem;
+      }
+      .form > button {
+        font-size: 1.5rem;
+      }
+
+  }
+
+  /* Desktop */
+
+  @media only screen and (min-width: 992px) {
+    body {
+      display: flex; 
+      flex-direction: column;
+      max-width: 100vw;
+    }
+
+    .topNav {
+      min-height: 10vh; 
+    }
+
+    .mainContainer {
+      display: grid; 
+      grid-template-areas: 
+      "card newCard"
+      "buttons newCard"
+      ;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      box-sizing: border-box;
+      margin: 4vh;  
+
+      align-items: flex-start; /*fixes cascading style issue causeing containers to not be aligned properly*/
+    }
+    .cardContainer {
+      grid-area: card;
+      min-height: 70vh;
+      max-height: fit-content;
+      max-width: 45vw;
+      box-sizing: border-box;
+      margin-right: 3.5vw;
+      margin-top: 0; 
+      margin-bottom: 0;
+      margin-left: 0; 
+    }
+
+      .cardContainer#malCardContent *:nth-child(2){
+        margin-bottom: 7vh; /* gap between word and phrase on Malayalam side in desktop*/
+      } 
+
+      .cardContainer *:last-child{
+        margin-top: 7vh;
+        margin-bottom: 3vh; 
+      }
+
+    .cardButtons {
+      grid-area: buttons;
+      max-width: 45vw;
+      height: 10vh; 
+      box-sizing: border-box;
+      font-size: 1.2rem;
+      margin-right: 3.5vw;
+      margin-top: 0; 
+      margin-bottom: 0;
+      margin-left: 0; 
+      display: flex;
+      flex-direction: row;
+     justify-content: center;
+    }
+    .form {
+      grid-area: newCard; 
+      height: 80vh; 
+      max-width: 40vw;
+      margin-left: 3.5vw; 
+      box-sizing: border-box;
+      font-size: 2rem;
+      margin-top: 0; 
+    }
+
+  }
+
+    /* display is toggled in js for card content 

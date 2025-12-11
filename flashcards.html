@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/flashcards.css"> 
+    <title>Flashcards</title>
+</head>
+
+<body>
+
+    <nav class="topnav" id="topNavBar">
+        <a class="active" id="dropMenu"> ≡ Menu</a>
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="locations.html">Locations</a>
+        </div>
+    </nav>
+
+    <main class="mainContainer" id="card">
+
+        <div class="cardContainer" id="engCardContent">
+                <i class="cardItem top engCardItem" id="category">Category</i> 
+                <h2 class="cardItem engCardItem" id="english">English Word</h2>
+                <h2 class="cardItem engCardItem" id="engExample">English Example</h2>
+                <i class="cardItem engCardItem">Click to Flip</i>
+        </div>
+
+        <div class="cardContainer" id="malCardContent">
+                <h3 class="cardItem top malCardItem" id="malayalam">മലയാളം</h2>  
+                <h2 class="cardItem malCardItem" id="translit">Transliteration</h2>
+                <h2 class="cardItem malCardItem" id="malExample">Malayalam Example</h2>
+                <h2 class="cardItem malCardItem" id="malExampleTranslit">Example Transliteration</h2>
+                <i class="cardItem malCardItem">Click to Flip Back</i>
+        </div>
+
+        <div class="cardButtons" id="cardButtons">
+            <button id="nextButton">Next ⏭️</button>
+            <button id="prevButton">Previous ⏮️</button>
+            <button id="shuffleButton">Shuffle 🔀</button>
+            <button id="resetButton">Reset 🔄️</button>
+            <button id="deleteButton">DELETE 🚮</button>
+        </div>
+ 
+        <form class="form" id="newCardForm">
+            <input type="text" id="newCategory" placeholder="Category (Noun, Adjective, ect)" required> 
+            <input type="text" id="newEnglish" placeholder="English Word" required>
+            <input type="text" id="newEngExample" placeholder="English phrase using word" required>
+            <input type="text" id="newMalayalam" placeholder="Malayalam word (Malayalam script)" required>
+            <input type="text" id="newTranslit" placeholder="Malayalam word (Transliterated)" required>
+            <input type="text" id="newMalExample" placeholder="Malayalam phrase (Malayalam script)" required>
+            <input type="text" id="newMalExampleTranslit" placeholder="Malayalam phrase (Transliterated)" required>
+            <button type="submit">Add Card 🆕</button>   
+        </form>
+
+    </main>
+    <footer class="footer" id="footer"></footer>
+    <script type="module" src="js/flashcards.js"></script>
+    <script type="module" src="js/utils.js"></script> 
+</body>
+
+</html>
