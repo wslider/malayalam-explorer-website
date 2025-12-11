@@ -1,5 +1,5 @@
-import { updateFooter } from "js/utils.js";
-import { navBarLinks } from "js/utils.js";
+import { updateFooter } from "/js/utils.js";
+import { navBarLinks } from "/js/utils.js";
 
 // Event Listener for Bilingual Header 
 
