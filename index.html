@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css"> 
-    <title>Locations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 </head>
 <body>
 
     <nav class="topnav" id="topNavBar">
         <a class="active" id="dropMenu"> ≡ Menu</a>
         <div id="myLinks">
-            <a href="index.html">Home</a>
             <a href="flashcards.html">Flashcards</a>
+            <a href="locations.html">Locations</a>
         </div>
     </nav>
 
-    <header class="header">Explore Featured Locations</header>
+    <header class="header">
+        <h2 class="info" id="infoGreetingText">Learn Malayalam ... Explore Kerala</h2>
+    </header>
 
     <main class="mainContainer">
-        <div class="card container" id="locationContainer">
-                <h2 id="locationName">Loading…</h1>
-                <div id="currentTemp">--°F</div>
-                <div id="time"></div>
-                <img class="image" id="locationImg">
-                <div id="locationDescEng"></div>
-                <div id="locationDescMal"></div>   
-        </div>
-        <div class="mapContainer container" id="locationMap">
-        </div>
-    </main>
     
+        <div class="mapDiv imgContainer container">
+            <figure class="containerImg figure">
+                <a href="https://www.openstreetmap.org/relation/2018151#map=7/10.785/76.707&layers=P" target="_blank">
+                    <img class="image map" id="keralaMap" src="images/kerala-map-square.png" alt="Map of Kerala and South India.">
+                </a>
+                <figcaption>Map of Kerala & Southern India. Click to Open and Navigate in OSM.</figcaption>
+            </figure>
+        </div> 
+
+        <div class="flashcardExpContainer container">
+            <h2 class="containerTitle">Learn Through Interactive Flashcards .. and Create Your Own</h2>
+            <figure class="containerImg figure">
+                <a href="flashcards.html">
+                <img class="flashcardImg containerImg" id="flashcardExpImg" src="images/flashcardExpImg.png" alt="screenshot of flashcards page showing malayalam translation, flashcard control buttons, and form for creating new flashcards">
+                </a>
+                <figcaption>Image of the flashcard page, with the current flashcard displaying the Malayalam side.</figcaption>
+                </figure>
+        </div>
+
+        <div class="locationDiv container">
+            <h2 class="containerTitle">Explore Featured Locations (coming soon)</h2>
+                <figure class="locationFig containerImg figure" id="locationFig">
+                        <a href="https://www.openstreetmap.org/?mlat=8.673&mlon=76.816#map=7/8.673/76.816&layers=P" target="_blank">
+                        <img class="locationImg" id="locationImg" src="images/varkala-beach-path.jpg" alt="image of Varkala Beach in Kerala, India">
+                        </a>
+                        <figcaption>Varkala Beach, Kerala, India</figcaption>
+                </figure>
+        </div>
+              
+        <div class="worldClock container">
+            <h2 class="containerTitle"> World Clock </h2>
+            <h3 class="greeting" id="localTimeGreetingText"></h3>
+            <h3 class="greeting" id="keralaTimeGreetingText"></h3>
+        </div>
+        
+    </main>
+
     <footer class="footer" id="footer"></footer>
 
-    <script type="module" src="js/index.js"></script>
-    <script type="module" src="js/utils.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="utils.js"></script>
+    
 </body>
 </html>
