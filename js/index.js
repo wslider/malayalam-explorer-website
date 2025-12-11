@@ -1,6 +1,3 @@
-import { updateFooter } from 'js/utils.js';
-import { navBarLinks } from 'js/utils.js';
-
 // Event Listener for Bilingual Header 
 
 document.getElementById("infoGreetingText").addEventListener("mouseout", function() {
@@ -193,5 +190,5 @@ setInterval(updateLocationFigure, 10000);
 
 
 
-updateFooter(); 
+
 
