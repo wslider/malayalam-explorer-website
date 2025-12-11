@@ -1,6 +1,4 @@
-// export to other js files
-
-function updateFooter() {
+export function updateFooter() {
     const footer = document.getElementById('footer');
     if (!footer) return; 
 
@@ -22,7 +20,7 @@ if (document.readyState === 'loading') {
 
 
 
-function navBarLinks() {
+export function navBarLinks() {
     const myLinks = document.getElementById("myLinks");
     const currentDisplay = window.getComputedStyle(myLinks).display;
     const topNavBar = document.getElementById('topNavBar'); 
@@ -46,6 +44,3 @@ function navBarLinks() {
         topNavBar.style.padding = "0 3vw 0 -1vw";
     }
 }
-
-updateFooter(); 
-navBarLinks(); 
