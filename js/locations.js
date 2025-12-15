@@ -1,6 +1,7 @@
 import { updateFooter } from "https://wslider.github.io/malayalam-explorer-website/js/utils.js";
 import { navBarLinks } from "https://wslider.github.io/malayalam-explorer-website/js/utils.js";
 
+
 document.getElementById('dropMenu').addEventListener('click', navBarLinks); 
 
 const locationName = document.getElementById('locationName');
