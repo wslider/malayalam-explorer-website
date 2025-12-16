@@ -1,5 +1,5 @@
-import { updateFooter } from 'js/utils.js';
-import { navBarLinks } from 'js/utils.js';
+import { updateFooter } from 'http://wslider.github.io/malayalam-explorer-website/js/utils.js';
+import { navBarLinks } from 'http://wslider.github.io/malayalam-explorer-website/js/utils.js';
 
 document.getElementById('dropMenu').addEventListener('click', navBarLinks); 
 
@@ -14,21 +14,17 @@ const malCard = document.getElementById('malCardContent');
 
 const API_BASE = window.location.origin; 
 
+const flashcardJsonData = "https://wslider.github.io/malayalam-explorer-website/data/flashcards.json"; 
+
 // Load data (API first, fallback to local JSON)
-async function loadFlashcards() {
-    try {
-        const response = await fetch(`${API_BASE}/api/flashcards`); // add in localhost and port
-        if (!response.ok) throw new Error('API fetch failed');
-        flashcards = await response.json(); 
-    } catch (err) {
-        console.error('API load failed, using local:', err);
-        try {
-            const localData = await fetch('./data/flashcards.json');
+async function loadFlashcards() {{
+     try {
+            const localData = await fetch(`${flashcardJsonData}`);
             if (!localData.ok) throw new Error('Local fetch failed');
             flashcards = await localData.json(); 
         } catch (localErr) {
             console.error('Local load failed:', localErr);
-            flashcards = [];  // Fallback to Empty
+            flashcards = [];  
         }
     }
     if (flashcards.length > 0) {
@@ -36,8 +32,8 @@ async function loadFlashcards() {
         displayCard();
     } else {
         console.warn('No flashcards loaded');
-    }
-}
+    } }
+
 
 // Display current card on both sides (always populate, visibility toggles)
 function displayCard() {
