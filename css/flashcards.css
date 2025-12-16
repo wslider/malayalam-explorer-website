@@ -131,38 +131,17 @@
       width: 95vw; 
     } 
 
-    #newCardForm {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      width: 95vw;
-      border: solid var(--mountainFog) 3px; 
-      box-shadow: 5px 5px var(--keralaShade);
-    }
-
       .cardButtons > button {
         font-size: 1.25rem;
         box-shadow: 5px 5px var(--keralaShade);
       }
       
-      .form > input {
-        font-size: 1.25rem;
-        padding: 1%;
-        margin: 2%;
-        box-shadow: 5px 5px var(--keralaShade); 
-      }
-      .form > button {
-        font-size: 1.5rem;
-        padding: 1%; 
-        margin:2%;
-        box-shadow: 5px 5px var(--keralaShade); 
-      }
-
+     
       .footer {
-        margin: 20px; 
+        width: 100%; 
         box-sizing: border-box;
         text-align: center;
-      }
+    }
   /* Tablet & Larger */
 
   @media only screen and (min-width: 768px) {
@@ -203,77 +182,5 @@
         font-size: 1.5rem;
       }
 
-      .form > input {
-        font-size: 1.25rem;
-      }
-      .form > button {
-        font-size: 1.5rem;
-      }
-
+      
   }
-
-  /* Desktop */
-
-  @media only screen and (min-width: 992px) {
-    body {
-      display: flex; 
-      flex-direction: column;
-      max-width: 100vw;
-    }
-
-    .topNav {
-      min-height: 10vh; 
-    }
-
-    .mainContainer {
-      display: grid; 
-      grid-template-areas: 
-      "card"
-      "buttons"
-      ;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
-      box-sizing: border-box;
-      margin: 4vh;  
-
-      align-items: flex-start; /*fixes cascading style issue causeing containers to not be aligned properly*/
-    }
-    .cardContainer {
-      grid-area: card;
-      min-height: 70vh;
-      max-height: fit-content;
-      max-width: 45vw;
-      box-sizing: border-box;
-      margin-right: 3.5vw;
-      margin-top: 0; 
-      margin-bottom: 0;
-      margin-left: 0; 
-    }
-
-      .cardContainer#malCardContent *:nth-child(2){
-        margin-bottom: 7vh; /* gap between word and phrase on Malayalam side in desktop*/
-      } 
-
-      .cardContainer *:last-child{
-        margin-top: 7vh;
-        margin-bottom: 3vh; 
-      }
-
-    .cardButtons {
-      grid-area: buttons;
-      max-width: 45vw;
-      height: 10vh; 
-      box-sizing: border-box;
-      font-size: 1.2rem;
-      margin-right: 3.5vw;
-      margin-top: 0; 
-      margin-bottom: 0;
-      margin-left: 0; 
-      display: flex;
-      flex-direction: row;
-     justify-content: center;
-    }
-    
-  }
-
-    /* display is toggled in js for card content 

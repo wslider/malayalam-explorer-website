@@ -55,16 +55,16 @@ function displayCard() {
     
     // Malayalam side (always set, even if hidden)
     document.getElementById('malayalam').textContent = card.malayalam;
-    document.getElementById('translit').textContent = card.transliteration;  // Matches JSON field
+    document.getElementById('translit').textContent = card.transliteration;  
     document.getElementById('malExample').textContent = card.malExample;
     document.getElementById('malExampleTranslit').textContent = card.malExampleTranslit;
     
-    console.log(`Displayed card ${currentIndex + 1}: ${card.english} / ${card.malayalam}`);  // Debug log
+    console.log(`Displayed card ${currentIndex + 1}: ${card.english} / ${card.malayalam}`);  
 }
 
 // Flip on click - toggle English front / Malayalam back
 engCard.addEventListener('click', () => {
-    console.log('Flip clicked! Current isFlipped:', isFlipped);  // Debug
+    console.log('Flip clicked! Current isFlipped:', isFlipped);  
     isFlipped = !isFlipped;
     
     if (isFlipped) {
@@ -114,7 +114,6 @@ malCard.addEventListener('click', () => {
 document.getElementById('nextButton').addEventListener('click', () => {
     if (flashcards.length === 0) return;
     currentIndex = (currentIndex + 1) % flashcards.length; 
-    // Reset to English side
     isFlipped = false;
     engCard.style.display = 'block';
     malCard.style.display = 'none';
@@ -124,7 +123,6 @@ document.getElementById('nextButton').addEventListener('click', () => {
 document.getElementById('prevButton').addEventListener('click', () => {
     if (flashcards.length === 0) return;
     currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
-    // Reset to English side
     isFlipped = false;
     engCard.style.display = 'block';
     malCard.style.display = 'none';
@@ -162,7 +160,6 @@ document.getElementById('resetButton').addEventListener('click', async () => {
 document.addEventListener('DOMContentLoaded', async () => {
     await loadFlashcards();  // Wait for fetch to finish
 
-    // Force reset state and display, regardless of when it loaded
     currentIndex = 0;
     isFlipped = false;
     
@@ -174,10 +171,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log('Initial card displayed after load');
     } else {
         console.warn('No flashcards loaded on init');
-        // Optional fallback
         const engTitle = document.getElementById('english');
         if (engTitle) engTitle.textContent = 'Failed to load flashcards';
     }
 
+    navBarLinks();
     updateFooter();
 });

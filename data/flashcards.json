@@ -7,7 +7,7 @@
     "malayalam": "വീട്",
     "transliteration": "viitu",
     "malExample": "ഞാൻ ഒരു വീട്ടിൽ വസിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan oru viittil vasikkunnu.)"
+    "malExampleTranslit": "(njaan oru viittil vasikkunnu.)"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "malayalam": "വെള്ളം",
     "transliteration": "vellam",
     "malExample": "ഞാൻ വെള്ളം കുടിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan vellam kutikkunnu.)"
+    "malExampleTranslit": "(njaan vellam kutikkunnu.)"
   },
   {
     "id": 3,
@@ -97,7 +97,7 @@
     "malayalam": "ആഴ്ച",
     "transliteration": "aazhcha",
     "malExample": "ഞാൻ ഈ ആഴ്ച ജോലി ചെയ്യുന്നു.",
-    "malExampleTranslit": "(nyaan ii aazhcha jooli cheyyunnu.)"
+    "malExampleTranslit": "(njaan ii aazhcha jooli cheyyunnu.)"
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "malayalam": "മണിക്കൂർ",
     "transliteration": "manikkuur",
     "malExample": "ഞാൻ ഒരു മണിക്കൂർ കാത്തിരിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan oru manikkuur kaattirikkunnu.)"
+    "malExampleTranslit": "(njaan oru manikkuur kaattirikkunnu.)"
   },
   {
     "id": 12,
@@ -147,7 +147,7 @@
     "malayalam": "രണ്ട്",
     "transliteration": "rantu",
     "malExample": "ഞാൻ രണ്ട് പക്ഷികൾ കാണുന്നു.",
-    "malExampleTranslit": "(nyaan rantu pakshikal kaanunnu.)"
+    "malExampleTranslit": "(njaan rantu pakshikal kaanunnu.)"
   },
   {
     "id": 16,
@@ -167,7 +167,7 @@
     "malayalam": "നാല്",
     "transliteration": "naal",
     "malExample": "ഞാൻ നാല് പഴങ്ങൾ വാങ്ങി.",
-    "malExampleTranslit": "(nyaan naal pazhangal vaangi.)"
+    "malExampleTranslit": "(njaan naal pazhangal vaangi.)"
   },
   {
     "id": 18,
@@ -187,7 +187,7 @@
     "malayalam": "ആറ്",
     "transliteration": "aaru",
     "malExample": "ഞാൻ ആറ് നക്ഷത്രങ്ങൾ കാണുന്നു.",
-    "malExampleTranslit": "(nyaan aaru nakshatrangal kaanunnu.)"
+    "malExampleTranslit": "(njaan aaru nakshatrangal kaanunnu.)"
   },
   {
     "id": 20,
@@ -337,7 +337,7 @@
     "malayalam": "മീൻ",
     "transliteration": "miin",
     "malExample": "ഞാൻ മീൻ തിന്നുന്നു.",
-    "malExampleTranslit": "(nyaan miin tinnunnu.)"
+    "malExampleTranslit": "(njaan miin tinnunnu.)"
   },
   {
     "id": 35,
@@ -387,7 +387,7 @@
     "malayalam": "നക്ഷത്രം",
     "transliteration": "nakshatram",
     "malExample": "ഞാൻ ഒരു നക്ഷത്രം കാണുന്നു.",
-    "malExampleTranslit": "(nyaan oru nakshatram kaanunnu.)"
+    "malExampleTranslit": "(njaan oru nakshatram kaanunnu.)"
   },
   {
     "id": 40,
@@ -457,7 +457,7 @@
     "malayalam": "ചന്ത",
     "transliteration": "chanta",
     "malExample": "ഞാൻ ചന്തയിൽ പോകുന്നു.",
-    "malExampleTranslit": "(nyaan chantayil pookunnu.)"
+    "malExampleTranslit": "(njaan chantayil pookunnu.)"
   },
   {
     "id": 47,
@@ -497,7 +497,7 @@
     "malayalam": "പുസ്തകം",
     "transliteration": "pustakam",
     "malExample": "ഞാൻ ഒരു പുസ്തകം വായിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan oru pustakam vaayikkunnu.)"
+    "malExampleTranslit": "(njaan oru pustakam vaayikkunnu.)"
   },
   {
     "id": 51,
@@ -507,7 +507,7 @@
     "malayalam": "പേപ്പർ",
     "transliteration": "pepper",
     "malExample": "ഞാൻ പേപ്പറിൽ എഴുതുന്നു.",
-    "malExampleTranslit": "(nyaan pepperil ezhuthunnu.)"
+    "malExampleTranslit": "(njaan pepperil ezhuthunnu.)"
   },
   {
     "id": 52,
@@ -517,7 +517,7 @@
     "malayalam": "പേന",
     "transliteration": "pena",
     "malExample": "ഞാൻ ഒരു പേന ഉപയോഗിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan oru pena upayogikkunnu.)"
+    "malExampleTranslit": "(njaan oru pena upayogikkunnu.)"
   },
   {
     "id": 53,
@@ -557,7 +557,7 @@
     "malayalam": "ബസ്",
     "transliteration": "bas",
     "malExample": "ഞാൻ ബസ്സിൽ കയറുന്നു.",
-    "malExampleTranslit": "(nyaan bassil kayarunnu.)"
+    "malExampleTranslit": "(njaan bassil kayarunnu.)"
   },
   {
     "id": 57,
@@ -577,7 +577,7 @@
     "malayalam": "അരി",
     "transliteration": "ari",
     "malExample": "ഞാൻ ദിവസവും അരി തിന്നുന്നു.",
-    "malExampleTranslit": "(nyaan divasavum ari tinnunnu.)"
+    "malExampleTranslit": "(njaan divasavum ari tinnunnu.)"
   },
   {
     "id": 59,
@@ -587,7 +587,7 @@
     "malayalam": "പച്ചക്കറി",
     "transliteration": "pachakkari",
     "malExample": "ഞാൻ പച്ചക്കറി വാങ്ങുന്നു.",
-    "malExampleTranslit": "(nyaan pachakkari vaangunnu.)"
+    "malExampleTranslit": "(njaan pachakkari vaangunnu.)"
   },
   {
     "id": 60,
@@ -607,7 +607,7 @@
     "malayalam": "പാൽ",
     "transliteration": "paal",
     "malExample": "ഞാൻ പാൽ കുടിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan paal kutikkunnu.)"
+    "malExampleTranslit": "(njaan paal kutikkunnu.)"
   },
   {
     "id": 62,
@@ -727,7 +727,7 @@
     "malayalam": "സ്നേഹം",
     "transliteration": "sneham",
     "malExample": "ഞാൻ സ്നേഹം അനുഭവിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan sneham anubhavikkunnu.)"
+    "malExampleTranslit": "(njaan sneham anubhavikkunnu.)"
   },
   {
     "id": 74,
@@ -777,7 +777,7 @@
     "malayalam": "വൈകുന്നേരം",
     "transliteration": "vaikunneram",
     "malExample": "ഞാൻ വൈകുന്നേരം നടക്കുന്നു.",
-    "malExampleTranslit": "(nyaan vaikunneram nadakkunnu.)"
+    "malExampleTranslit": "(njaan vaikunneram nadakkunnu.)"
   },
   {
     "id": 79,
@@ -815,9 +815,9 @@
     "english": "I",
     "engExample": "I am happy.",
     "malayalam": "ഞാൻ",
-    "transliteration": "nyaan",
+    "transliteration": "njaan",
     "malExample": "ഞാൻ സന്തോഷമാണ്.",
-    "malExampleTranslit": "(nyaan santhoshamaanu.)"
+    "malExampleTranslit": "(njaan santhoshamaanu.)"
   },
   {
     "id": 83,
@@ -1007,7 +1007,7 @@
     "malayalam": "സ്വയം",
     "transliteration": "svayam",
     "malExample": "ഞാൻ അത് സ്വയം ചെയ്തു.",
-    "malExampleTranslit": "(nyaan athu svayam cheythu.)"
+    "malExampleTranslit": "(njaan athu svayam cheythu.)"
   },
   {
     "id": 102,
@@ -1017,7 +1017,7 @@
     "malayalam": "പോകുന്നു",
     "transliteration": "pookunnu",
     "malExample": "ഞാൻ ചന്തയിൽ പോകുന്നു.",
-    "malExampleTranslit": "(nyaan chantayil pookunnu.)"
+    "malExampleTranslit": "(njaan chantayil pookunnu.)"
   },
   {
     "id": 103,
@@ -1027,7 +1027,7 @@
     "malayalam": "പോകുകയാണ്",
     "transliteration": "pookukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ വിദ്യാലയത്തിലേക്ക് പോകുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol vidyaalayathilekku pookukayaanu.)"
+    "malExampleTranslit": "(njaan ippol vidyaalayathilekku pookukayaanu.)"
   },
   {
     "id": 104,
@@ -1037,7 +1037,7 @@
     "malayalam": "പോയി",
     "transliteration": "poyi",
     "malExample": "ഞാൻ ഇന്നലെ കൊച്ചിയിൽ പോയി.",
-    "malExampleTranslit": "(nyaan innale kochiyil poyi.)"
+    "malExampleTranslit": "(njaan innale kochiyil poyi.)"
   },
   {
     "id": 105,
@@ -1047,7 +1047,7 @@
     "malayalam": "പോകും",
     "transliteration": "pookum",
     "malExample": "ഞാൻ നാളെ നഗരത്തിലേക്ക് പോകും.",
-    "malExampleTranslit": "(nyaan naale nagaratthilekku pookum.)"
+    "malExampleTranslit": "(njaan naale nagaratthilekku pookum.)"
   },
   {
     "id": 106,
@@ -1057,7 +1057,7 @@
     "malayalam": "വരുന്നു",
     "transliteration": "varunnu",
     "malExample": "ഞാൻ ദിവസവും വീട്ടിലേക്ക് വരുന്നു.",
-    "malExampleTranslit": "(nyaan divasavum viittilekku varunnu.)"
+    "malExampleTranslit": "(njaan divasavum viittilekku varunnu.)"
   },
   {
     "id": 107,
@@ -1067,7 +1067,7 @@
     "malayalam": "വരുകയാണ്",
     "transliteration": "varukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ കടയിലേക്ക് വരുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol kadayilekku varukayaanu.)"
+    "malExampleTranslit": "(njaan ippol kadayilekku varukayaanu.)"
   },
   {
     "id": 108,
@@ -1077,7 +1077,7 @@
     "malayalam": "വന്നു",
     "transliteration": "vannu",
     "malExample": "ഞാൻ ചന്തയിലേക്ക് വന്നു.",
-    "malExampleTranslit": "(nyaan chantayilekku vannu.)"
+    "malExampleTranslit": "(njaan chantayilekku vannu.)"
   },
   {
     "id": 109,
@@ -1087,7 +1087,7 @@
     "malayalam": "വരും",
     "transliteration": "varum",
     "malExample": "ഞാൻ നാളെ വരും.",
-    "malExampleTranslit": "(nyaan naale varum.)"
+    "malExampleTranslit": "(njaan naale varum.)"
   },
   {
     "id": 110,
@@ -1097,7 +1097,7 @@
     "malayalam": "തിന്നുന്നു",
     "transliteration": "tinnunnu",
     "malExample": "ഞാൻ ദിവസവും അരി തിന്നുന്നു.",
-    "malExampleTranslit": "(nyaan divasavum ari tinnunnu.)"
+    "malExampleTranslit": "(njaan divasavum ari tinnunnu.)"
   },
   {
     "id": 111,
@@ -1107,7 +1107,7 @@
     "malayalam": "തിന്നുകയാണ്",
     "transliteration": "tinnukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ പഴം തിന്നുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol pazham tinnukayaanu.)"
+    "malExampleTranslit": "(njaan ippol pazham tinnukayaanu.)"
   },
   {
     "id": 112,
@@ -1117,7 +1117,7 @@
     "malayalam": "തിന്നു",
     "transliteration": "tinnu",
     "malExample": "ഞാൻ ഇന്നലെ മീൻ തിന്നു.",
-    "malExampleTranslit": "(nyaan innale miin tinnu.)"
+    "malExampleTranslit": "(njaan innale miin tinnu.)"
   },
   {
     "id": 113,
@@ -1127,7 +1127,7 @@
     "malayalam": "തിന്നും",
     "transliteration": "tinnum",
     "malExample": "ഞാൻ പച്ചക്കറി തിന്നും.",
-    "malExampleTranslit": "(nyaan pachakkari tinnum.)"
+    "malExampleTranslit": "(njaan pachakkari tinnum.)"
   },
   {
     "id": 114,
@@ -1137,7 +1137,7 @@
     "malayalam": "കുടിക്കുന്നു",
     "transliteration": "kutikkunnu",
     "malExample": "ഞാൻ ഇപ്പോൾ ചായ കുടിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan ippol chaaya kutikkunnu.)"
+    "malExampleTranslit": "(njaan ippol chaaya kutikkunnu.)"
   },
   {
     "id": 115,
@@ -1147,7 +1147,7 @@
     "malayalam": "കുടിക്കുകയാണ്",
     "transliteration": "kutikkukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ വെള്ളം കുടിക്കുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol vellam kutikkukayaanu.)"
+    "malExampleTranslit": "(njaan ippol vellam kutikkukayaanu.)"
   },
   {
     "id": 116,
@@ -1157,7 +1157,7 @@
     "malayalam": "കുടിച്ചു",
     "transliteration": "kuticchu",
     "malExample": "ഞാൻ പാൽ കുടിച്ചു.",
-    "malExampleTranslit": "(nyaan paal kuticchu.)"
+    "malExampleTranslit": "(njaan paal kuticchu.)"
   },
   {
     "id": 117,
@@ -1167,7 +1167,7 @@
     "malayalam": "കുടിക്കും",
     "transliteration": "kutikkum",
     "malExample": "ഞാൻ കാപ്പി കുടിക്കും.",
-    "malExampleTranslit": "(nyaan kaappi kutikkum.)"
+    "malExampleTranslit": "(njaan kaappi kutikkum.)"
   },
   {
     "id": 118,
@@ -1177,7 +1177,7 @@
     "malayalam": "കാണുന്നു",
     "transliteration": "kaanunnu",
     "malExample": "ഞാൻ കടൽ കാണുന്നു.",
-    "malExampleTranslit": "(nyaan katal kaanunnu.)"
+    "malExampleTranslit": "(njaan katal kaanunnu.)"
   },
   {
     "id": 119,
@@ -1187,7 +1187,7 @@
     "malayalam": "കാണുകയാണ്",
     "transliteration": "kaanukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ ഒരു പക്ഷി കാണുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol oru pakshi kaanukayaanu.)"
+    "malExampleTranslit": "(njaan ippol oru pakshi kaanukayaanu.)"
   },
   {
     "id": 120,
@@ -1197,7 +1197,7 @@
     "malayalam": "കണ്ടു",
     "transliteration": "kandu",
     "malExample": "ഞാൻ ഒരു നക്ഷത്രം കണ്ടു.",
-    "malExampleTranslit": "(nyaan oru nakshatram kandu.)"
+    "malExampleTranslit": "(njaan oru nakshatram kandu.)"
   },
   {
     "id": 121,
@@ -1207,7 +1207,7 @@
     "malayalam": "കാണും",
     "transliteration": "kaanum",
     "malExample": "ഞാൻ ചന്ദ്രൻ കാണും.",
-    "malExampleTranslit": "(nyaan chandran kaanum.)"
+    "malExampleTranslit": "(njaan chandran kaanum.)"
   },
   {
     "id": 122,
@@ -1217,7 +1217,7 @@
     "malayalam": "പറയുന്നു",
     "transliteration": "parayunnu",
     "malExample": "ഞാൻ മലയാളം പറയുന്നു.",
-    "malExampleTranslit": "(nyaan malayalam parayunnu.)"
+    "malExampleTranslit": "(njaan malayalam parayunnu.)"
   },
   {
     "id": 123,
@@ -1227,7 +1227,7 @@
     "malayalam": "പറയുകയാണ്",
     "transliteration": "parayukayaanu",
     "malExample": "ഞാൻ ഒരു സുഹൃത്തിനോട് പറയുകയാണ്.",
-    "malExampleTranslit": "(nyaan oru suhrithinootu parayukayaanu.)"
+    "malExampleTranslit": "(njaan oru suhrithinootu parayukayaanu.)"
   },
   {
     "id": 124,
@@ -1237,7 +1237,7 @@
     "malayalam": "പറഞ്ഞു",
     "transliteration": "paranju",
     "malExample": "ഞാൻ ഇംഗ്ലീഷ് പറഞ്ഞു.",
-    "malExampleTranslit": "(nyaan english paranju.)"
+    "malExampleTranslit": "(njaan english paranju.)"
   },
   {
     "id": 125,
@@ -1247,7 +1247,7 @@
     "malayalam": "പറയും",
     "transliteration": "parayum",
     "malExample": "ഞാൻ വിദ്യാലയത്തിൽ പറയും.",
-    "malExampleTranslit": "(nyaan vidyaalayathil parayum.)"
+    "malExampleTranslit": "(njaan vidyaalayathil parayum.)"
   },
   {
     "id": 126,
@@ -1257,7 +1257,7 @@
     "malayalam": "വാങ്ങുന്നു",
     "transliteration": "vaangunnu",
     "malExample": "ഞാൻ പച്ചക്കറി വാങ്ങുന്നു.",
-    "malExampleTranslit": "(nyaan pachakkari vaangunnu.)"
+    "malExampleTranslit": "(njaan pachakkari vaangunnu.)"
   },
   {
     "id": 127,
@@ -1267,7 +1267,7 @@
     "malayalam": "വാങ്ങുകയാണ്",
     "transliteration": "vaangukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ ഒരു പുസ്തകം വാങ്ങുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol oru pustakam vaangukayaanu.)"
+    "malExampleTranslit": "(njaan ippol oru pustakam vaangukayaanu.)"
   },
   {
     "id": 128,
@@ -1277,7 +1277,7 @@
     "malayalam": "വാങ്ങി",
     "transliteration": "vaangi",
     "malExample": "ഞാൻ ഒരു പേന വാങ്ങി.",
-    "malExampleTranslit": "(nyaan oru pena vaangi.)"
+    "malExampleTranslit": "(njaan oru pena vaangi.)"
   },
   {
     "id": 129,
@@ -1287,7 +1287,7 @@
     "malayalam": "വാങ്ങും",
     "transliteration": "vaangum",
     "malExample": "ഞാൻ പഴം വാങ്ങും.",
-    "malExampleTranslit": "(nyaan pazham vaangum.)"
+    "malExampleTranslit": "(njaan pazham vaangum.)"
   },
   {
     "id": 130,
@@ -1337,7 +1337,7 @@
     "malayalam": "കൊടുക്കുന്നു",
     "transliteration": "kodukkunnu",
     "malExample": "ഞാൻ ഒരു സമ്മാനം കൊടുക്കുന്നു.",
-    "malExampleTranslit": "(nyaan oru sammaanam kodukkunnu.)"
+    "malExampleTranslit": "(njaan oru sammaanam kodukkunnu.)"
   },
   {
     "id": 135,
@@ -1347,7 +1347,7 @@
     "malayalam": "കൊടുക്കുകയാണ്",
     "transliteration": "kodukkukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ പണം കൊടുക്കുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol panam kodukkukayaanu.)"
+    "malExampleTranslit": "(njaan ippol panam kodukkukayaanu.)"
   },
   {
     "id": 136,
@@ -1357,7 +1357,7 @@
     "malayalam": "കൊടുത്തു",
     "transliteration": "koduthu",
     "malExample": "ഞാൻ ഒരു പുസ്തകം കൊടുത്തു.",
-    "malExampleTranslit": "(nyaan oru pustakam koduthu.)"
+    "malExampleTranslit": "(njaan oru pustakam koduthu.)"
   },
   {
     "id": 137,
@@ -1367,7 +1367,7 @@
     "malayalam": "കൊടുക്കും",
     "transliteration": "kodukkum",
     "malExample": "ഞാൻ ഒരു പേന കൊടുക്കും.",
-    "malExampleTranslit": "(nyaan oru pena kodukkum.)"
+    "malExampleTranslit": "(njaan oru pena kodukkum.)"
   },
   {
     "id": 138,
@@ -1377,7 +1377,7 @@
     "malayalam": "എടുക്കുന്നു",
     "transliteration": "edukkunnu",
     "malExample": "ഞാൻ പുസ്തകം എടുക്കുന്നു.",
-    "malExampleTranslit": "(nyaan pustakam edukunnu.)"
+    "malExampleTranslit": "(njaan pustakam edukunnu.)"
   },
   {
     "id": 139,
@@ -1387,7 +1387,7 @@
     "malayalam": "എടുക്കുകയാണ്",
     "transliteration": "edukkukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ ഒരു പേന എടുക്കുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol oru pena edukkukayaanu.)"
+    "malExampleTranslit": "(njaan ippol oru pena edukkukayaanu.)"
   },
   {
     "id": 140,
@@ -1397,7 +1397,7 @@
     "malayalam": "എടുത്തു",
     "transliteration": "eduthu",
     "malExample": "ഞാൻ പണം എടുത്തു.",
-    "malExampleTranslit": "(nyaan panam eduthu.)"
+    "malExampleTranslit": "(njaan panam eduthu.)"
   },
   {
     "id": 141,
@@ -1407,7 +1407,7 @@
     "malayalam": "എടുക്കും",
     "transliteration": "edukkum",
     "malExample": "ഞാൻ പഴം എടുക്കും.",
-    "malExampleTranslit": "(nyaan pazham edukkum.)"
+    "malExampleTranslit": "(njaan pazham edukkum.)"
   },
   {
     "id": 142,
@@ -1417,7 +1417,7 @@
     "malayalam": "വസിക്കുന്നു",
     "transliteration": "vasikkunnu",
     "malExample": "ഞാൻ കൊച്ചിയിൽ വസിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan kochiyil vasikkunnu.)"
+    "malExampleTranslit": "(njaan kochiyil vasikkunnu.)"
   },
   {
     "id": 143,
@@ -1427,7 +1427,7 @@
     "malayalam": "വസിക്കുകയാണ്",
     "transliteration": "vasikkukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ ഗ്രാമത്തിൽ വസിക്കുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol graamatthil vasikkukayaanu.)"
+    "malExampleTranslit": "(njaan ippol graamatthil vasikkukayaanu.)"
   },
   {
     "id": 144,
@@ -1437,7 +1437,7 @@
     "malayalam": "വസിച്ചു",
     "transliteration": "vasicchu",
     "malExample": "ഞാൻ നഗരത്തിൽ വസിച്ചു.",
-    "malExampleTranslit": "(nyaan nagaratthil vasicchu.)"
+    "malExampleTranslit": "(njaan nagaratthil vasicchu.)"
   },
   {
     "id": 145,
@@ -1447,7 +1447,7 @@
     "malayalam": "വസിക്കും",
     "transliteration": "vasikkum",
     "malExample": "ഞാൻ ഒരു വീട്ടിൽ വസിക്കും.",
-    "malExampleTranslit": "(nyaan oru viittil vasikkum.)"
+    "malExampleTranslit": "(njaan oru viittil vasikkum.)"
   },
   {
     "id": 146,
@@ -1457,7 +1457,7 @@
     "malayalam": "പ്രവർത്തിക്കുന്നു",
     "transliteration": "pravarthikkunnu",
     "malExample": "ഞാൻ ഒരു കടയിൽ പ്രവർത്തിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan oru kadayil pravarthikkunnu.)"
+    "malExampleTranslit": "(njaan oru kadayil pravarthikkunnu.)"
   },
   {
     "id": 147,
@@ -1467,7 +1467,7 @@
     "malayalam": "പ്രവർത്തിക്കുകയാണ്",
     "transliteration": "pravarthikkukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ പ്രവർത്തിക്കുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol pravarthikkukayaanu.)"
+    "malExampleTranslit": "(njaan ippol pravarthikkukayaanu.)"
   },
   {
     "id": 148,
@@ -1477,7 +1477,7 @@
     "malayalam": "പ്രവർത്തിച്ചു",
     "transliteration": "pravarthicchu",
     "malExample": "ഞാൻ ഇന്നലെ പ്രവർത്തിച്ചു.",
-    "malExampleTranslit": "(nyaan innale pravarthicchu.)"
+    "malExampleTranslit": "(njaan innale pravarthicchu.)"
   },
   {
     "id": 149,
@@ -1487,7 +1487,7 @@
     "malayalam": "പ്രവർത്തിക്കും",
     "transliteration": "pravarthikkum",
     "malExample": "ഞാൻ നാളെ പ്രവർത്തിക്കും.",
-    "malExampleTranslit": "(nyaan naale pravarthikkum.)"
+    "malExampleTranslit": "(njaan naale pravarthikkum.)"
   },
   {
     "id": 150,
@@ -1497,7 +1497,7 @@
     "malayalam": "അറിയുന്നു",
     "transliteration": "ariyunnu",
     "malExample": "ഞാൻ നിന്റെ പേര് അറിയുന്നു.",
-    "malExampleTranslit": "(nyaan ninnte peer ariyunnu.)"
+    "malExampleTranslit": "(njaan ninnte peer ariyunnu.)"
   },
   {
     "id": 151,
@@ -1507,7 +1507,7 @@
     "malayalam": "വരുകയാണ്",
     "transliteration": "varukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ വരുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol varukayaanu.)"
+    "malExampleTranslit": "(njaan ippol varukayaanu.)"
   },
   {
     "id": 152,
@@ -1517,7 +1517,7 @@
     "malayalam": "വന്നു",
     "transliteration": "vannu",
     "malExample": "ഞാൻ ഇന്നലെ വന്നു.",
-    "malExampleTranslit": "(nyaan innale vannu.)"
+    "malExampleTranslit": "(njaan innale vannu.)"
   },
   {
     "id": 153,
@@ -1527,7 +1527,7 @@
     "malayalam": "വരും",
     "transliteration": "varum",
     "malExample": "ഞാൻ നാളെ വരും.",
-    "malExampleTranslit": "(nyaan naale varum.)"
+    "malExampleTranslit": "(njaan naale varum.)"
   },
   {
     "id": 154,
@@ -1537,7 +1537,7 @@
     "malayalam": "പോകുന്നു",
     "transliteration": "pookunnu",
     "malExample": "ഞാൻ വിദ്യാലയത്തിലേക്ക് പോകുന്നു.",
-    "malExampleTranslit": "(nyaan vidyaalayathilekku pookunnu.)"
+    "malExampleTranslit": "(njaan vidyaalayathilekku pookunnu.)"
   },
   {
     "id": 155,
@@ -1547,7 +1547,7 @@
     "malayalam": "പോകുകയാണ്",
     "transliteration": "pookukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ ചന്തയിലേക്ക് പോകുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol chantayilekku pookukayaanu.)"
+    "malExampleTranslit": "(njaan ippol chantayilekku pookukayaanu.)"
   },
   {
     "id": 156,
@@ -1557,7 +1557,7 @@
     "malayalam": "പോയി",
     "transliteration": "poyi",
     "malExample": "ഞാൻ വീട്ടിലേക്ക് പോയി.",
-    "malExampleTranslit": "(nyaan viittilekku poyi.)"
+    "malExampleTranslit": "(njaan viittilekku poyi.)"
   },
   {
     "id": 157,
@@ -1567,7 +1567,7 @@
     "malayalam": "പോകും",
     "transliteration": "pookum",
     "malExample": "ഞാൻ നഗരത്തിലേക്ക് പോകും.",
-    "malExampleTranslit": "(nyaan nagaratthilekku pookum.)"
+    "malExampleTranslit": "(njaan nagaratthilekku pookum.)"
   },
   {
     "id": 158,
@@ -1587,7 +1587,7 @@
     "malayalam": "ഉണ്ടായിരിക്കുന്നു",
     "transliteration": "undaayirikkunnu",
     "malExample": "ഞാൻ ഇപ്പോൾ ഒരു പേന ഉണ്ടായിരിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan ippol oru pena undaayirikkunnu.)"
+    "malExampleTranslit": "(njaan ippol oru pena undaayirikkunnu.)"
   },
   {
     "id": 160,
@@ -1617,7 +1617,7 @@
     "malayalam": "ഉണ്ടാക്കുന്നു",
     "transliteration": "undaakkunnu",
     "malExample": "ഞാൻ കാപ്പി ഉണ്ടാക്കുന്നു.",
-    "malExampleTranslit": "(nyaan kaappi undaakkunnu.)"
+    "malExampleTranslit": "(njaan kaappi undaakkunnu.)"
   },
   {
     "id": 163,
@@ -1627,7 +1627,7 @@
     "malayalam": "ഉണ്ടാക്കുകയാണ്",
     "transliteration": "undaakkukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ ഭക്ഷണം ഉണ്ടാക്കുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol bhakshanam undaakkukayaanu.)"
+    "malExampleTranslit": "(njaan ippol bhakshanam undaakkukayaanu.)"
   },
   {
     "id": 164,
@@ -1637,7 +1637,7 @@
     "malayalam": "ഉണ്ടാക്കി",
     "transliteration": "undaakki",
     "malExample": "ഞാൻ ഒരു സമ്മാനം ഉണ്ടാക്കി.",
-    "malExampleTranslit": "(nyaan oru sammaanam undaakki.)"
+    "malExampleTranslit": "(njaan oru sammaanam undaakki.)"
   },
   {
     "id": 165,
@@ -1647,7 +1647,7 @@
     "malayalam": "ഉണ്ടാക്കും",
     "transliteration": "undaakkum",
     "malExample": "ഞാൻ ചായ ഉണ്ടാക്കും.",
-    "malExampleTranslit": "(nyaan chaaya undaakkum.)"
+    "malExampleTranslit": "(njaan chaaya undaakkum.)"
   },
   {
     "id": 166,
@@ -1657,7 +1657,7 @@
     "malayalam": "വിചാരിക്കുന്നു",
     "transliteration": "vichaarikkunnu",
     "malExample": "ഞാൻ നിന്നെക്കുറിച്ച് വിചാരിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan ninnekkurichu vichaarikkunnu.)"
+    "malExampleTranslit": "(njaan ninnekkurichu vichaarikkunnu.)"
   },
   {
     "id": 167,
@@ -1667,7 +1667,7 @@
     "malayalam": "വിചാരിക്കുകയാണ്",
     "transliteration": "vichaarikkukayaanu",
     "malExample": "ഞാൻ കടലിനെക്കുറിച്ച് വിചാരിക്കുകയാണ്.",
-    "malExampleTranslit": "(nyaan kadalinekkurichu vichaarikkukayaanu.)"
+    "malExampleTranslit": "(njaan kadalinekkurichu vichaarikkukayaanu.)"
   },
   {
     "id": 168,
@@ -1677,7 +1677,7 @@
     "malayalam": "വിചാരിച്ചു",
     "transliteration": "vichaaricchu",
     "malExample": "ഞാൻ പുസ്തകത്തെക്കുറിച്ച് വിചാരിച്ചു.",
-    "malExampleTranslit": "(nyaan pustakathekkurichu vichaaricchu.)"
+    "malExampleTranslit": "(njaan pustakathekkurichu vichaaricchu.)"
   },
   {
     "id": 169,
@@ -1687,7 +1687,7 @@
     "malayalam": "വിചാരിക്കും",
     "transliteration": "vichaarikkum",
     "malExample": "ഞാൻ നഗരത്തെക്കുറിച്ച് വിചാരിക്കും.",
-    "malExampleTranslit": "(nyaan nagarathekkurichu vichaarikkum.)"
+    "malExampleTranslit": "(njaan nagarathekkurichu vichaarikkum.)"
   },
   {
     "id": 170,
@@ -1697,7 +1697,7 @@
     "malayalam": "പറയുന്നു",
     "transliteration": "parayunnu",
     "malExample": "ഞാൻ നമസ്കാരം പറയുന്നു.",
-    "malExampleTranslit": "(nyaan namaskaaram parayunnu.)"
+    "malExampleTranslit": "(njaan namaskaaram parayunnu.)"
   },
   {
     "id": 171,
@@ -1707,7 +1707,7 @@
     "malayalam": "പറയുകയാണ്",
     "transliteration": "parayukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ ഒരു കഥ പറയുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol oru katha parayukayaanu.)"
+    "malExampleTranslit": "(njaan ippol oru katha parayukayaanu.)"
   },
   {
     "id": 172,
@@ -1717,7 +1717,7 @@
     "malayalam": "പറഞ്ഞു",
     "transliteration": "paranju",
     "malExample": "ഞാൻ നന്ദി പറഞ്ഞു.",
-    "malExampleTranslit": "(nyaan nandi paranju.)"
+    "malExampleTranslit": "(njaan nandi paranju.)"
   },
   {
     "id": 173,
@@ -1727,7 +1727,7 @@
     "malayalam": "പറയും",
     "transliteration": "parayum",
     "malExample": "ഞാൻ വിട പറയും.",
-    "malExampleTranslit": "(nyaan vida parayum.)"
+    "malExampleTranslit": "(njaan vida parayum.)"
   },
   {
     "id": 174,
@@ -1737,7 +1737,7 @@
     "malayalam": "നടക്കുന്നു",
     "transliteration": "nadakkunnu",
     "malExample": "ഞാൻ വിദ്യാലയത്തിലേക്ക് നടക്കുന്നു.",
-    "malExampleTranslit": "(nyaan vidyaalayathilekku nadakkunnu.)"
+    "malExampleTranslit": "(njaan vidyaalayathilekku nadakkunnu.)"
   },
   {
     "id": 175,
@@ -1747,7 +1747,7 @@
     "malayalam": "നടക്കുകയാണ്",
     "transliteration": "nadakkukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ പാർക്കിൽ നടക്കുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol paarkkil nadakkukayaanu.)"
+    "malExampleTranslit": "(njaan ippol paarkkil nadakkukayaanu.)"
   },
   {
     "id": 176,
@@ -1757,7 +1757,7 @@
     "malayalam": "നടന്നു",
     "transliteration": "nadannu",
     "malExample": "ഞാൻ ചന്തയിലേക്ക് നടന്നു.",
-    "malExampleTranslit": "(nyaan chantayilekku nadannu.)"
+    "malExampleTranslit": "(njaan chantayilekku nadannu.)"
   },
   {
     "id": 177,
@@ -1767,7 +1767,7 @@
     "malayalam": "നടക്കും",
     "transliteration": "nadakkum",
     "malExample": "ഞാൻ നാളെ നടക്കും.",
-    "malExampleTranslit": "(nyaan naale nadakkum.)"
+    "malExampleTranslit": "(njaan naale nadakkum.)"
   },
   {
     "id": 178,
@@ -1777,7 +1777,7 @@
     "malayalam": "ഉറങ്ങുന്നു",
     "transliteration": "urangunnu",
     "malExample": "ഞാൻ രാത്രി ഉറങ്ങുന്നു.",
-    "malExampleTranslit": "(nyaan raatri urangunnu.)"
+    "malExampleTranslit": "(njaan raatri urangunnu.)"
   },
   {
     "id": 179,
@@ -1787,7 +1787,7 @@
     "malayalam": "ഉറങ്ങുകയാണ്",
     "transliteration": "urangukayaanu",
     "malExample": "ഞാൻ ഇപ്പോൾ ഉറങ്ങുകയാണ്.",
-    "malExampleTranslit": "(nyaan ippol urangukayaanu.)"
+    "malExampleTranslit": "(njaan ippol urangukayaanu.)"
   },
   {
     "id": 180,
@@ -1797,7 +1797,7 @@
     "malayalam": "ഉറങ്ങി",
     "transliteration": "urangi",
     "malExample": "ഞാൻ ഇന്നലെ നന്നായി ഉറങ്ങി.",
-    "malExampleTranslit": "(nyaan innale nannaayi urangi.)"
+    "malExampleTranslit": "(njaan innale nannaayi urangi.)"
   },
   {
     "id": 181,
@@ -1807,7 +1807,7 @@
     "malayalam": "ഉറങ്ങും",
     "transliteration": "urangum",
     "malExample": "ഞാൻ നാളെ നേരത്തെ ഉറങ്ങും.",
-    "malExampleTranslit": "(nyaan naale nerathe urangum.)"
+    "malExampleTranslit": "(njaan naale nerathe urangum.)"
   },
   {
     "id": 182,
@@ -1867,7 +1867,7 @@
     "malayalam": "സന്തോഷം",
     "transliteration": "santhosham",
     "malExample": "ഞാൻ ഇന്ന് സന്തോഷമാണ്.",
-    "malExampleTranslit": "(nyaan innu santhoshamaanu.)"
+    "malExampleTranslit": "(njaan innu santhoshamaanu.)"
   },
   {
     "id": 188,
@@ -1957,7 +1957,7 @@
     "malayalam": "പുതിയ",
     "transliteration": "puthiya",
     "malExample": "ഞാൻ ഒരു പുതിയ പുസ്തകം വാങ്ങി.",
-    "malExampleTranslit": "(nyaan oru puthiya pustakam vaangi.)"
+    "malExampleTranslit": "(njaan oru puthiya pustakam vaangi.)"
   },
   {
     "id": 197,
@@ -2027,7 +2027,7 @@
     "malayalam": "ദുർബല",
     "transliteration": "durbala",
     "malExample": "ഞാൻ ദുർബലനാണ്.",
-    "malExampleTranslit": "(nyaan durbalanaanu.)"
+    "malExampleTranslit": "(njaan durbalanaanu.)"
   },
   {
     "id": 204,
@@ -2127,7 +2127,7 @@
     "malayalam": "ഇന്ന്",
     "transliteration": "innu",
     "malExample": "ഞാൻ ഇന്ന് ജോലി ചെയ്യുന്നു.",
-    "malExampleTranslit": "(nyaan innu jooli cheyyunnu.)"
+    "malExampleTranslit": "(njaan innu jooli cheyyunnu.)"
   },
   {
     "id": 214,
@@ -2137,7 +2137,7 @@
     "malayalam": "നാളെ",
     "transliteration": "naale",
     "malExample": "ഞാൻ നാളെ വരും.",
-    "malExampleTranslit": "(nyaan naale varum.)"
+    "malExampleTranslit": "(njaan naale varum.)"
   },
   {
     "id": 215,
@@ -2147,7 +2147,7 @@
     "malayalam": "ഇന്നലെ",
     "transliteration": "innale",
     "malExample": "ഞാൻ ഇന്നലെ പോയി.",
-    "malExampleTranslit": "(nyaan innale poyi.)"
+    "malExampleTranslit": "(njaan innale poyi.)"
   },
   {
     "id": 216,
@@ -2157,7 +2157,7 @@
     "malayalam": "എപ്പോഴും",
     "transliteration": "eppozhum",
     "malExample": "ഞാൻ എപ്പോഴും വായിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan eppozhum vaayikkunnu.)"
+    "malExampleTranslit": "(njaan eppozhum vaayikkunnu.)"
   },
   {
     "id": 217,
@@ -2167,7 +2167,7 @@
     "malayalam": "ഒരിക്കലും",
     "transliteration": "orikkalum",
     "malExample": "ഞാൻ ഒരിക്കലും കള്ളം പറയുന്നില്ല.",
-    "malExampleTranslit": "(nyaan orikkalum kallam parayunnilla.)"
+    "malExampleTranslit": "(njaan orikkalum kallam parayunnilla.)"
   },
   {
     "id": 218,
@@ -2177,7 +2177,7 @@
     "malayalam": "പലപ്പോഴും",
     "transliteration": "palappozhum",
     "malExample": "ഞാൻ പലപ്പോഴും നടക്കുന്നു.",
-    "malExampleTranslit": "(nyaan palappozhum nadakkunnu.)"
+    "malExampleTranslit": "(njaan palappozhum nadakkunnu.)"
   },
   {
     "id": 219,
@@ -2187,7 +2187,7 @@
     "malayalam": "ചിലപ്പോൾ",
     "transliteration": "chilappol",
     "malExample": "ഞാൻ ചിലപ്പോൾ പാടുന്നു.",
-    "malExampleTranslit": "(nyaan chilappol paadunnu.)"
+    "malExampleTranslit": "(njaan chilappol paadunnu.)"
   },
   {
     "id": 220,
@@ -2277,7 +2277,7 @@
     "malayalam": "അകത്ത്",
     "transliteration": "akathu",
     "malExample": "ഞാൻ അകത്താണ്.",
-    "malExampleTranslit": "(nyaan akathaanu.)"
+    "malExampleTranslit": "(njaan akathaanu.)"
   },
   {
     "id": 229,
@@ -2297,7 +2297,7 @@
     "malayalam": "ഉടൻ",
     "transliteration": "udan",
     "malExample": "ഞാൻ ഉടൻ വരും.",
-    "malExampleTranslit": "(nyaan udan varum.)"
+    "malExampleTranslit": "(njaan udan varum.)"
   },
   {
     "id": 231,
@@ -2307,7 +2307,7 @@
     "malayalam": "നേരത്തെ",
     "transliteration": "nerathe",
     "malExample": "ഞാൻ നേരത്തെ ഉണരുന്നു.",
-    "malExampleTranslit": "(nyaan nerathe unarunnu.)"
+    "malExampleTranslit": "(njaan nerathe unarunnu.)"
   },
   {
     "id": 232,
@@ -2317,7 +2317,7 @@
     "malayalam": "വൈകി",
     "transliteration": "vaiki",
     "malExample": "ഞാൻ വൈകി എത്തി.",
-    "malExampleTranslit": "(nyaan vaiki etthi.)"
+    "malExampleTranslit": "(njaan vaiki etthi.)"
   },
   {
     "id": 233,
@@ -2327,7 +2327,7 @@
     "malayalam": "ഇപ്പോൾ",
     "transliteration": "ippol",
     "malExample": "ഞാൻ ഇപ്പോൾ തിന്നുന്നു.",
-    "malExampleTranslit": "(nyaan ippol tinnunnu.)"
+    "malExampleTranslit": "(njaan ippol tinnunnu.)"
   },
   {
     "id": 234,
@@ -2347,7 +2347,7 @@
     "malayalam": "മുമ്പ്",
     "transliteration": "mumpu",
     "malExample": "ഞാൻ ജോലിക്ക് മുമ്പ് തിന്നുന്നു.",
-    "malExampleTranslit": "(nyaan joolikku mumpu tinnunnu.)"
+    "malExampleTranslit": "(njaan joolikku mumpu tinnunnu.)"
   },
   {
     "id": 236,
@@ -2357,7 +2357,7 @@
     "malayalam": "ശേഷം",
     "transliteration": "shesham",
     "malExample": "ഞാൻ അത്താഴം ശേഷം ഉറങ്ങുന്നു.",
-    "malExampleTranslit": "(nyaan athaazham shesham urangunnu.)"
+    "malExampleTranslit": "(njaan athaazham shesham urangunnu.)"
   },
   {
     "id": 237,
@@ -2367,7 +2367,7 @@
     "malayalam": "വീണ്ടും",
     "transliteration": "veendum",
     "malExample": "ഞാൻ വീണ്ടും ശ്രമിക്കും.",
-    "malExampleTranslit": "(nyaan veendum shramikkum.)"
+    "malExampleTranslit": "(njaan veendum shramikkum.)"
   },
   {
     "id": 238,
@@ -2377,7 +2377,7 @@
     "malayalam": "ൽ",
     "transliteration": "il",
     "malExample": "ഞാൻ വീട്ടിൽ ആണ്.",
-    "malExampleTranslit": "(nyaan viittil aanu.)"
+    "malExampleTranslit": "(njaan viittil aanu.)"
   },
   {
     "id": 239,
@@ -2397,7 +2397,7 @@
     "malayalam": "ൽ",
     "transliteration": "il",
     "malExample": "ഞാൻ ചന്തയിൽ ആണ്.",
-    "malExampleTranslit": "(nyaan chantayil aanu.)"
+    "malExampleTranslit": "(njaan chantayil aanu.)"
   },
   {
     "id": 241,
@@ -2407,7 +2407,7 @@
     "malayalam": "ലേക്ക്",
     "transliteration": "lekku",
     "malExample": "ഞാൻ വിദ്യാലയത്തിലേക്ക് പോകുന്നു.",
-    "malExampleTranslit": "(nyaan vidyaalayathilekku pookunnu.)"
+    "malExampleTranslit": "(njaan vidyaalayathilekku pookunnu.)"
   },
   {
     "id": 242,
@@ -2417,7 +2417,7 @@
     "malayalam": "നിന്ന്",
     "transliteration": "ninnu",
     "malExample": "ഞാൻ കൊച്ചിയിൽ നിന്നാണ്.",
-    "malExampleTranslit": "(nyaan kochiyil ninnanu.)"
+    "malExampleTranslit": "(njaan kochiyil ninnanu.)"
   },
   {
     "id": 243,
@@ -2427,7 +2427,7 @@
     "malayalam": "കൂടെ",
     "transliteration": "koode",
     "malExample": "ഞാൻ എന്റെ സുഹൃത്തിനോട് കൂടെ നടക്കുന്നു.",
-    "malExampleTranslit": "(nyaan ente suhrithinootu koode nadakkunnu.)"
+    "malExampleTranslit": "(njaan ente suhrithinootu koode nadakkunnu.)"
   },
   {
     "id": 244,
@@ -2447,7 +2447,7 @@
     "malayalam": "വഴി",
     "transliteration": "vazhi",
     "malExample": "ഞാൻ ബസ്സിൽ വഴി യാത്ര ചെയ്യുന്നു.",
-    "malExampleTranslit": "(nyaan bassil vazhi yaathra cheyyunnu.)"
+    "malExampleTranslit": "(njaan bassil vazhi yaathra cheyyunnu.)"
   },
   {
     "id": 246,
@@ -2487,7 +2487,7 @@
     "malayalam": "പക്ഷെ",
     "transliteration": "pakshae",
     "malExample": "ഞാൻ ശ്രമിച്ചു, പക്ഷെ പരാജയപ്പെട്ടു.",
-    "malExampleTranslit": "(nyaan shramicchu, pakshe paraajayappettu.)"
+    "malExampleTranslit": "(njaan shramicchu, pakshe paraajayappettu.)"
   },
   {
     "id": 250,
@@ -2497,7 +2497,7 @@
     "malayalam": "കാരണം",
     "transliteration": "kaaranam",
     "malExample": "ഞാൻ മഴ കാരണം വൈകി.",
-    "malExampleTranslit": "(nyaan mazha kaaranam vaiki.)"
+    "malExampleTranslit": "(njaan mazha kaaranam vaiki.)"
   },
   {
     "id": 251,
@@ -2517,7 +2517,7 @@
     "malayalam": "അതിനാൽ",
     "transliteration": "athinaal",
     "malExample": "ഞാൻ ക്ഷീണിതനാണ്, അതിനാൽ വിശ്രമിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan ksheenithanaanu, athinaal vishramikkunnu.)"
+    "malExampleTranslit": "(njaan ksheenithanaanu, athinaal vishramikkunnu.)"
   },
   {
     "id": 253,
@@ -2527,7 +2527,7 @@
     "malayalam": "മുമ്പ്",
     "transliteration": "mumpu",
     "malExample": "ഞാൻ ജോലിക്ക് മുമ്പ് തിന്നുന്നു.",
-    "malExampleTranslit": "(nyaan joolikku mumpu tinnunnu.)"
+    "malExampleTranslit": "(njaan joolikku mumpu tinnunnu.)"
   },
   {
     "id": 254,
@@ -2537,7 +2537,7 @@
     "malayalam": "ശേഷം",
     "transliteration": "shesham",
     "malExample": "ഞാൻ അത്താഴം ശേഷം ഉറങ്ങുന്നു.",
-    "malExampleTranslit": "(nyaan athaazham shesham urangunnu.)"
+    "malExampleTranslit": "(njaan athaazham shesham urangunnu.)"
   },
   {
     "id": 255,
@@ -2587,7 +2587,7 @@
     "malayalam": "അകത്ത്",
     "transliteration": "akathu",
     "malExample": "ഞാൻ വീട്ടിനകത്താണ്.",
-    "malExampleTranslit": "(nyaan viittinakathaanu.)"
+    "malExampleTranslit": "(njaan viittinakathaanu.)"
   },
   {
     "id": 260,
@@ -2627,7 +2627,7 @@
     "malayalam": "ഇടയിൽ",
     "transliteration": "idayil",
     "malExample": "ഞാൻ സുഹൃത്തുക്കൾക്കിടയിൽ ഇരിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan suhrithukkalkkidayil irikkunnu.)"
+    "malExampleTranslit": "(njaan suhrithukkalkkidayil irikkunnu.)"
   },
   {
     "id": 264,
@@ -2647,7 +2647,7 @@
     "malayalam": "മുതൽ",
     "transliteration": "muthal",
     "malExample": "ഞാൻ രാവിലെ മുതൽ ഇവിടെയാണ്.",
-    "malExampleTranslit": "(nyaan raavile muthal iviteyaanu.)"
+    "malExampleTranslit": "(njaan raavile muthal iviteyaanu.)"
   },
   {
     "id": 266,
@@ -2667,7 +2667,7 @@
     "malayalam": "ഇല്ലാതെ",
     "transliteration": "illaathe",
     "malExample": "ഞാൻ ഭക്ഷണം ഇല്ലാതെ പോകുന്നു.",
-    "malExampleTranslit": "(nyaan bhakshanam illaathe pookunnu.)"
+    "malExampleTranslit": "(njaan bhakshanam illaathe pookunnu.)"
   },
   {
     "id": 268,
@@ -2687,7 +2687,7 @@
     "malayalam": "സുഖമാണോ?",
     "transliteration": "sukhamaano",
     "malExample": "ഞാൻ സുഖമാണ്, നിനക്ക് സുഖമാണോ?",
-    "malExampleTranslit": "(nyaan sukhamaanu, ninakku sukhamaano?)"
+    "malExampleTranslit": "(njaan sukhamaanu, ninakku sukhamaano?)"
   },
   {
     "id": 270,
@@ -2825,9 +2825,9 @@
     "english": "I’m fine",
     "engExample": "I’m fine, thank you.",
     "malayalam": "ഞാൻ സുഖമാണ്",
-    "transliteration": "nyaan sukhamaanu",
+    "transliteration": "njaan sukhamaanu",
     "malExample": "ഞാൻ സുഖമാണ്, നന്ദി.",
-    "malExampleTranslit": "(nyaan sukhamaanu, nandi.)"
+    "malExampleTranslit": "(njaan sukhamaanu, nandi.)"
   },
   {
     "id": 284,
@@ -2875,9 +2875,9 @@
     "english": "I’m tired",
     "engExample": "I’m tired, I need rest.",
     "malayalam": "ഞാൻ ക്ഷീണിതനാണ്",
-    "transliteration": "nyaan ksheenithanaanu",
+    "transliteration": "njaan ksheenithanaanu",
     "malExample": "ഞാൻ ക്ഷീണിതനാണ്, എനിക്ക് വിശ്രമം വേണം.",
-    "malExampleTranslit": "(nyaan ksheenithanaanu, enikku vishramam venam.)"
+    "malExampleTranslit": "(njaan ksheenithanaanu, enikku vishramam venam.)"
   },
   {
     "id": 289,
@@ -2915,9 +2915,9 @@
     "english": "I’m lost",
     "engExample": "I’m lost, where is the road?",
     "malayalam": "ഞാൻ നഷ്ടപ്പെട്ടു",
-    "transliteration": "nyaan nashtappettu",
+    "transliteration": "njaan nashtappettu",
     "malExample": "ഞാൻ നഷ്ടപ്പെട്ടു, പാത എവിടെയാണ്?",
-    "malExampleTranslit": "(nyaan nashtappettu, paata eviteyaanu?)"
+    "malExampleTranslit": "(njaan nashtappettu, paata eviteyaanu?)"
   },
   {
     "id": 293,
@@ -3025,9 +3025,9 @@
     "english": "I wear mundu",
     "engExample": "I wear mundu for Onam.",
     "malayalam": "ഞാൻ മുണ്ട് ധരിക്കുന്നു",
-    "transliteration": "nyaan mundu dharikkunnu",
+    "transliteration": "njaan mundu dharikkunnu",
     "malExample": "ഞാൻ ഓണത്തിന് മുണ്ട് ധരിക്കുന്നു.",
-    "malExampleTranslit": "(nyaan onathinu mundu dharikkunnu.)"
+    "malExampleTranslit": "(njaan onathinu mundu dharikkunnu.)"
   },
   {
     "id": 304,
