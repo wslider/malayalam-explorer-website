@@ -12,27 +12,32 @@ let isShuffled = false;
 const engCard = document.getElementById('engCardContent');
 const malCard = document.getElementById('malCardContent');
 
-const API_BASE = window.location.origin; 
+//const API_BASE = window.location.origin; 
 
 const flashcardJsonData = "https://wslider.github.io/malayalam-explorer-website/data/flashcards.json"; 
 
-// Load data (API first, fallback to local JSON)
-async function loadFlashcards() {{
-     try {
-            const localData = await fetch(`${flashcardJsonData}`);
-            if (!localData.ok) throw new Error('Local fetch failed');
-            flashcards = await localData.json(); 
-        } catch (localErr) {
-            console.error('Local load failed:', localErr);
-            flashcards = [];  
-        }
+//Load flashcards from JSON file and parse into JS array of objects
+
+async function loadFlashcards() {
+    try {
+        const response = await fetch(flashcardJsonData);
+        if (!response.ok) throw new Error('Fetch failed');
+        flashcards = await response.json(); 
+    } catch (err) {
+        console.error('Load failed:', err);
+        flashcards = [];
     }
+
     if (flashcards.length > 0) {
-        currentIndex = 0;  // Reset index on reload
+        currentIndex = 0;
+        isFlipped = false;
+        engCard.style.display = 'block';
+        malCard.style.display = 'none';
         displayCard();
     } else {
         console.warn('No flashcards loaded');
-    } }
+    }
+}
 
 
 // Display current card on both sides (always populate, visibility toggles)
@@ -139,125 +144,40 @@ document.getElementById('shuffleButton').addEventListener('click', () => {
 });
 
 // Reset: Reload original, unshuffle, reset flip
-document.getElementById('resetButton').addEventListener('click', () => {
-    loadFlashcards();
-    isShuffled = false; 
+document.getElementById('resetButton').addEventListener('click', async () => {
+    isShuffled = false;
+    await loadFlashcards();  // Wait for fresh load
+    currentIndex = 0;
+    isFlipped = false;
+    if (engCard) engCard.style.display = 'block';
+    if (malCard) malCard.style.display = 'none';
+
+    if (flashcards.length > 0) {
+        displayCard();
+    }
 });
 
-// DELETE current card
-document.getElementById('deleteButton').addEventListener('click', async () => {  
-    if (flashcards.length === 0 || !flashcards[currentIndex]) {
-        console.warn('Nothing to delete.');
-        return;
-    }
-    const card = flashcards[currentIndex]; 
-    if (!confirm(`Delete "${card.english}" (${card.category})? This cannot be undone!`)) {
-        return; 
-    }
+
+
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadFlashcards();  // Wait for fetch to finish
+
+    // Force reset state and display, regardless of when it loaded
+    currentIndex = 0;
+    isFlipped = false;
     
-    // Remove locally first (UI updates immediately)
-    const deletedIndex = currentIndex;  // Save for potential rollback
-    flashcards.splice(currentIndex, 1);
-    if (currentIndex >= flashcards.length) {
-        currentIndex = Math.max(0, flashcards.length - 1);  
+    if (engCard) engCard.style.display = 'block';
+    if (malCard) malCard.style.display = 'none';
+
+    if (flashcards.length > 0) {
+        displayCard();
+        console.log('Initial card displayed after load');
+    } else {
+        console.warn('No flashcards loaded on init');
+        // Optional fallback
+        const engTitle = document.getElementById('english');
+        if (engTitle) engTitle.textContent = 'Failed to load flashcards';
     }
 
-    try {
-        let response = { ok: true };  //Default "success" for local-only
-        if (card.id) {
-            response = await fetch(`${API_BASE}/api/flashcards/${card.id}`, { 
-                method: 'DELETE',
-            });
-            if (!response.ok) {  // Now safe: Always defined
-                throw new Error(`DELETE failed: ${response.status}`);
-            }
-            console.log(`API delete succeeded for card ${card.id}`); 
-        } else {
-            console.warn('No card ID—skipped API delete (local-only mode)');  
-        }
-
-        // Success: Update UI
-        isFlipped = false;
-        engCard.style.display = 'block';
-        malCard.style.display = 'none';
-
-        if (flashcards.length > 0) {
-            displayCard(); 
-        } else {
-            alert('All Cards deleted. Create new cards using the form.');
-        }
-    } catch (err) {
-        // Rollback: Reload to restore from source (re-adds if API failed)
-        console.error('Delete failed:', err);
-        alert('Failed to delete card. Check console for details.');
-        loadFlashcards();  
-        currentIndex = Math.min(deletedIndex, flashcards.length - 1); 
-    }
+    updateFooter();
 });
-
-
-// New Card Form: POST to API, refresh list
-// Server assigns Id
-document.getElementById('newCardForm').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const newCard = {
-        category: document.getElementById('newCategory').value.trim(),
-        english: document.getElementById('newEnglish').value.trim(),
-        engExample: document.getElementById('newEngExample').value.trim(),
-        malayalam: document.getElementById('newMalayalam').value.trim(),
-        transliteration: document.getElementById('newTranslit').value.trim(),  // Matches JSON field
-        malExample: document.getElementById('newMalExample').value.trim(),
-        malExampleTranslit: document.getElementById('newMalExampleTranslit').value.trim(),
-    };
-
-    
-    // Basic validation + Matches if all characters in Malayalam inputs are in Malayalam unicode range
-    // Includes Malayalam numerals 
-    // Allows spaces and common punctuations 
-    const malayalamRegex = /^[\u0D00-\u0D7F\u0D66-\u0D78\s\u200C-\u200D.,!?'"“”()-]+$/u;   
-
-    if (!newCard.category || !newCard.english || !newCard.malayalam) {
-        alert('Please fill required fields: Category, English, Malayalam');
-        return;
-    }
-
-    // Check if all letters of Malayalam word (not translit) are in Malayalam Script
-    if (!malayalamRegex.test(newCard.malayalam)) {
-        alert('Malayalam word must be in valid Malayalam script');
-        return; 
-    }
-    //check if all letters of malayalam example phrase (not translit) are in Malayalam Script (skip if empty)
-    if (newCard.malExample && !malayalamRegex.test(newCard.malExample)) {  
-        alert(`Malayalam example be in valid Malayalam script (common puntuations allowed: ", !, ?)`);
-        return; 
-    }
-
-
-    try {
-        const response = await fetch(`${API_BASE}/api/flashcards`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(newCard)
-        });
-        if (!response.ok) throw new Error('POST failed');
-
-        const addedCard = await response.json();  // Server returns the full card w/ ID
-        loadFlashcards();  // Refresh list
-        e.target.reset();
-        console.log('New card added:', addedCard.english, 'ID:', addedCard.id);
-
-    } catch (err) {
-        console.error('Form submission failed:', err);
-        alert('Failed to add card. Check console.');
-    }
-});
-
-// Init: Load on page load, ensure English side visible
-loadFlashcards();
-isFlipped = false;
-engCard.style.display = 'block';
-malCard.style.display = 'none';
-
-
-
-updateFooter(); 
