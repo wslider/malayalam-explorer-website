@@ -158,8 +158,8 @@
     .footer {
         box-sizing: border-box;
         text-align: center;
-        position: absolute;
-        bottom: 25px;
+        margin-top: 25px;
+        margin-bottom: 25px; 
     }
 
     @media only screen and (min-width: 768px) {
