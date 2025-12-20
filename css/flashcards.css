@@ -1,4 +1,4 @@
-    :root {
+   :root {
       --keralaGreen: #004700; 
       --keralaNight: #000d08;
       --keralaShade: #001d08;
@@ -131,19 +131,38 @@
       width: 95vw; 
     } 
 
+    #newCardForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 95vw;
+      border: solid var(--mountainFog) 3px; 
+      box-shadow: 5px 5px var(--keralaShade);
+    }
+
       .cardButtons > button {
         font-size: 1.25rem;
         box-shadow: 5px 5px var(--keralaShade);
       }
       
-     
+      .form > input {
+        font-size: 1.25rem;
+        padding: 1%;
+        margin: 2%;
+        box-shadow: 5px 5px var(--keralaShade); 
+      }
+      .form > button {
+        font-size: 1.5rem;
+        padding: 1%; 
+        margin:2%;
+        box-shadow: 5px 5px var(--keralaShade); 
+      }
+
       .footer {
-        width: 100%; 
+        margin: 20px; 
         box-sizing: border-box;
         text-align: center;
-        margin-top: 25px; 
-        margin-bottom: 25px; 
-    }
+      }
   /* Tablet & Larger */
 
   @media only screen and (min-width: 768px) {
@@ -184,5 +203,13 @@
         font-size: 1.5rem;
       }
 
-      
+      .form > input {
+        font-size: 1.25rem;
+      }
+      .form > button {
+        font-size: 1.5rem;
+      }
+
   }
+
+      /* display is toggled in js for card content 

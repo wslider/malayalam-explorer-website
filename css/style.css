@@ -65,7 +65,7 @@
 
 
     .header {
-        font-size: 1rem;
+        font-size: .9rem;
         text-align: center;
         cursor: pointer;
         text-align: center;
@@ -75,7 +75,8 @@
         padding-top: 10px;
         padding-bottom: 10px; 
         box-sizing: border-box; 
-        min-height: 12vh;
+        max-height: 20vh;
+        margin-bottom: 3vh;
     }
  
 
@@ -93,9 +94,10 @@
 
     .container { 
         box-sizing: border-box;
-        width: 90%; 
-        margin: 5%; 
-        padding: 20px;
+        width: 97%; 
+        padding: 2%;
+        margin: 1%; 
+        padding: 2%;
         border: solid var(--mountainFog) 3px; 
         box-shadow: 3px 3px #001d08;
         display: flex;
@@ -105,10 +107,12 @@
 
     .containerTitle {
         align-self: center;
+        text-align: center;
     }
 
     .containerImg {
         align-self: center;
+        width: 100%; 
     }
 
     .figure {
@@ -116,6 +120,11 @@
         flex-direction: column;
         align-items: center;
         gap: 10px; 
+        width: 100%; 
+    }
+
+    .figCaption {
+        text-align: center;
     }
 
 
@@ -135,8 +144,9 @@
         justify-content: space-around; 
     }
         .locationImg {
-            max-width: 60vw;
+            width: 100%;
             padding: 10px; 
+            box-sizing: border-box;
         }
 
 
@@ -155,17 +165,21 @@
         align-items: start;
     }
 
+        .sunMapButton {
+            display: none;  
+        }
+
     .footer {
+        margin: 25px; 
         box-sizing: border-box;
         text-align: center;
-        margin-top: 25px;
-        margin-bottom: 25px; 
-    }
+      }
 
     @media only screen and (min-width: 768px) {
 
     .header {
-        min-height: 15vh; 
+        max-height: 10vh; 
+        font-size: 0.9rem;
     }
   
 
@@ -182,7 +196,7 @@
     /* default setting for containers within main for tablets and large screens */
 
     .container {
-        height: 90%; 
+        height: 95%; 
     }
 
         .flashcardExpContainer {
@@ -206,19 +220,64 @@
         .worldClock {
             grid-area: worldClock;
         }
+            .sunMapButton {
+                display: none;  
+            }
 
+    }
+
+    @media only screen and (min-width: 768px) {
+    .topNav {
+        display: flex; 
+        flex-direction: row;
+        font-size: 1.25rem;
+    }
+
+      .topnav > a {
+          text-align: left;
+      }
+    
+    .worldClock {
+            justify-content: space-around; 
+            align-items: center;
+            font-size: 1.25rem;
+            padding: 5%; 
+            min-height: 50vw; 
+        }
+    
     }
 
     @media only screen and (min-width: 992px) {
-        .worldClock {
-            justify-content: center; 
-            align-items: center;
-            font-size: 1.25rem;
-            padding: 10%; 
-        }
+        .topnav {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+      }
 
-        .topnav > a {
-            text-align: left;
+      .topnav #myLinks {
+          display: flex;
+          flex-direction: row;
+          background-color: transparent;
+      }
+
+      .topnav a {
+        margin-left: 5vw; 
+        margin-right: 12vw; 
+      }
+
+      #dropMenu {
+          display: none; 
+      }
+
+        .sunMapButton {
+            display: block; 
+            font-size: 1.5rem;
+            background-color: var(--backwaterBlue);
+            color: var(--mountainFog);
+            box-shadow: 3px 3px var(--keralaNight);
+            padding: 15px; 
+            border-radius: 15px;
         }
 
     }
+        

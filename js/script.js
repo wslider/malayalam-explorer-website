@@ -1,5 +1,6 @@
-import { updateFooter } from "https://wslider.github.io/malayalam-explorer-website/js/utils.js";
 import { navBarLinks } from "https://wslider.github.io/malayalam-explorer-website/js/utils.js";
+import { updateSunMapLink } from "https://wslider.github.io/malayalam-explorer-website/utils.js";
+import { updateFooter } from "https://wslider.github.io/malayalam-explorer-website/js/utils.js";
 
 // Event Listener for Bilingual Header 
 
@@ -191,7 +192,7 @@ function updateLocationFigure() {
 updateLocationFigure(); 
 setInterval(updateLocationFigure, 10000);
 
-
+updateSunMapLink();
 
 updateFooter(); 
 

@@ -1,25 +1,3 @@
-export function updateFooter() {
-    const footer = document.getElementById('footer');
-    if (!footer) return; 
-
-    const now = new Date();
-    const footerYear = now.getFullYear();
-    footer.textContent = `Malayalam Explorer - ${footerYear}`;
-}
-
-// Run when the DOM is ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-        updateFooter();
-        setInterval(updateFooter, 3600000); // 1 hour 
-    });
-} else {
-    updateFooter();
-    setInterval(updateFooter, 36000000);
-}
-
-
-
 export function navBarLinks() {
     const myLinks = document.getElementById("myLinks");
     const currentDisplay = window.getComputedStyle(myLinks).display;
@@ -43,4 +21,36 @@ export function navBarLinks() {
         topNavBar.style.gap = "5vw"; 
         topNavBar.style.padding = "0 3vw 0 -1vw";
     }
+}
+
+
+
+export function updateSunMapLink(){
+  const nowUtc = new Date().toISOString();
+  const isoTxt = nowUtc.slice(0, 16).replace(/[-:]/g, '');
+  const sunMapLink = `https://www.timeanddate.com/scripts/sunmap.php?iso=${isoTxt}`; 
+  document.getElementById('sunMapButton').addEventListener('click', ()=>{
+    window.open(`${sunMapLink}`, '_blank');
+  }); 
+}
+
+
+export function updateFooter() {
+    const footer = document.getElementById('footer');
+    if (!footer) return; 
+
+    const now = new Date();
+    const footerYear = now.getFullYear();
+    footer.textContent = `Malayalam Explorer - ${footerYear}`;
+}
+
+// Run when the DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        updateFooter();
+        setInterval(updateFooter, 3600000); // 1 hour 
+    });
+} else {
+    updateFooter();
+    setInterval(updateFooter, 36000000);
 }

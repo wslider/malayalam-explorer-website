@@ -1,5 +1,6 @@
-import { updateFooter } from "https://wslider.github.io/malayalam-explorer-website/js/utils.js";
 import { navBarLinks } from "https://wslider.github.io/malayalam-explorer-website/js/utils.js";
+import { updateSunMapLink } from "https://wslider.github.io/malayalam-explorer-website/utils.js";
+import { updateFooter } from "https://wslider.github.io/malayalam-explorer-website/js/utils.js";
 
 
 document.getElementById('dropMenu').addEventListener('click', navBarLinks); 
@@ -60,24 +61,8 @@ const locationName = document.getElementById('locationName');
     updateLocation();
     setInterval(updateLocation, 60000);
 
+    updateSunMapLink();
+
     updateFooter();
 
 
-// pin on map location (add to array)
-// location image for each location 
-// insp for locations on profile site 
-
-/* 
-
-     const locations = [
-      { name: "Munnar", lat: "10.09", lon: "77.06", src:"images/munnar-hillstation.jpg", engDesc:"", malDesc:"" },
-      { name: "Thiruvananthapuram", lat: "8.52", lon: "76.94", src:"images/trivandrum-nairMuseum.jpg", engDesc:"", malDesc:"" }
-    ];
-
-        locationDesc.addEventListener("mouseout", function() {
-          this.textContent = `${loc.engDesc}`
-        });                             
-
-        locationDesc.addEventListener("mouseover", function() {
-          this.textContent = `${loc.malDesc}`
-        }); */ 
