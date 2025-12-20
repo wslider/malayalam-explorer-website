@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://wslider.github.io/malayalam-explorer-website/css/locations.css">
+    <link rel="stylesheet" href="css/locations.css">
     <title>Locations</title>
 </head>
 <body>
@@ -18,21 +18,29 @@
     <header class="header">Explore Featured Locations</header>
 
     <main class="mainContainer">
-        <div class="card container" id="locationContainer">
-                <h2 id="locationName">Loading…</h1>
-                <div id="currentTemp">--°F</div>
-                <img class="image" id="locationImg">
-                <div id="locationDescEng"></div>
-                <div id="locationDescMal"></div>   
-        </div>
-            <div class="mapContainer container" id="locationMap">
-        </div>
+    <div class="card container" id="locationContainer">
+        <h2 id="locationName">Loading…</h2>
 
-       
-    </main>
+        <p id="currentTemp">--°F</p>
+        <p id="time"></p>   =
+
+        <img class="image" id="locationImg" src="" alt="">
+
+        <div id="locationDescEng"></div>
+        <div id="locationDescMal"></div>   
+    </div>
+
+    <div class="mapContainer container" id="locationMap">
+        
+    </div>
+
+    <div class="sunMapButtonContainer container">
+        <button class="sunMapButton" id="sunMapButton">View Daylight Map</button>
+    </div>
+</main>
     
     <footer class="footer" id="footer"></footer>
 
-    <script type="module" src="https://wslider.github.io/malayalam-explorer-website/js/locations.js"></script>
+    <script type="module" src="js/locations.js"></script>
 </body>
 </html>

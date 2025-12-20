@@ -2,21 +2,28 @@ import { updateFooter } from "https://wslider.github.io/malayalam-explorer-websi
 import { navBarLinks } from "https://wslider.github.io/malayalam-explorer-website/js/utils.js";
 
 
-document.getElementById('dropMenu').addEventListener('click', navBarLinks); 
+document.addEventListener('DOMContentLoaded', () => {
+    // Put ALL your code that touches the DOM inside here
 
-const locationName = document.getElementById('locationName');
+    document.getElementById('dropMenu').addEventListener('click', navBarLinks); 
+
+    const locationName = document.getElementById('locationName');
     const currentTempText = document.getElementById('currentTemp');
     const timeText = document.getElementById('time');
-
     const locationImg = document.getElementById('locationImg');
     const locationDesc = document.getElementById('locationDesc'); 
-
     const locationMap = document.getElementById('locationMap'); 
 
+    // Add null checks to avoid crashes
+    if (!locationName || !currentTempText || !timeText || !locationImg || !locationMap) {
+      console.error("One or more required elements are missing in the HTML!");
+      return; // Stop execution if elements aren't found
+    }
+
     const locations = [
-      { name: "Munnar", lat: "10.09", lon: "77.06", src:"images/munnar-hillstation.jpg", alt:"Anamudi as seen from the south with State Highway 17. Photo taken from Nayamakad, Kannan Devan Hills, Kerala, India.- Bimal K C from Cochin, India, 2008"},
-      { name: "Thiruvananthapuram", lat: "8.52", lon: "76.94", src:"images/trivandrum-nairMuseum.jpg", alt:"Image of Nair Museum in Trivandrum. - William Slider, 2008"},
-      { name: "Vembanad Lake", lat: "9.60", lon: "76.40", src:"images/vembanad-lake-monsoon-clouds.jpeg", alt:"Image of houseboats on Vembanad Lake and monsoon clouds. - William Slider, 2011"}
+      { name: "Munnar", lat: 10.09, lon: 77.06, src:"images/munnar-hillstation.jpg", alt:"..." },
+      { name: "Thiruvananthapuram", lat: 8.52, lon: 76.94, src:"images/trivandrum-nairMuseum.jpg", alt:"..." },
+      { name: "Vembanad Lake", lat: 9.60, lon: 76.40, src:"images/vembanad-lake-monsoon-clouds.jpeg", alt:"..." }
     ];
 
     let i = 0;
@@ -28,6 +35,7 @@ const locationName = document.getElementById('locationName');
 
       try {
         const res = await fetch(url);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
 
         const temp = Math.round(data.current.temperature_2m);
@@ -37,27 +45,25 @@ const locationName = document.getElementById('locationName');
         currentTempText.textContent = `${temp}°F`;
         timeText.textContent = `as of ${time} IST`;
 
-        locationImg.src = `${loc.src}`;
-        locationImg.alt = `${loc.alt}`; 
+        locationImg.src = loc.src;
+        locationImg.alt = loc.alt; 
 
-        locationMap.innerHTML = `
-        <iframe class="mapImage image" src="https://www.openstreetmap.org/export/embed.html?bbox=73.53698730468751%2C7.988511967656373%2C80.60119628906251%2C12.157480388484009&amp;layer=mapnik&amp;marker=${loc.lat}%2C${loc.lon}" style="border: 1px solid black">
+        locationMap.innerHTML = `<iframe class="mapImage image" src="https://www.openstreetmap.org/export/embed.html?bbox=73.53698730468751%2C7.988511967656373%2C80.60119628906251%2C12.157480388484009&amp;layer=mapnik&amp;marker=${loc.lat}%2C${loc.lon}" style="border: 1px solid black">
         </iframe><br/>
         <small>
         <a href="https://www.openstreetmap.org/?mlat=${loc.lat}&amp;mlon=${loc.lon}#map=8/${loc.lat}/${loc.lon}">View Larger Map</a>
-        </small>`
+        </small>`;
 
-        
-      } 
-      
-      catch (err) {
+      } catch (err) {
+        console.error("Weather update failed:", err);
         currentTempText.textContent = "Error";
       }
 
-      i = (i + 1) % locations.length; // loop though continously 
+      i = (i + 1) % locations.length;
     }
 
     updateLocation();
     setInterval(updateLocation, 60000);
 
     updateFooter();
+  });
