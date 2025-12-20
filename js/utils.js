@@ -25,16 +25,6 @@ export function navBarLinks() {
 
 
 
-export function updateSunMapLink(){
-  const nowUtc = new Date().toISOString();
-  const isoTxt = nowUtc.slice(0, 16).replace(/[-:]/g, '');
-  const sunMapLink = `https://www.timeanddate.com/scripts/sunmap.php?iso=${isoTxt}`; 
-  document.getElementById('sunMapButton').addEventListener('click', ()=>{
-    window.open(`${sunMapLink}`, '_blank');
-  }); 
-}
-
-
 export function updateFooter() {
     const footer = document.getElementById('footer');
     if (!footer) return; 
@@ -54,3 +44,12 @@ if (document.readyState === 'loading') {
     updateFooter();
     setInterval(updateFooter, 36000000);
 }
+
+/* export function updateSunMapLink(){
+  const nowUtc = new Date().toISOString();
+  const isoTxt = nowUtc.slice(0, 16).replace(/[-:]/g, '');
+  const sunMapLink = `https://www.timeanddate.com/scripts/sunmap.php?iso=${isoTxt}`; 
+  document.getElementById('sunMapButton').addEventListener('click', ()=>{
+    window.open(`${sunMapLink}`, '_blank');
+  }); 
+} */
