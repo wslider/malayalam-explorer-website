@@ -7,7 +7,7 @@
     <title>Flashcards</title>
 </head>
 
-<body>
+<body class="body">
 
     <nav class="topnav" id="topNavBar">
         <a class="active" id="dropMenu"> ≡ Menu</a>
@@ -35,10 +35,14 @@
         </div>
 
         <div class="cardButtons" id="cardButtons">
-            <button id="nextButton">Next ⏭️</button>
-            <button id="prevButton">Previous ⏮️</button>
+            <div class="nextPrevButtonsDiv">
+                <button class=nextButton id="nextButton"><div class="nextButtonText">Next</div> <div>⏭️</div></button>
+                <button class="prevButton" id="prevButton"><div class="prevButtonText">Prev</div> <div>⏮️</div></button>
+            </div>
             <button id="shuffleButton">Shuffle 🔀</button>
             <button id="resetButton">Reset 🔄️</button>
+            <button class="searchButton" id="searchButton">Deep Dive 🐳</button>
+            
         </div>
 
     </main>

@@ -7,6 +7,7 @@
       --mountainFog: #f0fff8; 
       --monsoonCloud: #333849;
       --backwaterBlue: #032094;
+      --deepSeaDive: #001847;
     }
 
     body {
@@ -15,9 +16,9 @@
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-content: center;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
         gap: 5%; 
         margin: 0; 
     }
@@ -131,6 +132,61 @@
       width: 95vw; 
     } 
 
+      .cardButtons > button {
+        font-size: 1.25rem;
+        padding: 1%; 
+        box-shadow: 5px 5px var(--keralaShade); 
+        min-height: 7vh;
+        border-radius: 10px;
+      }
+
+      .nextPrevButtonsDiv {
+        display: flex; 
+        flex-direction: row-reverse; 
+        justify-content: center;
+        width: 100%;
+      }
+
+        .nextPrevButtonsDiv > button {
+          font-size: 1.5rem;
+          padding: 1%; 
+          box-shadow: 5px 5px var(--keralaShade); 
+          width: 50%;
+          min-height: 7vh;
+          border-radius: 10px;
+        }
+
+        .prevButton {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: center;
+          align-items: center;
+        }
+
+          .prevButtonText {
+            font-size: 1.7rem;
+            margin-left: 10px;  
+          }
+        
+        .nextButton {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          
+        }
+
+          .nextButtonText {
+            font-size: 1.7rem; 
+            margin-right: 10px;
+          }
+        
+        .searchButton {
+          background-color: var(--deepSeaDive);
+          color: var(--mountainFog);
+          text-shadow: #f0fff8 1px 1px 2px;
+        }
+
     #newCardForm {
       display: flex;
       flex-direction: column;
@@ -140,10 +196,7 @@
       box-shadow: 5px 5px var(--keralaShade);
     }
 
-      .cardButtons > button {
-        font-size: 1.25rem;
-        box-shadow: 5px 5px var(--keralaShade);
-      }
+      
       
       .form > input {
         font-size: 1.25rem;
@@ -166,6 +219,10 @@
   /* Tablet & Larger */
 
   @media only screen and (min-width: 768px) {
+    body {
+      height: 100vh;
+    }
+
     .topNav {
         display: flex; 
         flex-direction: row;
@@ -197,11 +254,23 @@
       grid-area: cardButtons; 
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: center;
+      gap: 0; 
     }
       .cardButtons > button {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
+
+      .nextPrevButtonsDiv {
+        display: flex; 
+        flex-direction: row-reverse; 
+        justify-content: center;
+        width: 60%;
+      }
+        .nextPrevButtonsDiv > button {
+          font-size: 1.8rem;
+          padding: 1%; 
+        }
 
       .form > input {
         font-size: 1.25rem;

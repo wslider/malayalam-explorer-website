@@ -155,6 +155,30 @@ document.getElementById('resetButton').addEventListener('click', async () => {
     }
 });
 
+// Search / Deep Dive button Functionality
+document.getElementById('searchButton').addEventListener('click', () => {
+    const card = flashcards[currentIndex];
+    const malayalamSearchTerm = document.getElementById('malayalam').textContent = card.malayalam;
+    const englighSearchTerm = document.getElementById('english').textContent = card.english;
+    if (flashcards.length === 0) return;
+    else if (malCard.style.display === 'block') {
+        // Malayalam side visible
+        console.log('Searching for Malayalam term:', malayalamSearchTerm);
+        const searchTerm = malayalamSearchTerm;
+        const encodedTerm = encodeURIComponent(searchTerm.trim());
+        const searchUrl = `https://duckduckgo.com/?q=${encodedTerm}&ia=web`;
+        window.open(searchUrl, '_blank', 'noopener,noreferrer');
+    }
+    else {
+        // English side visible
+        console.log('Searching for English term:', englighSearchTerm);
+        const searchTerm = englighSearchTerm;
+        const encodedTerm = encodeURIComponent(searchTerm.trim());
+        const searchUrl = `https://duckduckgo.com/?q=${encodedTerm}&ia=web`;
+        window.open(searchUrl, '_blank', 'noopener,noreferrer');
+    }; 
+    
+});
 
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -175,6 +199,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (engTitle) engTitle.textContent = 'Failed to load flashcards';
     }
 
-    navBarLinks();
     updateFooter();
 });
