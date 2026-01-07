@@ -76,43 +76,34 @@
     }
 
     .cardContainer {
-      min-height: 50vh; 
+      min-height: 58vh; 
       max-height: fit-content; 
       width: 95vw; 
-      margin-top: 3vh; 
+      margin-top: 2vh; 
       border: 3px solid var(--mountainFog);
       box-shadow: 5px 5px var(--keralaShade);
+      background-color: #002d00ad;
       box-sizing: border-box;
       text-align: center;
       cursor: pointer;
     }
 
-    .cardContainer#engCardContent {
-      padding-top: 7vh; 
-    }
-
-    .cardContainer#engCardContent *:nth-child(2) {
-      margin-top: 7vh;
-    }
-
-  
-    .cardItem {
-      margin-top: 20px;
-      margin-bottom: 20px; 
-      margin-left: 4vw; 
-      margin-right: 4vw;
-    }
+ 
 
     .engCardItem {
-      font-size: 1.4rem;
+      font-size: 1.45rem;
     }
 
     .malCardItem {
-      font-size: 1.2rem;
+      font-size: 1.45rem;
+    }
+
+    .cardItem {
+      margin: 1vh 2vw; 
     }
 
     .cardItem.top{
-      margin-top: 40px; 
+      margin-top: 10px; 
     }
 
     .cardItem#category {
@@ -120,8 +111,7 @@
     }
 
     i.cardItem {
-      font-size: 0.9rem; 
-      margin-top: 20vh; 
+      font-size: 1rem; 
     }
 
     .cardButtons {
@@ -186,30 +176,10 @@
           color: var(--mountainFog);
           text-shadow: #f0fff8 1px 1px 2px;
         }
-
-    #newCardForm {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      width: 95vw;
-      border: solid var(--mountainFog) 3px; 
-      box-shadow: 5px 5px var(--keralaShade);
-    }
-
-      
-      
-      .form > input {
-        font-size: 1.25rem;
-        padding: 1%;
-        margin: 2%;
-        box-shadow: 5px 5px var(--keralaShade); 
-      }
-      .form > button {
-        font-size: 1.5rem;
-        padding: 1%; 
-        margin:2%;
-        box-shadow: 5px 5px var(--keralaShade); 
-      }
+        .searchButton:hover {
+          background-color: var(--backwaterBlue);
+          font-weight: 700;
+        }
 
       .footer {
         margin: 20px; 
@@ -234,21 +204,25 @@
       }
     
     .cardContainer {
-      font-size: 1.4rem;
+      min-height: 60vh;
+      margin-top: 0; 
     }
 
       .engCardItem {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
       }
 
       .malCardItem {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
     
-    .cardContainer *:last-child{
-        margin-top: 7vh;
-        margin-bottom: 3vh; 
-      }
+        .cardItem#category {
+        font-size: 1.1rem; 
+        }
+
+        i.cardItem {
+          font-size: 1.1rem; 
+        }
 
     .cardButtons {
       grid-area: cardButtons; 

@@ -31,7 +31,11 @@ async function loadFlashcards() {
     if (flashcards.length > 0) {
         currentIndex = 0;
         isFlipped = false;
-        engCard.style.display = 'block';
+        engCard.style.display = 'flex';
+        engCard.style.flexDirection = 'column';
+        engCard.style.alignItems = 'center';
+        engCard.style.justifyContent = 'space-around';
+        engCard.style.textAlign = 'center';
         malCard.style.display = 'none';
         displayCard();
     } else {
@@ -70,11 +74,19 @@ engCard.addEventListener('click', () => {
     if (isFlipped) {
         // Flip to Malayalam
         engCard.style.display = 'none';
-        malCard.style.display = 'block';  // Show back
+        malCard.style.display = 'flex';
+        malCard.style.flexDirection = 'column';
+        malCard.style.alignItems = 'center';
+        malCard.style.justifyContent = 'space-around';
+        malCard.style.textAlign = 'center'; // Show back
         console.log('Switched to Malayalam side');
     } else {
         // Flip back to English
-        engCard.style.display = 'block';
+        engCard.style.display = 'flex';
+        engCard.style.flexDirection = 'column';
+        engCard.style.alignItems = 'center';
+        engCard.style.justifyContent = 'space-around';
+        engCard.style.textAlign = 'center'; // Show front
         malCard.style.display = 'none';
         console.log('Switched to English side');
     }
@@ -105,7 +117,11 @@ malCard.addEventListener('mouseleave', () => {
 malCard.addEventListener('click', () => {
     console.log('Malayalam clicked! Flipping back');
     isFlipped = false;  // Force back to English
-    engCard.style.display = 'block';
+    engCard.style.display = 'flex';
+    engCard.style.flexDirection = 'column';
+    engCard.style.alignItems = 'center';
+    engCard.style.justifyContent = 'space-around';
+    engCard.style.textAlign = 'center';
     malCard.style.display = 'none';
     displayCard();
 });
@@ -115,7 +131,11 @@ document.getElementById('nextButton').addEventListener('click', () => {
     if (flashcards.length === 0) return;
     currentIndex = (currentIndex + 1) % flashcards.length; 
     isFlipped = false;
-    engCard.style.display = 'block';
+    engCard.style.display = 'flex';
+    engCard.style.flexDirection = 'column';
+    engCard.style.alignItems = 'center';
+    engCard.style.justifyContent = 'space-around';
+    engCard.style.textAlign = 'center';
     malCard.style.display = 'none';
     displayCard(); 
 });
@@ -124,7 +144,11 @@ document.getElementById('prevButton').addEventListener('click', () => {
     if (flashcards.length === 0) return;
     currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
     isFlipped = false;
-    engCard.style.display = 'block';
+    engCard.style.display = 'flex';
+    engCard.style.flexDirection = 'column';
+    engCard.style.alignItems = 'center';
+    engCard.style.justifyContent = 'space-around';
+    engCard.style.textAlign = 'center';
     malCard.style.display = 'none';
     displayCard(); 
 });
@@ -136,7 +160,11 @@ document.getElementById('shuffleButton').addEventListener('click', () => {
     currentIndex = 0; 
     // Reset to English side
     isFlipped = false;
-    engCard.style.display = 'block';
+    engCard.style.display = 'flex';
+    engCard.style.flexDirection = 'column';
+    engCard.style.alignItems = 'center';
+    engCard.style.justifyContent = 'space-around';
+    engCard.style.textAlign = 'center';
     malCard.style.display = 'none';
     displayCard(); 
 });
@@ -147,7 +175,11 @@ document.getElementById('resetButton').addEventListener('click', async () => {
     await loadFlashcards();  // Wait for fresh load
     currentIndex = 0;
     isFlipped = false;
-    if (engCard) engCard.style.display = 'block';
+    if (engCard) engCard.style.display = 'flex';
+    engCard.style.flexDirection = 'column';
+    engCard.style.alignItems = 'center';
+    engCard.style.justifyContent = 'space-around';
+    engCard.style.textAlign = 'center';
     if (malCard) malCard.style.display = 'none';
 
     if (flashcards.length > 0) {
@@ -161,7 +193,7 @@ document.getElementById('searchButton').addEventListener('click', () => {
     const malayalamSearchTerm = document.getElementById('malayalam').textContent = card.malayalam;
     const englighSearchTerm = document.getElementById('english').textContent = card.english;
     if (flashcards.length === 0) return;
-    else if (malCard.style.display === 'block') {
+    else if (malCard.style.display === 'flex') {
         // Malayalam side visible
         console.log('Searching for Malayalam term:', malayalamSearchTerm);
         const searchTerm = malayalamSearchTerm;
@@ -187,7 +219,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     currentIndex = 0;
     isFlipped = false;
     
-    if (engCard) engCard.style.display = 'block';
+    if (engCard) engCard.style.display = 'flex';
     if (malCard) malCard.style.display = 'none';
 
     if (flashcards.length > 0) {
