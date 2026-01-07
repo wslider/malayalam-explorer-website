@@ -98,8 +98,9 @@
         padding: 2%;
         margin: 1%; 
         padding: 2%;
-        border: solid var(--mountainFog) 3px; 
+        border: solid var(--mountainFog) 2px; 
         box-shadow: 3px 3px #001d08;
+        background-color: #003100c2;
         display: flex;
         flex-direction: column;
         gap: 5px;
