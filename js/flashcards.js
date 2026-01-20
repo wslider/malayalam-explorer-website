@@ -96,15 +96,34 @@ engCard.addEventListener('click', () => {
     
     displayCard();  // Refresh content AFTER swap
 
-    // Track viewed cards
-    const currentCardId = flashcards[currentIndex].id;
-    const totalCards = flashcards.length;
+ const currentCardId = flashcards[currentIndex].id;
+    const totalCards = flashcards.length;  // you can also hoist this outside if it never changes
+
     if (!viewedIds.has(currentCardId)) {
         viewedIds.add(currentCardId);
-        document.getElementById('cardsViewed').innerText = `${viewedIds.size} cards viewed of ${totalCards}`;
-    }
-    else {
-       console.log(`Card ID ${currentCardId} already viewed.`);
+
+        const viewedCount = viewedIds.size;
+        const counterEl = document.getElementById('cardsViewed');
+
+        if (viewedCount === totalCards) {
+            counterEl.innerText = `All ${totalCards} cards viewed! 🎉`;
+            // Optional: add a class for permanent highlight or confetti
+            // counterEl.classList.add('complete');
+        } else {
+            counterEl.innerText = `${viewedCount} cards of ${totalCards} viewed`;
+            // Trigger animation
+            const counterAnimEl = document.getElementById('counter');
+            if (counterAnimEl) {
+                // Reset animation
+                counterAnimEl.style.animation = 'none';
+                // Force reflow so animation restarts
+                void counterAnimEl.offsetWidth;
+                // Re-apply
+                counterAnimEl.style.animation = 'highlight green 1s ease-in-out';
+            }
+        }
+    } else {
+        console.log(`Card ID ${currentCardId} already viewed`);
     }
 });
 
@@ -191,6 +210,8 @@ document.getElementById('shuffleButton').addEventListener('click', () => {
 // Reset: Reload original, unshuffle, reset flip
 document.getElementById('resetButton').addEventListener('click', async () => {
     isShuffled = false;
+    viewedIds.clear();
+    document.getElementById('cardsViewed').innerText = `0 cards viewed of ${flashcards.length}`;
     await loadFlashcards();  // Wait for fresh load
     currentIndex = 0;
     isFlipped = false;
@@ -203,10 +224,9 @@ document.getElementById('resetButton').addEventListener('click', async () => {
 
     if (flashcards.length > 0) {
         displayCard();
+        viewedIds.clear; 
+
     }
-    // Clear viewed IDs on reset
-    viewedIds.clear();
-    document.getElementById('cardsViewed').innerText = `0 cards viewed of ${totalCards}`;
 });
 
 // Search / Deep Dive button Functionality
@@ -248,9 +268,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (viewedIds.size === 0) {
     document.getElementById('cardsViewed').innerText = `0 cards viewed of ${totalCards}`;
     }
-    else if (viewedIds.size.size === totalCards) {
-        document.getElementById('cardsViewed').innerText = `All ${totalCards} cards viewed!`;
-    }
+    
 
     if (flashcards.length > 0) {
         displayCard();
