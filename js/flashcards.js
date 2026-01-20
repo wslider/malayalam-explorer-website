@@ -7,6 +7,7 @@ let flashcards = []; // Global array of cards
 let currentIndex = 0;
 let isFlipped = false; 
 let isShuffled = false; 
+const viewedIds = new Set();
 
 // DOM elements 
 const engCard = document.getElementById('engCardContent');
@@ -66,6 +67,8 @@ function displayCard() {
     console.log(`Displayed card ${currentIndex + 1}: ${card.english} / ${card.malayalam}`);  
 }
 
+
+
 // Flip on click - toggle English front / Malayalam back
 engCard.addEventListener('click', () => {
     console.log('Flip clicked! Current isFlipped:', isFlipped);  
@@ -92,7 +95,23 @@ engCard.addEventListener('click', () => {
     }
     
     displayCard();  // Refresh content AFTER swap
+
+    // Track viewed cards
+    const currentCardId = flashcards[currentIndex].id;
+    const totalCards = flashcards.length;
+    if (!viewedIds.has(currentCardId)) {
+        viewedIds.add(currentCardId);
+        document.getElementById('cardsViewed').innerText = `${viewedIds.size} cards viewed of ${totalCards}`;
+    }
+    else {
+       console.log(`Card ID ${currentCardId} already viewed.`);
+    }
 });
+
+
+
+
+
 
 //Change background color on card to highlight interactivity
 
@@ -185,6 +204,9 @@ document.getElementById('resetButton').addEventListener('click', async () => {
     if (flashcards.length > 0) {
         displayCard();
     }
+    // Clear viewed IDs on reset
+    viewedIds.clear();
+    document.getElementById('cardsViewed').innerText = `0 cards viewed of ${totalCards}`;
 });
 
 // Search / Deep Dive button Functionality
@@ -218,9 +240,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     currentIndex = 0;
     isFlipped = false;
+    const totalCards = flashcards.length;
     
     if (engCard) engCard.style.display = 'flex';
     if (malCard) malCard.style.display = 'none';
+
+    if (viewedIds.size === 0) {
+    document.getElementById('cardsViewed').innerText = `0 cards viewed of ${totalCards}`;
+    }
+    else if (viewedIds.size.size === totalCards) {
+        document.getElementById('cardsViewed').innerText = `All ${totalCards} cards viewed!`;
+    }
 
     if (flashcards.length > 0) {
         displayCard();

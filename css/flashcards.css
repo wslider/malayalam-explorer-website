@@ -181,6 +181,23 @@
           font-weight: 700;
         }
 
+        .counter {
+          width: clamp(fit-content, 300px, 90vw);
+          margin-top: clamp(10px, 2vh, 20px);
+          padding: clamp(10px, 2vh, 20px);
+          box-sizing: border-box;
+          background-color: var(--keralaNight);
+          color: var(--mountainFog);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .cardsViewed {
+          font-size: 1rem; 
+          text-align: center;
+          margin-top: clamp(10px, 2vh, 20px);
+        }
+
+
       .footer {
         margin: 20px; 
         box-sizing: border-box;
