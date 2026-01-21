@@ -181,21 +181,44 @@
           font-weight: 700;
         }
 
-        .counter {
-          width: clamp(fit-content, 300px, 90vw);
-          margin-top: clamp(10px, 2vh, 20px);
+        .statsContainer {
+          display: flex; 
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: clamp(fit-content, 320px, 90vw);
+          margin-top: clamp(10px, 2vh, 20px); 
+          margin-bottom: clamp(10px, 2vh, 20px);
           padding: clamp(10px, 2vh, 20px);
           box-sizing: border-box;
-          background-color: var(--keralaNight);
-          color: var(--mountainFog);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          gap: clamp(10px, 2vh, 20px);
         }
-        
-        .cardsViewed {
-          font-size: 1rem; 
-          text-align: center;
-          margin-top: clamp(10px, 2vh, 20px);
-        }
+
+          .counter {
+            width: clamp(fit-content, 300px, 90vw);
+            min-height: fit-content;      
+            height: 7vh; 
+            text-align: center;
+            margin-top: clamp(10px, 2vh, 20px);
+            padding: clamp(10px, 2vh, 20px);
+            box-sizing: border-box;
+            background-color: var(--keralaNight);
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: var(--mountainFog);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 10px;
+          }
+
+          .counter:nth-last-of-type(1) {
+            background-color: var(--deepSeaDive);
+          }
+          
+          .cardsViewed {
+            font-size: 1rem; 
+            text-align: center;
+            margin-top: clamp(10px, 2vh, 20px);
+          }
 
 
       .footer {
@@ -206,14 +229,16 @@
   /* Tablet & Larger */
 
   @media only screen and (min-width: 768px) {
-    body {
-      height: 100vh;
+    .body {
+      min-height: fit-content
     }
 
-    .topNav {
-        display: flex; 
-        flex-direction: row;
+    .topnav {
+      display: flex; 
+      flex-direction: row;
       font-size: 1.5rem;
+      height: clamp (50px, 7vh, 70px);
+      margin-bottom: 2vh;
     }
 
       .topnav > a {
@@ -270,6 +295,12 @@
         font-size: 1.5rem;
       }
 
-  }
+      .statsContainer {
+        flex-direction: row; 
+        justify-content: space-around;
+        margin: 0;
+        gap: 20px;
 
+  }
+  }
       /* display is toggled in js for card content 

@@ -12,6 +12,7 @@ const viewedIds = new Set();
 // DOM elements 
 const engCard = document.getElementById('engCardContent');
 const malCard = document.getElementById('malCardContent');
+const timeElapsedDiv = document.getElementById('timeElapsed');
 
 //const API_BASE = window.location.origin; 
 
@@ -67,7 +68,17 @@ function displayCard() {
     console.log(`Displayed card ${currentIndex + 1}: ${card.english} / ${card.malayalam}`);  
 }
 
-
+// Timer to track time spent on flashcards - updates every second
+// Called once on load
+function startTimer() {
+    let secondsElapsed = 0;
+    setInterval(() => {
+        secondsElapsed++;
+        const minutes = Math.floor(secondsElapsed / 60);
+        const seconds = secondsElapsed % 60;
+        timeElapsedDiv.innerText = `Time Elapsed: ${minutes}m ${seconds}s`;
+    }, 1000);
+}
 
 // Flip on click - toggle English front / Malayalam back
 engCard.addEventListener('click', () => {
@@ -279,5 +290,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (engTitle) engTitle.textContent = 'Failed to load flashcards';
     }
 
+    
+    startTimer();
     updateFooter();
 });
+
+
+// Timer functionality
+
+
