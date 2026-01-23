@@ -11,8 +11,12 @@ const viewedIds = new Set();
 
 // DOM elements 
 const engCard = document.getElementById('engCardContent');
-const malCard = document.getElementById('malCardContent');
+const malCard = document.getElementById('malCardContent'); 
 const timeElapsedDiv = document.getElementById('timeElapsed');
+const counterContainer = document.getElementById('counterContainer');
+const timerContainer = document.getElementById('timerContainer');
+    
+
 
 //const API_BASE = window.location.origin; 
 
@@ -78,6 +82,7 @@ function startTimer() {
         const seconds = secondsElapsed % 60;
         timeElapsedDiv.innerText = `Time Elapsed: ${minutes}m ${seconds}s`;
     }, 1000);
+
 }
 
 // Flip on click - toggle English front / Malayalam back
@@ -118,24 +123,31 @@ engCard.addEventListener('click', () => {
 
         if (viewedCount === totalCards) {
             counterEl.innerText = `All ${totalCards} cards viewed! 🎉`;
-            // Optional: add a class for permanent highlight or confetti
-            // counterEl.classList.add('complete');
-        } else {
+            counterContainer.style.backgroundColor = "#003200ff"; // Final color
+            // add celebration animation or effect here
+        } 
+        else {
             counterEl.innerText = `${viewedCount} cards of ${totalCards} viewed`;
-            // Trigger animation
-            const counterAnimEl = document.getElementById('counter');
-            if (counterAnimEl) {
-                // Reset animation
-                counterAnimEl.style.animation = 'none';
-                // Force reflow so animation restarts
-                void counterAnimEl.offsetWidth;
-                // Re-apply
-                counterAnimEl.style.animation = 'highlight green 1s ease-in-out';
+            if (viewedCount > 100) {
+                counterContainer.style.backgroundColor = "#1a0033ff";
+            } else if (viewedCount > 75) {
+                counterContainer.style.backgroundColor = "#170057ff";
+            } else if (viewedCount > 50) {
+                counterContainer.style.backgroundColor = "#650000ff";
+            } else if (viewedCount > 25) {
+                counterContainer.style.backgroundColor = "#043800ff";
+            } else if (viewedCount > 10 ) { 
+                counterContainer.style.backgroundColor = "#00283cff";
             }
         }
-    } else {
+    } 
+    else {
         console.log(`Card ID ${currentCardId} already viewed`);
     }
+
+
+
+
 });
 
 
