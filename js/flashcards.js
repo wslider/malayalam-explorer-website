@@ -22,7 +22,7 @@ const toggleTranslitButton = document.getElementById('toggleTranslit');
 
 //const API_BASE = window.location.origin; 
 
-const flashcardJsonData = "/data/flashcards.json"; 
+const flashcardJsonData = "data/flashcards.json"; 
 
 //Load flashcards from JSON file and parse into JS array of objects
 
