@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/flashcards.css"> 
+    <base href="/malayalam-explorer-website/">
     <title>Flashcards</title>
 </head>
 
@@ -28,9 +29,9 @@
 
         <div class="cardContainer" id="malCardContent">
                 <h3 class="cardItem top malCardItem" id="malayalam">മലയാളം</h2>  
-                <h2 class="cardItem malCardItem" id="translit">Transliteration</h2>
+                <h2 class="cardItem malCardItem translit" id="translit">Transliteration</h2>
                 <h2 class="cardItem malCardItem" id="malExample">Malayalam Example</h2>
-                <h2 class="cardItem malCardItem" id="malExampleTranslit">Example Transliteration</h2>
+                <h2 class="cardItem malCardItem translit" id="malExampleTranslit">Example Transliteration</h2>
                 <i class="cardItem malCardItem flipText">Click to Flip Back</i>
         </div>
 
@@ -41,6 +42,7 @@
             </div>
             <button id="shuffleButton">Shuffle 🔀</button>
             <button id="resetButton">Reset 🔄️</button>
+            <button class="toggleTranslit" id="toggleTranslit">Hide Transliteration</button>
             <button class="searchButton" id="searchButton">Deep Dive 🐳</button>
             
         </div>

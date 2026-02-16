@@ -1,5 +1,5 @@
-import { updateFooter } from 'https://wslider.github.io/malayalam-explorer-website/js/utils.js';
-import { navBarLinks } from 'https://wslider.github.io/malayalam-explorer-website/js/utils.js';
+import { updateFooter } from './js/utils.js';
+import { navBarLinks } from './js/utils.js';
 
 document.getElementById('dropMenu').addEventListener('click', navBarLinks); 
 
@@ -15,12 +15,14 @@ const malCard = document.getElementById('malCardContent');
 const timeElapsedDiv = document.getElementById('timeElapsed');
 const counterContainer = document.getElementById('counterContainer');
 const timerContainer = document.getElementById('timerContainer');
+const translitElements = document.querySelectorAll('.malCardContent.translit'); 
+const toggleTranslitButton = document.getElementById('toggleTranslit'); 
     
 
 
 //const API_BASE = window.location.origin; 
 
-const flashcardJsonData = "https://wslider.github.io/malayalam-explorer-website/data/flashcards.json"; 
+const flashcardJsonData = "/data/flashcards.json"; 
 
 //Load flashcards from JSON file and parse into JS array of objects
 
@@ -277,7 +279,24 @@ document.getElementById('searchButton').addEventListener('click', () => {
     
 });
 
+ 
+// Toggle Transliteration visibility
+let isTranslitHidden = false;
 
+toggleTranslitButton.addEventListener('click', () => {
+  isTranslitHidden = !isTranslitHidden;
+
+  translitElements.forEach(el => {
+    el.classList.toggle(translitClass, isTranslitHidden);
+  });
+
+  toggleTranslitButton.textContent = isTranslitHidden 
+    ? 'Show Transliteration' 
+    : 'Hide Transliteration';
+});
+
+
+// Initialize flashcards on page load
 document.addEventListener('DOMContentLoaded', async () => {
     await loadFlashcards();  // Wait for fetch to finish
 

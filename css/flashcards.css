@@ -98,6 +98,10 @@
       font-size: 1.45rem;
     }
 
+    .translit {
+      display: block;
+    }
+
     .cardItem {
       margin: 1vh 2vw; 
     }
@@ -219,6 +223,12 @@
             text-align: center;
             margin-top: clamp(10px, 2vh, 20px);
           }
+
+      /* display is toggled in js for card content*/
+      .translit-hidden {
+        color: transparent !important;  /* or use visibility: hidden; but color:transparent keeps layout */
+        user-select: none;              /* optional: prevents accidental selection/copy */
+      }
 
 
       .footer {
