@@ -281,7 +281,7 @@ document.getElementById('searchButton').addEventListener('click', () => {
 
  
 // Toggle Transliteration visibility
-let isTranslitHidden = false;
+/*let isTranslitHidden = false;
 
 toggleTranslitButton.addEventListener('click', () => {
   isTranslitHidden = !isTranslitHidden;
@@ -293,7 +293,7 @@ toggleTranslitButton.addEventListener('click', () => {
   toggleTranslitButton.textContent = isTranslitHidden 
     ? 'Show Transliteration' 
     : 'Hide Transliteration';
-});
+}); */
 
 
 // Initialize flashcards on page load
