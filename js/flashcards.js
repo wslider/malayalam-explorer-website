@@ -1,332 +1,262 @@
 import { updateFooter } from './utils.js';
 import { navBarLinks } from './utils.js';
 
-document.getElementById('dropMenu').addEventListener('click', navBarLinks); 
-
-let flashcards = []; // Global array of cards
-let currentIndex = 0;
-let isFlipped = false; 
-let isShuffled = false; 
-const viewedIds = new Set();
-
-// DOM elements 
+// DOM elements
+const dropMenu = document.getElementById('dropMenu');
 const engCard = document.getElementById('engCardContent');
-const malCard = document.getElementById('malCardContent'); 
+const malCard = document.getElementById('malCardContent');
 const timeElapsedDiv = document.getElementById('timeElapsed');
 const counterContainer = document.getElementById('counterContainer');
-const timerContainer = document.getElementById('timerContainer');
-const translitElements = document.querySelectorAll('.malCardContent.translit'); 
-const toggleTranslitButton = document.getElementById('toggleTranslit'); 
-    
+const cardsViewedEl = document.getElementById('cardsViewed');
+const playButton = document.getElementById('playButton');
 
+// Globals
+let flashcards = [];
+let currentIndex = 0;
+let isFlipped = false;
+let isShuffled = false;
+let autoInterval = null;
+const viewedIds = new Set();
 
-//const API_BASE = window.location.origin; 
+const flashcardJsonData = "data/flashcards.json";
 
-const flashcardJsonData = "data/flashcards.json"; 
-
-//Load flashcards from JSON file and parse into JS array of objects
+// ────────────────────────────────────────────────
+// Load & Display
+// ────────────────────────────────────────────────
 
 async function loadFlashcards() {
-    try {
-        const response = await fetch(flashcardJsonData);
-        if (!response.ok) throw new Error('Fetch failed');
-        flashcards = await response.json(); 
-    } catch (err) {
-        console.error('Load failed:', err);
-        flashcards = [];
-    }
+  try {
+    const response = await fetch(flashcardJsonData);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    flashcards = await response.json();
 
     if (flashcards.length > 0) {
-        currentIndex = 0;
-        isFlipped = false;
-        engCard.style.display = 'flex';
-        engCard.style.flexDirection = 'column';
-        engCard.style.alignItems = 'center';
-        engCard.style.justifyContent = 'space-around';
-        engCard.style.textAlign = 'center';
-        malCard.style.display = 'none';
-        displayCard();
+      currentIndex = 0;
+      isFlipped = false;
+      resetCardVisibility();
+      displayCard();
     } else {
-        console.warn('No flashcards loaded');
+      console.warn('No flashcards loaded');
     }
+  } catch (err) {
+    console.error('Failed to load flashcards:', err);
+    flashcards = [];
+  }
 }
 
-
-// Display current card on both sides (always populate, visibility toggles)
 function displayCard() {
-    if (flashcards.length === 0 || !flashcards[currentIndex]) {
-        console.warn('No card to display');
-        return;
-    }
-    const card = flashcards[currentIndex];
-    
-    // English side
-    document.getElementById('category').textContent = card.category;
-    document.getElementById('english').textContent = card.english;
-    document.getElementById('engExample').textContent = card.engExample;
-    
-    // Malayalam side (always set, even if hidden)
-    document.getElementById('malayalam').textContent = card.malayalam;
-    document.getElementById('translit').textContent = card.transliteration;  
-    document.getElementById('malExample').textContent = card.malExample;
-    document.getElementById('malExampleTranslit').textContent = card.malExampleTranslit;
-    
-    console.log(`Displayed card ${currentIndex + 1}: ${card.english} / ${card.malayalam}`);  
+  if (!flashcards[currentIndex]) return;
+
+  const card = flashcards[currentIndex];
+
+  // English side
+  document.getElementById('category').textContent = card.category || '';
+  document.getElementById('english').textContent = card.english || '';
+  document.getElementById('engExample').textContent = card.engExample || '';
+
+  // Malayalam side
+  document.getElementById('malayalam').textContent = card.malayalam || '';
+  document.getElementById('translit').textContent = card.transliteration || '';
+  document.getElementById('malExample').textContent = card.malExample || '';
+  document.getElementById('malExampleTranslit').textContent = card.malExampleTranslit || '';
+
+  updateViewedCounter();
 }
 
-// Timer to track time spent on flashcards - updates every second
-// Called once on load
+function resetCardVisibility() {
+  if (engCard) {
+    engCard.style.display = 'flex';
+    engCard.style.flexDirection = 'column';
+    engCard.style.alignItems = 'center';
+    engCard.style.justifyContent = 'space-around';
+    engCard.style.textAlign = 'center';
+  }
+  if (malCard) malCard.style.display = 'none';
+}
+
+// ────────────────────────────────────────────────
+// Flip Logic
+// ────────────────────────────────────────────────
+
+function flipCard() {
+  isFlipped = !isFlipped;
+  if (isFlipped) {
+    engCard.style.display = 'none';
+    malCard.style.display = 'flex';
+    malCard.style.flexDirection = 'column';
+    malCard.style.alignItems = 'center';
+    malCard.style.justifyContent = 'space-around';
+    malCard.style.textAlign = 'center';
+  } else {
+    resetCardVisibility();
+  }
+}
+
+engCard?.addEventListener('click', flipCard);
+malCard?.addEventListener('click', () => {
+  isFlipped = false;
+  resetCardVisibility();
+});
+
+// ────────────────────────────────────────────────
+// Navigation
+// ────────────────────────────────────────────────
+
+function goNext() {
+  if (flashcards.length === 0) return;
+  currentIndex = (currentIndex + 1) % flashcards.length;
+  isFlipped = false;
+  resetCardVisibility();
+  displayCard();
+}
+
+function goPrev() {
+  if (flashcards.length === 0) return;
+  currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
+  isFlipped = false;
+  resetCardVisibility();
+  displayCard();
+}
+
+document.getElementById('nextButton')?.addEventListener('click', goNext);
+document.getElementById('prevButton')?.addEventListener('click', goPrev);
+
+// ────────────────────────────────────────────────
+// Auto Play / Pause
+// ────────────────────────────────────────────────
+
+function toggleAutoPlay() {
+  if (autoInterval) {
+    clearInterval(autoInterval);
+    autoInterval = null;
+    playButton.textContent = 'Play ▶️';
+  } else {
+    autoInterval = setInterval(() => {
+      goNext();
+      setTimeout(flipCard, 5000); // Flip to Malayalam ~5s after new card
+    }, 15000); // Next card every 15s total cycle
+    playButton.textContent = 'Pause ⏸️';
+  }
+}
+
+playButton?.addEventListener('click', toggleAutoPlay);
+
+// ────────────────────────────────────────────────
+// Shuffle & Reset
+// ────────────────────────────────────────────────
+
+document.getElementById('shuffleButton')?.addEventListener('click', () => {
+  flashcards = [...flashcards].sort(() => Math.random() - 0.5);
+  currentIndex = 0;
+  isFlipped = false;
+  viewedIds.clear();
+  resetCardVisibility();
+  displayCard();
+});
+
+document.getElementById('resetButton')?.addEventListener('click', async () => {
+  viewedIds.clear();
+  await loadFlashcards();
+  currentIndex = 0;
+  isFlipped = false;
+  if (autoInterval) toggleAutoPlay(); // Stop auto if running
+  resetCardVisibility();
+  displayCard();
+});
+
+// ────────────────────────────────────────────────
+// Viewed Counter + Color Progression
+// ────────────────────────────────────────────────
+
+function updateViewedCounter() {
+  if (!flashcards[currentIndex]) return;
+  const cardId = flashcards[currentIndex].id;
+  const total = flashcards.length;
+
+  if (!viewedIds.has(cardId)) {
+    viewedIds.add(cardId);
+    const viewed = viewedIds.size;
+
+    cardsViewedEl.textContent = viewed === total 
+      ? `All ${total} cards viewed! 🎉` 
+      : `${viewed} of ${total} viewed`;
+
+    // Color progression
+    if (viewed === total) {
+      counterContainer.style.backgroundColor = "#003200ff";
+    } else if (viewed > 100) {
+      counterContainer.style.backgroundColor = "#1a0033ff";
+    } else if (viewed > 75) {
+      counterContainer.style.backgroundColor = "#170057ff";
+    } else if (viewed > 50) {
+      counterContainer.style.backgroundColor = "#650000ff";
+    } else if (viewed > 25) {
+      counterContainer.style.backgroundColor = "#043800ff";
+    } else if (viewed > 10) {
+      counterContainer.style.backgroundColor = "#00283cff";
+    }
+  }
+}
+
+// ────────────────────────────────────────────────
+// Deep Search (DuckDuckGo)
+// ────────────────────────────────────────────────
+
+document.getElementById('searchButton')?.addEventListener('click', () => {
+  if (flashcards.length === 0 || !flashcards[currentIndex]) return;
+
+  const card = flashcards[currentIndex];
+  const term = isFlipped ? card.malayalam : card.english;
+
+  if (term) {
+    const encoded = encodeURIComponent(term.trim());
+    const url = `https://duckduckgo.com/?q=${encoded}&ia=web`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
+});
+
+// ────────────────────────────────────────────────
+// Hover Effects
+// ────────────────────────────────────────────────
+
+const hoverColor = "#00aa00";
+
+engCard?.addEventListener('mouseenter', () => engCard.style.backgroundColor = hoverColor);
+engCard?.addEventListener('mouseleave', () => engCard.style.backgroundColor = '');
+malCard?.addEventListener('mouseenter', () => malCard.style.backgroundColor = hoverColor);
+malCard?.addEventListener('mouseleave', () => malCard.style.backgroundColor = '');
+
+// ────────────────────────────────────────────────
+// Timer
+// ────────────────────────────────────────────────
+
 function startTimer() {
-    let secondsElapsed = 0;
-    setInterval(() => {
-        secondsElapsed++;
-        const minutes = Math.floor(secondsElapsed / 60);
-        const seconds = secondsElapsed % 60;
-        timeElapsedDiv.innerText = `Time Elapsed: ${minutes}m ${seconds}s`;
-    }, 1000);
-
+  let seconds = 0;
+  setInterval(() => {
+    seconds++;
+    const min = Math.floor(seconds / 60);
+    const sec = seconds % 60;
+    timeElapsedDiv.textContent = `Time Elapsed: ${min}m ${sec}s`;
+  }, 1000);
 }
 
-// Flip on click - toggle English front / Malayalam back
-engCard.addEventListener('click', () => {
-    console.log('Flip clicked! Current isFlipped:', isFlipped);  
-    isFlipped = !isFlipped;
-    
-    if (isFlipped) {
-        // Flip to Malayalam
-        engCard.style.display = 'none';
-        malCard.style.display = 'flex';
-        malCard.style.flexDirection = 'column';
-        malCard.style.alignItems = 'center';
-        malCard.style.justifyContent = 'space-around';
-        malCard.style.textAlign = 'center'; // Show back
-        console.log('Switched to Malayalam side');
-    } else {
-        // Flip back to English
-        engCard.style.display = 'flex';
-        engCard.style.flexDirection = 'column';
-        engCard.style.alignItems = 'center';
-        engCard.style.justifyContent = 'space-around';
-        engCard.style.textAlign = 'center'; // Show front
-        malCard.style.display = 'none';
-        console.log('Switched to English side');
-    }
-    
-    displayCard();  // Refresh content AFTER swap
+// ────────────────────────────────────────────────
+// Init
+// ────────────────────────────────────────────────
 
- const currentCardId = flashcards[currentIndex].id;
-    const totalCards = flashcards.length;  // you can also hoist this outside if it never changes
-
-    if (!viewedIds.has(currentCardId)) {
-        viewedIds.add(currentCardId);
-
-        const viewedCount = viewedIds.size;
-        const counterEl = document.getElementById('cardsViewed');
-
-        if (viewedCount === totalCards) {
-            counterEl.innerText = `All ${totalCards} cards viewed! 🎉`;
-            counterContainer.style.backgroundColor = "#003200ff"; // Final color
-            // add celebration animation or effect here
-        } 
-        else {
-            counterEl.innerText = `${viewedCount} cards of ${totalCards} viewed`;
-            if (viewedCount > 100) {
-                counterContainer.style.backgroundColor = "#1a0033ff";
-            } else if (viewedCount > 75) {
-                counterContainer.style.backgroundColor = "#170057ff";
-            } else if (viewedCount > 50) {
-                counterContainer.style.backgroundColor = "#650000ff";
-            } else if (viewedCount > 25) {
-                counterContainer.style.backgroundColor = "#043800ff";
-            } else if (viewedCount > 10 ) { 
-                counterContainer.style.backgroundColor = "#00283cff";
-            }
-        }
-    } 
-    else {
-        console.log(`Card ID ${currentCardId} already viewed`);
-    }
-
-
-
-
-});
-
-
-
-
-
-
-//Change background color on card to highlight interactivity
-
-engCard.addEventListener('mouseover', ()=>{
-    engCard.style.backgroundColor = "#00aa00"; 
-});
-
-engCard.addEventListener('mouseleave', ()=>{
-    engCard.style.backgroundColor = ''; 
-});
-
-malCard.addEventListener('mouseover', ()=> {
-    malCard.style.backgroundColor = "#00aa00"; 
-});
-
-malCard.addEventListener('mouseleave', () => {
-    malCard.style.backgroundColor = '';
-});
-
-
-// Add click listener to Malayalam side for flip-back
-malCard.addEventListener('click', () => {
-    console.log('Malayalam clicked! Flipping back');
-    isFlipped = false;  // Force back to English
-    engCard.style.display = 'flex';
-    engCard.style.flexDirection = 'column';
-    engCard.style.alignItems = 'center';
-    engCard.style.justifyContent = 'space-around';
-    engCard.style.textAlign = 'center';
-    malCard.style.display = 'none';
-    displayCard();
-});
-
-// Navigation Buttons (with flip reset to English)
-document.getElementById('nextButton').addEventListener('click', () => {
-    if (flashcards.length === 0) return;
-    currentIndex = (currentIndex + 1) % flashcards.length; 
-    isFlipped = false;
-    engCard.style.display = 'flex';
-    engCard.style.flexDirection = 'column';
-    engCard.style.alignItems = 'center';
-    engCard.style.justifyContent = 'space-around';
-    engCard.style.textAlign = 'center';
-    malCard.style.display = 'none';
-    displayCard(); 
-});
-
-document.getElementById('prevButton').addEventListener('click', () => {
-    if (flashcards.length === 0) return;
-    currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
-    isFlipped = false;
-    engCard.style.display = 'flex';
-    engCard.style.flexDirection = 'column';
-    engCard.style.alignItems = 'center';
-    engCard.style.justifyContent = 'space-around';
-    engCard.style.textAlign = 'center';
-    malCard.style.display = 'none';
-    displayCard(); 
-});
-
-// Shuffle: Copy array, randomize, reset index and flip
-document.getElementById('shuffleButton').addEventListener('click', () => {
-    isShuffled = !isShuffled; 
-    flashcards = [...flashcards].sort(() => Math.random() - 0.5); 
-    currentIndex = 0; 
-    // Reset to English side
-    isFlipped = false;
-    engCard.style.display = 'flex';
-    engCard.style.flexDirection = 'column';
-    engCard.style.alignItems = 'center';
-    engCard.style.justifyContent = 'space-around';
-    engCard.style.textAlign = 'center';
-    malCard.style.display = 'none';
-    displayCard(); 
-});
-
-// Reset: Reload original, unshuffle, reset flip
-document.getElementById('resetButton').addEventListener('click', async () => {
-    isShuffled = false;
-    viewedIds.clear();
-    document.getElementById('cardsViewed').innerText = `0 cards viewed of ${flashcards.length}`;
-    await loadFlashcards();  // Wait for fresh load
-    currentIndex = 0;
-    isFlipped = false;
-    if (engCard) engCard.style.display = 'flex';
-    engCard.style.flexDirection = 'column';
-    engCard.style.alignItems = 'center';
-    engCard.style.justifyContent = 'space-around';
-    engCard.style.textAlign = 'center';
-    if (malCard) malCard.style.display = 'none';
-
-    if (flashcards.length > 0) {
-        displayCard();
-        viewedIds.clear; 
-
-    }
-});
-
-// Search / Deep Dive button Functionality
-document.getElementById('searchButton').addEventListener('click', () => {
-    const card = flashcards[currentIndex];
-    const malayalamSearchTerm = document.getElementById('malayalam').textContent = card.malayalam;
-    const englighSearchTerm = document.getElementById('english').textContent = card.english;
-    if (flashcards.length === 0) return;
-    else if (malCard.style.display === 'flex') {
-        // Malayalam side visible
-        console.log('Searching for Malayalam term:', malayalamSearchTerm);
-        const searchTerm = malayalamSearchTerm;
-        const encodedTerm = encodeURIComponent(searchTerm.trim());
-        const searchUrl = `https://duckduckgo.com/?q=${encodedTerm}&ia=web`;
-        window.open(searchUrl, '_blank', 'noopener,noreferrer');
-    }
-    else {
-        // English side visible
-        console.log('Searching for English term:', englighSearchTerm);
-        const searchTerm = englighSearchTerm;
-        const encodedTerm = encodeURIComponent(searchTerm.trim());
-        const searchUrl = `https://duckduckgo.com/?q=${encodedTerm}&ia=web`;
-        window.open(searchUrl, '_blank', 'noopener,noreferrer');
-    }; 
-    
-});
-
- 
-// Toggle Transliteration visibility
-/*let isTranslitHidden = false;
-
-toggleTranslitButton.addEventListener('click', () => {
-  isTranslitHidden = !isTranslitHidden;
-
-  translitElements.forEach(el => {
-    el.classList.toggle(translitClass, isTranslitHidden);
-  });
-
-  toggleTranslitButton.textContent = isTranslitHidden 
-    ? 'Show Transliteration' 
-    : 'Hide Transliteration';
-}); */
-
-
-// Initialize flashcards on page load
 document.addEventListener('DOMContentLoaded', async () => {
-    await loadFlashcards();  // Wait for fetch to finish
+  dropMenu?.addEventListener('click', navBarLinks);
 
-    currentIndex = 0;
-    isFlipped = false;
-    const totalCards = flashcards.length;
-    
-    if (engCard) engCard.style.display = 'flex';
-    if (malCard) malCard.style.display = 'none';
+  await loadFlashcards();
 
-    if (viewedIds.size === 0) {
-    document.getElementById('cardsViewed').innerText = `0 cards viewed of ${totalCards}`;
+  if (flashcards.length > 0) {
+    displayCard();
+  } else {
+    if (document.getElementById('english')) {
+      document.getElementById('english').textContent = 'Failed to load flashcards';
     }
-    
+  }
 
-    if (flashcards.length > 0) {
-        displayCard();
-        console.log('Initial card displayed after load');
-    } else {
-        console.warn('No flashcards loaded on init');
-        const engTitle = document.getElementById('english');
-        if (engTitle) engTitle.textContent = 'Failed to load flashcards';
-    }
-
-    
-    startTimer();
-    updateFooter();
+  startTimer();
+  updateFooter();
 });
-
-
-// Timer functionality
-
-
