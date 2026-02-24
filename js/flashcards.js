@@ -131,6 +131,9 @@ function toggleAutoPlay() {
     autoInterval = null;
     playButton.textContent = 'Play ▶️';
   } else {
+    if (!isFlipped) {
+        flipCard(); // Start by showing Malayalam side
+    }
     autoInterval = setInterval(() => {
       goNext();
       setTimeout(flipCard, 5000); // Flip to Malayalam ~5s after new card
