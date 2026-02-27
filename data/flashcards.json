@@ -4998,5 +4998,1005 @@
     "transliteration": "namukku pokaam",
     "malExample": "നടക്കാൻ പോകാം.",
     "malExampleTranslit": "nadakkaan pokaam."
+  },
+  {
+    "id": 501,
+    "category": "Conversational Phrases",
+    "english": "How are you all there?",
+    "engExample": "How are you all there? Everyone okay?",
+    "malayalam": "അവിടെ എല്ലാവരും എങ്ങനെയുണ്ട്?",
+    "transliteration": "avide ellaavarum enganeyundu?",
+    "malExample": "അവിടെ എല്ലാവരും എങ്ങനെയുണ്ട്? എല്ലാവർക്കും ശരിയാണോ?",
+    "malExampleTranslit": "avide ellaavarum enganeyundu? ellaavarkkum shariyaano?"
+  },
+  {
+    "id": 502,
+    "category": "Conversational Phrases",
+    "english": "What are you doing right now?",
+    "engExample": "What are you doing right now? Just relaxing?",
+    "malayalam": "ഇപ്പോൾ എന്താണ് ചെയ്യുന്നത്?",
+    "transliteration": "ippol enthaanu cheyyunnathu?",
+    "malExample": "ഇപ്പോൾ എന്താണ് ചെയ്യുന്നത്? വെറുതെ ഇരിക്കുകയാണോ?",
+    "malExampleTranslit": "ippol enthaanu cheyyunnathu? veruthe irikkukayaano?"
+  },
+  {
+    "id": 503,
+    "category": "Conversational Phrases",
+    "english": "Have you eaten anything?",
+    "engExample": "Have you eaten anything? Don't skip meals.",
+    "malayalam": "എന്തെങ്കിലും കഴിച്ചോ?",
+    "transliteration": "enthenkilum kazhichcho?",
+    "malExample": "എന്തെങ്കിലും കഴിച്ചോ? ഭക്ഷണം മുടക്കരുത്.",
+    "malExampleTranslit": "enthenkilum kazhichcho? bhakshanam mutakkaruthu."
+  },
+  {
+    "id": 504,
+    "category": "Conversational Phrases",
+    "english": "Are you sleeping well these days?",
+    "engExample": "Are you sleeping well these days? Not staying up late?",
+    "malayalam": "ഇപ്പോഴൊക്കെ നല്ല ഉറക്കം കിട്ടുന്നുണ്ടോ?",
+    "transliteration": "ippolokke nalla urakkam kittunnundo?",
+    "malExample": "ഇപ്പോഴൊക്കെ നല്ല ഉറക്കം കിട്ടുന്നുണ്ടോ? വൈകി ഉറങ്ങുന്നില്ലല്ലേ?",
+    "malExampleTranslit": "ippolokke nalla urakkam kittunnundo? vaiki urangunnillaalle?"
+  },
+  {
+    "id": 505,
+    "category": "Conversational Phrases",
+    "english": "How is everyone keeping?",
+    "engExample": "How is everyone keeping? No problems na?",
+    "malayalam": "എല്ലാവരും എങ്ങനെ നിൽക്കുന്നു?",
+    "transliteration": "ellaavarum engane nilkkunnu?",
+    "malExample": "എല്ലാവരും എങ്ങനെ നിൽക്കുന്നു? ഒരു പ്രശ്നവും ഇല്ലല്ലേ?",
+    "malExampleTranslit": "ellaavarum engane nilkkunnu? oru prashnavum illalle?"
+  },
+  {
+    "id": 506,
+    "category": "Conversational Phrases",
+    "english": "Any news from your side?",
+    "engExample": "Any news from your side? Tell me something.",
+    "malayalam": "നിങ്ങളുടെ ഭാഗത്ത് എന്തെങ്കിലും വാർത്തയുണ്ടോ?",
+    "transliteration": "ningalude bhaagaththu enthenkilum vaarthayundo?",
+    "malExample": "നിങ്ങളുടെ ഭാഗത്ത് എന്തെങ്കിലും വാർത്തയുണ്ടോ? എന്തെങ്കിലും പറയ്.",
+    "malExampleTranslit": "ningalude bhaagaththu enthenkilum vaarthayundo? enthenkilum paray."
+  },
+  {
+    "id": 507,
+    "category": "Conversational Phrases",
+    "english": "Did you take your medicine?",
+    "engExample": "Did you take your medicine? Don't forget okay?",
+    "malayalam": "മരുന്ന് കഴിച്ചോ?",
+    "transliteration": "marunnu kazhichcho?",
+    "malExample": "മരുന്ന് കഴിച്ചോ? മറക്കരുത് ഓക്കേ?",
+    "malExampleTranslit": "marunnu kazhichcho? marakkaruthu okke?"
+  },
+  {
+    "id": 508,
+    "category": "Conversational Phrases",
+    "english": "Are you going out today?",
+    "engExample": "Are you going out today? Or staying home?",
+    "malayalam": "ഇന്ന് പുറത്തിറങ്ങുന്നുണ്ടോ?",
+    "transliteration": "innu puratthirangunnundo?",
+    "malExample": "ഇന്ന് പുറത്തിറങ്ങുന്നുണ്ടോ? അതോ വീട്ടിലിരിക്കുകയാണോ?",
+    "malExampleTranslit": "innu puratthirangunnundo? atho veettilirikkukayaano?"
+  },
+  {
+    "id": 509,
+    "category": "Conversational Phrases",
+    "english": "Shall we talk tomorrow?",
+    "engExample": "Shall we talk tomorrow? Or evening itself?",
+    "malayalam": "നാളെ സംസാരിക്കാം?",
+    "transliteration": "naale samsaarikkaam?",
+    "malExample": "നാളെ സംസാരിക്കാം? അതോ വൈകുന്നേരം തന്നെ?",
+    "malExampleTranslit": "naale samsaarikkaam? atho vaikkunneram thanne?"
+  },
+  {
+    "id": 510,
+    "category": "Conversational Phrases",
+    "english": "Okay then, bye for now.",
+    "engExample": "Okay then, bye for now. Take care.",
+    "malayalam": "ഓക്കേ അപ്പോൾ ബൈ.",
+    "transliteration": "okke appol bye.",
+    "malExample": "ഓക്കേ അപ്പോൾ ബൈ. ശ്രദ്ധിക്കണേ.",
+    "malExampleTranslit": "okke appol bye. shraddhikkanne."
+  },
+  {
+    "id": 511,
+    "category": "Conversational Phrases",
+    "english": "Is everything okay there?",
+    "engExample": "Is everything okay there? No tension na?",
+    "malayalam": "അവിടെ എല്ലാം ശരിയാണോ?",
+    "transliteration": "avide ellaam shariyaano?",
+    "malExample": "അവിടെ എല്ലാം ശരിയാണോ? ഒരു ടെൻഷനും ഇല്ലല്ലേ?",
+    "malExampleTranslit": "avide ellaam shariyaano? oru tenshanum illalle?"
+  },
+  {
+    "id": 512,
+    "category": "Conversational Phrases",
+    "english": "How is your health now?",
+    "engExample": "How is your health now? Feeling better?",
+    "malayalam": "ഇപ്പോൾ ആരോഗ്യം എങ്ങനെയുണ്ട്?",
+    "transliteration": "ippol aarogyam enganeyundu?",
+    "malExample": "ഇപ്പോൾ ആരോഗ്യം എങ്ങനെയുണ്ട്? ഭേദമായോ?",
+    "malExampleTranslit": "ippol aarogyam enganeyundu? bhedamaayo?"
+  },
+  {
+    "id": 513,
+    "category": "Conversational Phrases",
+    "english": "What did you have for breakfast?",
+    "engExample": "What did you have for breakfast? Something nice?",
+    "malayalam": "പ്രാതൽ എന്താ കഴിച്ചത്?",
+    "transliteration": "praathal enthaa kazhichathu?",
+    "malExample": "പ്രാതൽ എന്താ കഴിച്ചത്? നല്ലത് കഴിച്ചോ?",
+    "malExampleTranslit": "praathal enthaa kazhichathu? nallathu kazhichcho?"
+  },
+  {
+    "id": 514,
+    "category": "Conversational Phrases",
+    "english": "Are the kids studying well?",
+    "engExample": "Are the kids studying well? Any exams coming?",
+    "malayalam": "കുട്ടികൾ നല്ലപോലെ പഠിക്കുന്നുണ്ടോ?",
+    "transliteration": "kuttikal nallapole padikkunnundo?",
+    "malExample": "കുട്ടികൾ നല്ലപോലെ പഠിക്കുന്നുണ്ടോ? പരീക്ഷ ഉണ്ടോ ഉടൻ?",
+    "malExampleTranslit": "kuttikal nallapole padikkunnundo? pareeksha undo udan?"
+  },
+  {
+    "id": 515,
+    "category": "Conversational Phrases",
+    "english": "Did you go for a walk today?",
+    "engExample": "Did you go for a walk today? Good for health.",
+    "malayalam": "ഇന്ന് നടക്കാൻ പോയോ?",
+    "transliteration": "innu nadakkaan poyo?",
+    "malExample": "ഇന്ന് നടക്കാൻ പോയോ? ആരോഗ്യത്തിന് നല്ലതാ.",
+    "malExampleTranslit": "innu nadakkaan poyo? aarogyathinu nallathaa."
+  },
+  {
+    "id": 516,
+    "category": "Conversational Phrases",
+    "english": "How is the voice today?",
+    "engExample": "How is the voice today? Sounds clear.",
+    "malayalam": "ഇന്ന് ശബ്ദം എങ്ങനെയുണ്ട്?",
+    "transliteration": "innu shabdham enganeyundu?",
+    "malExample": "ഇന്ന് ശബ്ദം എങ്ങനെയുണ്ട്? നല്ല ക്ലിയറായി കേൾക്കുന്നു.",
+    "malExampleTranslit": "innu shabdham enganeyundu? nalla clearaayi kelkkunnu."
+  },
+  {
+    "id": 517,
+    "category": "Conversational Phrases",
+    "english": "Don't strain yourself okay?",
+    "engExample": "Don't strain yourself okay? Take rest.",
+    "malayalam": "ഒരു അധികം വല്ലാതെ വിഷമിക്കരുത് ഓക്കേ?",
+    "transliteration": "oru adhikam vallathe vishamikkaruthu okke?",
+    "malExample": "ഒരു അധികം വല്ലാതെ വിഷമിക്കരുത് ഓക്കേ? റസ്റ്റ് എടുക്ക്.",
+    "malExampleTranslit": "oru adhikam vallathe vishamikkaruthu okke? rest edukku."
+  },
+  {
+    "id": 518,
+    "category": "Conversational Phrases",
+    "english": "Call me if you need anything.",
+    "engExample": "Call me if you need anything. I'm here.",
+    "malayalam": "എന്തെങ്കിലും വേണമെങ്കിൽ വിളിക്കണേ.",
+    "transliteration": "enthenkilum venamenkil vilikkanne.",
+    "malExample": "എന്തെങ്കിലും വേണമെങ്കിൽ വിളിക്കണേ. ഞാൻ ഇവിടെയുണ്ട്.",
+    "malExampleTranslit": "enthenkilum venamenkil vilikkanne. njaan ivideyundu."
+  },
+  {
+    "id": 519,
+    "category": "Conversational Phrases",
+    "english": "Okay, talk later.",
+    "engExample": "Okay, talk later. Bye for now.",
+    "malayalam": "ഓക്കേ പിന്നെ സംസാരിക്കാം.",
+    "transliteration": "okke pinne samsaarikkaam.",
+    "malExample": "ഓക്കേ പിന്നെ സംസാരിക്കാം. ഇപ്പോൾ ബൈ.",
+    "malExampleTranslit": "okke pinne samsaarikkaam. ippol bye."
+  },
+  {
+    "id": 520,
+    "category": "Conversational Phrases",
+    "english": "How was your day?",
+    "engExample": "How was your day? Anything special?",
+    "malayalam": "ഇന്നത്തെ ദിവസം എങ്ങനെയായിരുന്നു?",
+    "transliteration": "innatthe divasam enganeyayirunnu?",
+    "malExample": "ഇന്നത്തെ ദിവസം എങ്ങനെയായിരുന്നു? എന്തെങ്കിലും സ്പെഷ്യൽ ഉണ്ടായോ?",
+    "malExampleTranslit": "innatthe divasam enganeyayirunnu? enthenkilum special undaayo?"
+  },
+  {
+    "id": 521,
+    "category": "Conversational Phrases",
+    "english": "Did you rest in the afternoon?",
+    "engExample": "Did you rest in the afternoon? Or busy?",
+    "malayalam": "ഉച്ചയ്ക്ക് ഒന്ന് കിടന്നോ?",
+    "transliteration": "uchaykku onnu kidanno?",
+    "malExample": "ഉച്ചയ്ക്ക് ഒന്ന് കിടന്നോ? അതോ തിരക്കായിരുന്നോ?",
+    "malExampleTranslit": "uchaykku onnu kidanno? atho thirakkayaayirunno?"
+  },
+  {
+    "id": 522,
+    "category": "Conversational Phrases",
+    "english": "How is the mood today?",
+    "engExample": "How is the mood today? Cheerful?",
+    "malayalam": "ഇന്ന് മൂഡ് എങ്ങനെയുണ്ട്?",
+    "transliteration": "innu mood enganeyundu?",
+    "malExample": "ഇന്ന് മൂഡ് എങ്ങനെയുണ്ട്? സന്തോഷമാണോ?",
+    "malExampleTranslit": "innu mood enganeyundu? santhoshamaano?"
+  },
+  {
+    "id": 523,
+    "category": "Conversational Phrases",
+    "english": "Any phone call from someone?",
+    "engExample": "Any phone call from someone? Who was it?",
+    "malayalam": "ആരെങ്കിലും വിളിച്ചോ?",
+    "transliteration": "aarenkilum vilichcho?",
+    "malExample": "ആരെങ്കിലും വിളിച്ചോ? ആരായിരുന്നു?",
+    "malExampleTranslit": "aarenkilum vilichcho? aaraayirunnu?"
+  },
+  {
+    "id": 524,
+    "category": "Conversational Phrases",
+    "english": "Don't worry about anything okay?",
+    "engExample": "Don't worry about anything okay? Everything will be fine.",
+    "malayalam": "ഒന്നും വിഷമിക്കണ്ട ഓക്കേ?",
+    "transliteration": "onnum vishamikkenda okke?",
+    "malExample": "ഒന്നും വിഷമിക്കണ്ട ഓക്കേ? എല്ലാം ശരിയാകും.",
+    "malExampleTranslit": "onnum vishamikkenda okke? ellaam shariyaakum."
+  },
+  {
+    "id": 525,
+    "category": "Conversational Phrases",
+    "english": "I'll call you later okay?",
+    "engExample": "I'll call you later okay? Or you call me.",
+    "malayalam": "പിന്നെ വിളിക്കാം ഓക്കേ?",
+    "transliteration": "pinne vilikkaam okke?",
+    "malExample": "പിന്നെ വിളിക്കാം ഓക്കേ? അതോ നീ വിളിക്ക്.",
+    "malExampleTranslit": "pinne vilikkaam okke? atho nee vilikku."
+  },
+  {
+    "id": 526,
+    "category": "Conversational Phrases",
+    "english": "Take care of yourself.",
+    "engExample": "Take care of yourself. Don't forget.",
+    "malayalam": "നിന്നെ നോക്കണേ.",
+    "transliteration": "ninne nokkanne.",
+    "malExample": "നിന്നെ നോക്കണേ. മറക്കരുത്.",
+    "malExampleTranslit": "ninne nokkanne. marakkaruthu."
+  },
+  {
+    "id": 527,
+    "category": "Conversational Phrases",
+    "english": "Bye, love you.",
+    "engExample": "Bye, love you. Talk soon.",
+    "malayalam": "ബൈ, ലവ് യു.",
+    "transliteration": "bye, love you.",
+    "malExample": "ബൈ, ലവ് യു. ഉടൻ സംസാരിക്കാം.",
+    "malExampleTranslit": "bye, love you. udan samsaarikkaam."
+  },
+  {
+    "id": 528,
+    "category": "Conversational Phrases",
+    "english": "Did you drink water?",
+    "engExample": "Did you drink water? Drink some now.",
+    "malayalam": "വെള്ളം കുടിച്ചോ?",
+    "transliteration": "vellam kudichcho?",
+    "malExample": "വെള്ളം കുടിച്ചോ? ഇപ്പോൾ കുടിക്ക്.",
+    "malExampleTranslit": "vellam kudichcho? ippol kudikku."
+  },
+  {
+    "id": 529,
+    "category": "Conversational Phrases",
+    "english": "How is the weather there?",
+    "engExample": "How is the weather there? Hot or cool?",
+    "malayalam": "അവിടെ കാലാവസ്ഥ എങ്ങനെയുണ്ട്?",
+    "transliteration": "avide kaalaavastha enganeyundu?",
+    "malExample": "അവിടെ കാലാവസ്ഥ എങ്ങനെയുണ്ട്? ചൂടാണോ കുളിർമ്മയാണോ?",
+    "malExampleTranslit": "avide kaalaavastha enganeyundu? choodaano kulirmayaano?"
+  },
+  {
+    "id": 530,
+    "category": "Conversational Phrases",
+    "english": "Okay, I'll let you go now.",
+    "engExample": "Okay, I'll let you go now. Rest well.",
+    "malayalam": "ഓക്കേ ഞാൻ വിടാം.",
+    "transliteration": "okke njaan vidaam.",
+    "malExample": "ഓക്കേ ഞാൻ വിടാം. നല്ല റസ്റ്റ് എടുക്ക്.",
+    "malExampleTranslit": "okke njaan vidaam. nalla rest edukku."
+  },
+  {
+    "id": 531,
+    "category": "Conversational Phrases",
+    "english": "Are you feeling tired?",
+    "engExample": "Are you feeling tired? Take a break.",
+    "malayalam": "നിനക്ക് ക്ഷീണം തോന്നുന്നുണ്ടോ?",
+    "transliteration": "ninakku ksheenam thonunnundo?",
+    "malExample": "നിനക്ക് ക്ഷീണം തോന്നുന്നുണ്ടോ? ഒന്ന് ബ്രേക്ക് എടുക്ക്.",
+    "malExampleTranslit": "ninakku ksheenam thonunnundo? onnu break edukku."
+  },
+  {
+    "id": 532,
+    "category": "Conversational Phrases",
+    "english": "Did you watch anything nice?",
+    "engExample": "Did you watch anything nice? Some serial?",
+    "malayalam": "എന്തെങ്കിലും നല്ലത് കണ്ടോ?",
+    "transliteration": "enthenkilum nallathu kando?",
+    "malExample": "എന്തെങ്കിലും നല്ലത് കണ്ടോ? ഏതെങ്കിലും സീരിയൽ?",
+    "malExampleTranslit": "enthenkilum nallathu kando? ethenkilum serial?"
+  },
+  {
+    "id": 533,
+    "category": "Conversational Phrases",
+    "english": "Don't be alone too much.",
+    "engExample": "Don't be alone too much. Call someone.",
+    "malayalam": "ഒറ്റയ്ക്ക് അധികം ഇരിക്കരുത്.",
+    "transliteration": "ottaykku adhikam irikkaruthu.",
+    "malExample": "ഒറ്റയ്ക്ക് അധികം ഇരിക്കരുത്. ആരെയെങ്കിലും വിളിക്ക്.",
+    "malExampleTranslit": "ottaykku adhikam irikkaruthu. aareyenkilum vilikku."
+  },
+  {
+    "id": 534,
+    "category": "Conversational Phrases",
+    "english": "I'm missing you all.",
+    "engExample": "I'm missing you all. When can we meet?",
+    "malayalam": "എല്ലാവരെയും മിസ്സ് ചെയ്യുന്നു.",
+    "transliteration": "ellaavareyum miss cheyyunnu.",
+    "malExample": "എല്ലാവരെയും മിസ്സ് ചെയ്യുന്നു. എപ്പോഴാ കാണാൻ പറ്റുക?",
+    "malExampleTranslit": "ellaavareyum miss cheyyunnu. eppozhaa kaanaan pattuka?"
+  },
+  {
+    "id": 535,
+    "category": "Conversational Phrases",
+    "english": "Take care and sleep early.",
+    "engExample": "Take care and sleep early. Good night.",
+    "malayalam": "ശ്രദ്ധിക്കണേ നേരത്തെ ഉറങ്ങണേ.",
+    "transliteration": "shraddhikkanne neraththe urangane.",
+    "malExample": "ശ്രദ്ധിക്കണേ നേരത്തെ ഉറങ്ങണേ. ഗുഡ് നൈറ്റ്.",
+    "malExampleTranslit": "shraddhikkanne neraththe urangane. good night."
+  },
+  {
+    "id": 536,
+    "category": "Conversational Phrases",
+    "english": "How is your appetite?",
+    "engExample": "How is your appetite? Eating well?",
+    "malayalam": "വിശപ്പ് എങ്ങനെയുണ്ട്?",
+    "transliteration": "vishappu enganeyundu?",
+    "malExample": "വിശപ്പ് എങ്ങനെയുണ്ട്? നല്ലപോലെ കഴിക്കുന്നുണ്ടോ?",
+    "malExampleTranslit": "vishappu enganeyundu? nallapole kazhikkunnundo?"
+  },
+  {
+    "id": 537,
+    "category": "Conversational Phrases",
+    "english": "Don't worry too much.",
+    "engExample": "Don't worry too much. Everything is okay.",
+    "malayalam": "അധികം വിഷമിക്കണ്ട.",
+    "transliteration": "adhikam vishamikkenda.",
+    "malExample": "അധികം വിഷമിക്കണ്ട. എല്ലാം ശരിയാണ്.",
+    "malExampleTranslit": "adhikam vishamikkenda. ellaam shariyaanu."
+  },
+  {
+    "id": 538,
+    "category": "Conversational Phrases",
+    "english": "I'll call you in the evening.",
+    "engExample": "I'll call you in the evening. Okay?",
+    "malayalam": "വൈകുന്നേരം വിളിക്കാം.",
+    "transliteration": "vaikkunneram vilikkaam.",
+    "malExample": "വൈകുന്നേരം വിളിക്കാം. ഓക്കേ?",
+    "malExampleTranslit": "vaikkunneram vilikkaam. okke?"
+  },
+  {
+    "id": 539,
+    "category": "Conversational Phrases",
+    "english": "Good night, sweet dreams.",
+    "engExample": "Good night, sweet dreams. Sleep well.",
+    "malayalam": "ഗുഡ് നൈറ്റ്, സ്വീറ്റ് ഡ്രീംസ്.",
+    "transliteration": "good night, sweet dreams.",
+    "malExample": "ഗുഡ് നൈറ്റ്, സ്വീറ്റ് ഡ്രീംസ്. നല്ല ഉറക്കം.",
+    "malExampleTranslit": "good night, sweet dreams. nalla urakkam."
+  },
+  {
+    "id": 540,
+    "category": "Conversational Phrases",
+    "english": "Bye, take care.",
+    "engExample": "Bye, take care. Call anytime.",
+    "malayalam": "ബൈ, ശ്രദ്ധിക്കണേ.",
+    "transliteration": "bye, shraddhikkanne.",
+    "malExample": "ബൈ, ശ്രദ്ധിക്കണേ. എപ്പോൾ വേണമെങ്കിലും വിളിക്ക്.",
+    "malExampleTranslit": "bye, shraddhikkanne. eppol venamenkilum vilikku."
+  },
+  {
+    "id": 541,
+    "category": "Conversational Phrases",
+    "english": "How is the day going?",
+    "engExample": "How is the day going? Busy?",
+    "malayalam": "ദിവസം എങ്ങനെ പോകുന്നു?",
+    "transliteration": "divasam engane pokunnu?",
+    "malExample": "ദിവസം എങ്ങനെ പോകുന്നു? തിരക്കാണോ?",
+    "malExampleTranslit": "divasam engane pokunnu? thirakkaano?"
+  },
+  {
+    "id": 542,
+    "category": "Conversational Phrases",
+    "english": "Are you feeling okay?",
+    "engExample": "Are you feeling okay? Any tiredness?",
+    "malayalam": "നിനക്ക് ശരിയാണോ തോന്നുന്നത്?",
+    "transliteration": "ninakku shariyaano thonunnathu?",
+    "malExample": "നിനക്ക് ശരിയാണോ തോന്നുന്നത്? ക്ഷീണം തോന്നുന്നുണ്ടോ?",
+    "malExampleTranslit": "ninakku shariyaano thonunnathu? ksheenam thonunnundo?"
+  },
+  {
+    "id": 543,
+    "category": "Conversational Phrases",
+    "english": "Don't forget to drink water.",
+    "engExample": "Don't forget to drink water. Stay hydrated.",
+    "malayalam": "വെള്ളം കുടിക്കാൻ മറക്കരുത്.",
+    "transliteration": "vellam kudikkaan marakkaruthu.",
+    "malExample": "വെള്ളം കുടിക്കാൻ മറക്കരുത്. ഹൈഡ്രേറ്റഡ് ആയിരിക്ക്.",
+    "malExampleTranslit": "vellam kudikkaan marakkaruthu. hydrated aayirikk."
+  },
+  {
+    "id": 544,
+    "category": "Conversational Phrases",
+    "english": "I'll be thinking of you.",
+    "engExample": "I'll be thinking of you. Call me anytime.",
+    "malayalam": "നിന്നെ ഓർത്തിരിക്കും.",
+    "transliteration": "ninne orthirikkum.",
+    "malExample": "നിന്നെ ഓർത്തിരിക്കും. എപ്പോൾ വേണമെങ്കിലും വിളിക്ക്.",
+    "malExampleTranslit": "ninne orthirikkum. eppol venamenkilum vilikku."
+  },
+  {
+    "id": 545,
+    "category": "Conversational Phrases",
+    "english": "Good night from here.",
+    "engExample": "Good night from here. Sweet dreams.",
+    "malayalam": "ഇവിടെ നിന്ന് ഗുഡ് നൈറ്റ്.",
+    "transliteration": "ivide ninnu good night.",
+    "malExample": "ഇവിടെ നിന്ന് ഗുഡ് നൈറ്റ്. സ്വീറ്റ് ഡ്രീംസ്.",
+    "malExampleTranslit": "ivide ninnu good night. sweet dreams."
+  },
+  {
+    "id": 546,
+    "category": "Conversational Phrases",
+    "english": "How is your back today?",
+    "engExample": "How is your back today? Better?",
+    "malayalam": "ഇന്ന് നട്ടെല്ല് എങ്ങനെയുണ്ട്?",
+    "transliteration": "innu natellu enganeyundu?",
+    "malExample": "ഇന്ന് നട്ടെല്ല് എങ്ങനെയുണ്ട്? ഭേദമായോ?",
+    "malExampleTranslit": "innu natellu enganeyundu? bhedamaayo?"
+  },
+  {
+    "id": 547,
+    "category": "Conversational Phrases",
+    "english": "Don't sit too long.",
+    "engExample": "Don't sit too long. Walk a bit.",
+    "malayalam": "അധികം ഇരിക്കരുത്.",
+    "transliteration": "adhikam irikkaruthu.",
+    "malExample": "അധികം ഇരിക്കരുത്. ഒന്ന് നടക്ക്.",
+    "malExampleTranslit": "adhikam irikkaruthu. onnu nadakku."
+  },
+  {
+    "id": 548,
+    "category": "Conversational Phrases",
+    "english": "I'll call you soon okay?",
+    "engExample": "I'll call you soon okay? Miss you.",
+    "malayalam": "ഉടൻ വിളിക്കാം ഓക്കേ?",
+    "transliteration": "udan vilikkaam okke?",
+    "malExample": "ഉടൻ വിളിക്കാം ഓക്കേ? മിസ്സ് ചെയ്യുന്നു.",
+    "malExampleTranslit": "udan vilikkaam okke? miss cheyyunnu."
+  },
+  {
+    "id": 549,
+    "category": "Conversational Phrases",
+    "english": "Bye, God bless.",
+    "engExample": "Bye, God bless. Take care.",
+    "malayalam": "ബൈ, ദൈവം അനുഗ്രഹിക്കട്ടെ.",
+    "transliteration": "bye, daivam anugrahikkatte.",
+    "malExample": "ബൈ, ദൈവം അനുഗ്രഹിക്കട്ടെ. ശ്രദ്ധിക്കണേ.",
+    "malExampleTranslit": "bye, daivam anugrahikkatte. shraddhikkanne."
+  },
+  {
+    "id": 550,
+    "category": "Conversational Phrases",
+    "english": "Talk to you later.",
+    "engExample": "Talk to you later. Bye for now.",
+    "malayalam": "പിന്നെ സംസാരിക്കാം.",
+    "transliteration": "pinne samsaarikkaam.",
+    "malExample": "പിന്നെ സംസാരിക്കാം. ഇപ്പോൾ ബൈ.",
+    "malExampleTranslit": "pinne samsaarikkaam. ippol bye."
+  },
+  {
+    "id": 551,
+    "category": "Conversational Phrases",
+    "english": "How was lunch?",
+    "engExample": "How was lunch? Tasty?",
+    "malayalam": "ഉച്ചഭക്ഷണം എങ്ങനെ ഉണ്ടായിരുന്നു?",
+    "transliteration": "uchabhakshanam engane undaayirunnu?",
+    "malExample": "ഉച്ചഭക്ഷണം എങ്ങനെ ഉണ്ടായിരുന്നു? രുചിച്ചോ?",
+    "malExampleTranslit": "uchabhakshanam engane undaayirunnu? ruchichcho?"
+  },
+  {
+    "id": 552,
+    "category": "Conversational Phrases",
+    "english": "Are you comfortable?",
+    "engExample": "Are you comfortable? Need anything?",
+    "malayalam": "നിനക്ക് സുഖമാണോ?",
+    "transliteration": "ninakku sukham aano?",
+    "malExample": "നിനക്ക് സുഖമാണോ? എന്തെങ്കിലും വേണോ?",
+    "malExampleTranslit": "ninakku sukham aano? enthenkilum veno?"
+  },
+  {
+    "id": 553,
+    "category": "Conversational Phrases",
+    "english": "Don't forget to smile.",
+    "engExample": "Don't forget to smile. Be happy.",
+    "malayalam": "ചിരിക്കാൻ മറക്കരുത്.",
+    "transliteration": "chirikkaan marakkaruthu.",
+    "malExample": "ചിരിക്കാൻ മറക്കരുത്. സന്തോഷമായിരിക്ക്.",
+    "malExampleTranslit": "chirikkaan marakkaruthu. santhoshamaayirikk."
+  },
+  {
+    "id": 554,
+    "category": "Conversational Phrases",
+    "english": "I'll be thinking about you.",
+    "engExample": "I'll be thinking about you. Call me anytime.",
+    "malayalam": "നിന്നെ ഓർത്തിരിക്കും.",
+    "transliteration": "ninne orthirikkum.",
+    "malExample": "നിന്നെ ഓർത്തിരിക്കും. എപ്പോൾ വേണമെങ്കിലും വിളിക്ക്.",
+    "malExampleTranslit": "ninne orthirikkum. eppol venamenkilum vilikku."
+  },
+  {
+    "id": 555,
+    "category": "Conversational Phrases",
+    "english": "Good night, sleep tight.",
+    "engExample": "Good night, sleep tight. Sweet dreams.",
+    "malayalam": "ഗുഡ് നൈറ്റ്, നല്ല ഉറക്കം.",
+    "transliteration": "good night, nalla urakkam.",
+    "malExample": "ഗുഡ് നൈറ്റ്, നല്ല ഉറക്കം. സ്വീറ്റ് ഡ്രീംസ്.",
+    "malExampleTranslit": "good night, nalla urakkam. sweet dreams."
+  },
+  {
+    "id": 556,
+    "category": "Conversational Phrases",
+    "english": "How is your energy level?",
+    "engExample": "How is your energy level? Feeling fresh?",
+    "malayalam": "എനർജി ലെവൽ എങ്ങനെയുണ്ട്?",
+    "transliteration": "energy level enganeyundu?",
+    "malExample": "എനർജി ലെവൽ എങ്ങനെയുണ്ട്? ഫ്രെഷ് തോന്നുന്നുണ്ടോ?",
+    "malExampleTranslit": "energy level enganeyundu? fresh thonunnundo?"
+  },
+  {
+    "id": 557,
+    "category": "Conversational Phrases",
+    "english": "Don't overthink things.",
+    "engExample": "Don't overthink things. Relax.",
+    "malayalam": "അധികം ആലോചിക്കണ്ട.",
+    "transliteration": "adhikam aalochikkenda.",
+    "malExample": "അധികം ആലോചിക്കണ്ട. റിലാക്സ് ചെയ്യ്.",
+    "malExampleTranslit": "adhikam aalochikkenda. relax cheyy."
+  },
+  {
+    "id": 558,
+    "category": "Conversational Phrases",
+    "english": "I'll call you in a bit.",
+    "engExample": "I'll call you in a bit. Stay there.",
+    "malayalam": "കുറച്ച് കഴിഞ്ഞ് വിളിക്കാം.",
+    "transliteration": "kurach kazhinju vilikkaam.",
+    "malExample": "കുറച്ച് കഴിഞ്ഞ് വിളിക്കാം. അവിടെ ഇരിക്ക്.",
+    "malExampleTranslit": "kurach kazhinju vilikkaam. avide irikku."
+  },
+  {
+    "id": 559,
+    "category": "Conversational Phrases",
+    "english": "Love you all.",
+    "engExample": "Love you all. Bye now.",
+    "malayalam": "എല്ലാവരെയും ലവ് ചെയ്യുന്നു.",
+    "transliteration": "ellaavareyum love cheyyunnu.",
+    "malExample": "എല്ലാവരെയും ലവ് ചെയ്യുന്നു. ഇപ്പോൾ ബൈ.",
+    "malExampleTranslit": "ellaavareyum love cheyyunnu. ippol bye."
+  },
+  {
+    "id": 560,
+    "category": "Conversational Phrases",
+    "english": "Bye, take rest.",
+    "engExample": "Bye, take rest. Talk tomorrow.",
+    "malayalam": "ബൈ, റസ്റ്റ് എടുക്ക്.",
+    "transliteration": "bye, rest edukku.",
+    "malExample": "ബൈ, റസ്റ്റ് എടുക്ക്. നാളെ സംസാരിക്കാം.",
+    "malExampleTranslit": "bye, rest edukku. naale samsaarikkaam."
+  },
+  {
+    "id": 561,
+    "category": "Conversational Phrases",
+    "english": "How is the appetite today?",
+    "engExample": "How is the appetite today? Eating properly?",
+    "malayalam": "ഇന്ന് വിശപ്പ് എങ്ങനെയുണ്ട്?",
+    "transliteration": "innu vishappu enganeyundu?",
+    "malExample": "ഇന്ന് വിശപ്പ് എങ്ങനെയുണ്ട്? നല്ലപോലെ കഴിക്കുന്നുണ്ടോ?",
+    "malExampleTranslit": "innu vishappu enganeyundu? nallapole kazhikkunnundo?"
+  },
+  {
+    "id": 562,
+    "category": "Conversational Phrases",
+    "english": "Don't sit in one place too long.",
+    "engExample": "Don't sit in one place too long. Move around.",
+    "malayalam": "ഒരു ഇടത്ത് അധികം ഇരിക്കരുത്.",
+    "transliteration": "oru idaththu adhikam irikkaruthu.",
+    "malExample": "ഒരു ഇടത്ത് അധികം ഇരിക്കരുത്. ഒന്ന് നീങ്ങി നടക്ക്.",
+    "malExampleTranslit": "oru idaththu adhikam irikkaruthu. onnu neengi nadakku."
+  },
+  {
+    "id": 563,
+    "category": "Conversational Phrases",
+    "english": "I'll call back soon.",
+    "engExample": "I'll call back soon. Stay near the phone.",
+    "malayalam": "ഉടൻ തിരിച്ചു വിളിക്കാം.",
+    "transliteration": "udan thirichu vilikkaam.",
+    "malExample": "ഉടൻ തിരിച്ചു വിളിക്കാം. ഫോൺ അടുത്ത് ഇരിക്ക്.",
+    "malExampleTranslit": "udan thirichu vilikkaam. phone adutthu irikku."
+  },
+  {
+    "id": 564,
+    "category": "Conversational Phrases",
+    "english": "How is the head today?",
+    "engExample": "How is the head today? No headache?",
+    "malayalam": "ഇന്ന് തല എങ്ങനെയുണ്ട്?",
+    "transliteration": "innu thala enganeyundu?",
+    "malExample": "ഇന്ന് തല എങ്ങനെയുണ്ട്? തലവേദന ഇല്ലല്ലേ?",
+    "malExampleTranslit": "innu thala enganeyundu? thalavedana illalle?"
+  },
+  {
+    "id": 565,
+    "category": "Conversational Phrases",
+    "english": "Don't forget to smile okay?",
+    "engExample": "Don't forget to smile okay? Be happy.",
+    "malayalam": "ചിരിക്കാൻ മറക്കരുത് ഓക്കേ?",
+    "transliteration": "chirikkaan marakkaruthu okke?",
+    "malExample": "ചിരിക്കാൻ മറക്കരുത് ഓക്കേ? സന്തോഷമായിരിക്ക്.",
+    "malExampleTranslit": "chirikkaan marakkaruthu okke? santhoshamaayirikk."
+  },
+  {
+    "id": 566,
+    "category": "Conversational Phrases",
+    "english": "Are you feeling fresh?",
+    "engExample": "Are you feeling fresh? Or tired?",
+    "malayalam": "നിനക്ക് ഫ്രെഷ് തോന്നുന്നുണ്ടോ?",
+    "transliteration": "ninakku fresh thonunnundo?",
+    "malExample": "നിനക്ക് ഫ്രെഷ് തോന്നുന്നുണ്ടോ? അതോ ക്ഷീണമാണോ?",
+    "malExampleTranslit": "ninakku fresh thonunnundo? atho ksheenamaano?"
+  },
+  {
+    "id": 567,
+    "category": "Conversational Phrases",
+    "english": "Call me anytime okay?",
+    "engExample": "Call me anytime okay? Don't hesitate.",
+    "malayalam": "എപ്പോൾ വേണമെങ്കിലും വിളിക്ക് ഓക്കേ?",
+    "transliteration": "eppol venamenkilum vilikku okke?",
+    "malExample": "എപ്പോൾ വേണമെങ്കിലും വിളിക്ക് ഓക്കേ? മടിക്കണ്ട.",
+    "malExampleTranslit": "eppol venamenkilum vilikku okke? madikkenda."
+  },
+  {
+    "id": 568,
+    "category": "Conversational Phrases",
+    "english": "Bye, God be with you.",
+    "engExample": "Bye, God be with you. Take care.",
+    "malayalam": "ബൈ, ദൈവം കൂടെയുണ്ടാകട്ടെ.",
+    "transliteration": "bye, daivam koodeyundaakatte.",
+    "malExample": "ബൈ, ദൈവം കൂടെയുണ്ടാകട്ടെ. ശ്രദ്ധിക്കണേ.",
+    "malExampleTranslit": "bye, daivam koodeyundaakatte. shraddhikkanne."
+  },
+  {
+    "id": 569,
+    "category": "Conversational Phrases",
+    "english": "How is your day so far?",
+    "engExample": "How is your day so far? Going well?",
+    "malayalam": "ഇതുവരെ ദിവസം എങ്ങനെ?",
+    "transliteration": "ithuvare divasam engane?",
+    "malExample": "ഇതുവരെ ദിവസം എങ്ങനെ? നല്ലപോലെ പോകുന്നുണ്ടോ?",
+    "malExampleTranslit": "ithuvare divasam engane? nallapole pokunnundo?"
+  },
+  {
+    "id": 570,
+    "category": "Conversational Phrases",
+    "english": "Are you relaxed now?",
+    "engExample": "Are you relaxed now? Or still busy?",
+    "malayalam": "ഇപ്പോൾ റിലാക്സ് ആണോ?",
+    "transliteration": "ippol relax aano?",
+    "malExample": "ഇപ്പോൾ റിലാക്സ് ആണോ? അതോ ഇപ്പോഴും തിരക്കാണോ?",
+    "malExampleTranslit": "ippol relax aano? atho ippolum thirakkaano?"
+  },
+  {
+    "id": 571,
+    "category": "Conversational Phrases",
+    "english": "Don't forget to rest.",
+    "engExample": "Don't forget to rest. You need it.",
+    "malayalam": "റസ്റ്റ് എടുക്കാൻ മറക്കരുത്.",
+    "transliteration": "rest edukkaan marakkaruthu.",
+    "malExample": "റസ്റ്റ് എടുക്കാൻ മറക്കരുത്. നിനക്ക് വേണം.",
+    "malExampleTranslit": "rest edukkaan marakkaruthu. ninakku venam."
+  },
+  {
+    "id": 572,
+    "category": "Conversational Phrases",
+    "english": "I'm always here for you.",
+    "engExample": "I'm always here for you. Call anytime.",
+    "malayalam": "ഞാൻ എപ്പോഴും നിനക്ക് വേണ്ടി ഇവിടെയുണ്ട്.",
+    "transliteration": "njaan eppozhum ninakku vendi ivideyundu.",
+    "malExample": "ഞാൻ എപ്പോഴും നിനക്ക് വേണ്ടി ഇവിടെയുണ്ട്. എപ്പോൾ വേണമെങ്കിലും വിളിക്ക്.",
+    "malExampleTranslit": "njaan eppozhum ninakku vendi ivideyundu. eppol venamenkilum vilikku."
+  },
+  {
+    "id": 573,
+    "category": "Conversational Phrases",
+    "english": "Good night, darling.",
+    "engExample": "Good night, darling. Sleep well.",
+    "malayalam": "ഗുഡ് നൈറ്റ് ഡാർലിങ്.",
+    "transliteration": "good night darling.",
+    "malExample": "ഗുഡ് നൈറ്റ് ഡാർലിങ്. നല്ല ഉറക്കം.",
+    "malExampleTranslit": "good night darling. nalla urakkam."
+  },
+  {
+    "id": 574,
+    "category": "Conversational Phrases",
+    "english": "How is your energy?",
+    "engExample": "How is your energy? Feeling good?",
+    "malayalam": "എനർജി എങ്ങനെയുണ്ട്?",
+    "transliteration": "energy enganeyundu?",
+    "malExample": "എനർജി എങ്ങനെയുണ്ട്? നല്ലപോലെ തോന്നുന്നുണ്ടോ?",
+    "malExampleTranslit": "energy enganeyundu? nallapole thonunnundo?"
+  },
+  {
+    "id": 575,
+    "category": "Conversational Phrases",
+    "english": "Don't think too much.",
+    "engExample": "Don't think too much. Relax a bit.",
+    "malayalam": "അധികം ആലോചിക്കണ്ട.",
+    "transliteration": "adhikam aalochikkenda.",
+    "malExample": "അധികം ആലോചിക്കണ്ട. ഒന്ന് റിലാക്സ് ചെയ്യ്.",
+    "malExampleTranslit": "adhikam aalochikkenda. onnu relax cheyy."
+  },
+  {
+    "id": 576,
+    "category": "Conversational Phrases",
+    "english": "I'll call you back.",
+    "engExample": "I'll call you back. Wait a minute.",
+    "malayalam": "ഞാൻ തിരിച്ചു വിളിക്കാം.",
+    "transliteration": "njaan thirichu vilikkaam.",
+    "malExample": "ഞാൻ തിരിച്ചു വിളിക്കാം. ഒരു നിമിഷം കാത്തിരിക്ക്.",
+    "malExampleTranslit": "njaan thirichu vilikkaam. oru nimisham kaaththirikk."
+  },
+  {
+    "id": 577,
+    "category": "Conversational Phrases",
+    "english": "Love you so much.",
+    "engExample": "Love you so much. Bye now.",
+    "malayalam": "വളരെ ലവ് ചെയ്യുന്നു.",
+    "transliteration": "valare love cheyyunnu.",
+    "malExample": "വളരെ ലവ് ചെയ്യുന്നു. ഇപ്പോൾ ബൈ.",
+    "malExampleTranslit": "valare love cheyyunnu. ippol bye."
+  },
+  {
+    "id": 578,
+    "category": "Conversational Phrases",
+    "english": "Bye, see you soon.",
+    "engExample": "Bye, see you soon. Take care.",
+    "malayalam": "ബൈ, ഉടൻ കാണാം.",
+    "transliteration": "bye, udan kaanam.",
+    "malExample": "ബൈ, ഉടൻ കാണാം. ശ്രദ്ധിക്കണേ.",
+    "malExampleTranslit": "bye, udan kaanam. shraddhikkanne."
+  },
+  {
+    "id": 579,
+    "category": "Conversational Phrases",
+    "english": "How is your day today?",
+    "engExample": "How is your day today? Going good?",
+    "malayalam": "ഇന്നത്തെ ദിവസം എങ്ങനെ?",
+    "transliteration": "innatthe divasam engane?",
+    "malExample": "ഇന്നത്തെ ദിവസം എങ്ങനെ? നല്ലപോലെ പോകുന്നുണ്ടോ?",
+    "malExampleTranslit": "innatthe divasam engane? nallapole pokunnundo?"
+  },
+  {
+    "id": 580,
+    "category": "Conversational Phrases",
+    "english": "Are you happy today?",
+    "engExample": "Are you happy today? Feeling good?",
+    "malayalam": "ഇന്ന് സന്തോഷമാണോ?",
+    "transliteration": "innu santhoshamaano?",
+    "malExample": "ഇന്ന് സന്തോഷമാണോ? നല്ല തോന്നലുണ്ടോ?",
+    "malExampleTranslit": "innu santhoshamaano? nalla thonnalundo?"
+  },
+  {
+    "id": 581,
+    "category": "Conversational Phrases",
+    "english": "Don't forget your water.",
+    "engExample": "Don't forget your water. Drink enough.",
+    "malayalam": "വെള്ളം മറക്കരുത്.",
+    "transliteration": "vellam marakkaruthu.",
+    "malExample": "വെള്ളം മറക്കരുത്. മതിയായിട്ട് കുടിക്ക്.",
+    "malExampleTranslit": "vellam marakkaruthu. mathiyaayittu kudikku."
+  },
+  {
+    "id": 582,
+    "category": "Conversational Phrases",
+    "english": "I'm always here.",
+    "engExample": "I'm always here. Call me anytime.",
+    "malayalam": "ഞാൻ എപ്പോഴും ഇവിടെയുണ്ട്.",
+    "transliteration": "njaan eppozhum ivideyundu.",
+    "malExample": "ഞാൻ എപ്പോഴും ഇവിടെയുണ്ട്. എപ്പോൾ വേണമെങ്കിലും വിളിക്ക്.",
+    "malExampleTranslit": "njaan eppozhum ivideyundu. eppol venamenkilum vilikku."
+  },
+  {
+    "id": 583,
+    "category": "Conversational Phrases",
+    "english": "Good night, my dear.",
+    "engExample": "Good night, my dear. Sleep well.",
+    "malayalam": "ഗുഡ് നൈറ്റ് എന്റെ പ്രിയപ്പെട്ടവരേ.",
+    "transliteration": "good night ente priyappettavare.",
+    "malExample": "ഗുഡ് നൈറ്റ് എന്റെ പ്രിയപ്പെട്ടവരേ. നല്ല ഉറക്കം.",
+    "malExampleTranslit": "good night ente priyappettavare. nalla urakkam."
+  },
+  {
+    "id": 584,
+    "category": "Conversational Phrases",
+    "english": "How is your day feeling?",
+    "engExample": "How is your day feeling? Good or okay?",
+    "malayalam": "ഇന്നത്തെ ദിവസം എങ്ങനെ തോന്നുന്നു?",
+    "transliteration": "innatthe divasam engane thonunnu?",
+    "malExample": "ഇന്നത്തെ ദിവസം എങ്ങനെ തോന്നുന്നു? നല്ലതാണോ ശരിയാണോ?",
+    "malExampleTranslit": "innatthe divasam engane thonunnu? nallathaanu shariyaano?"
+  },
+  {
+    "id": 585,
+    "category": "Conversational Phrases",
+    "english": "Don't be sad okay?",
+    "engExample": "Don't be sad okay? Smile a little.",
+    "malayalam": "വിഷമിക്കണ്ട ഓക്കേ?",
+    "transliteration": "vishamikkenda okke?",
+    "malExample": "വിഷമിക്കണ്ട ഓക്കേ? ഒന്ന് ചിരിക്ക്.",
+    "malExampleTranslit": "vishamikkenda okke? onnu chirikku."
+  },
+  {
+    "id": 586,
+    "category": "Conversational Phrases",
+    "english": "I'll be right back.",
+    "engExample": "I'll be right back. Don't go away.",
+    "malayalam": "ഞാൻ ഉടൻ തിരിച്ചു വരാം.",
+    "transliteration": "njaan udan thirichu varaam.",
+    "malExample": "ഞാൻ ഉടൻ തിരിച്ചു വരാം. പോകരുത്.",
+    "malExampleTranslit": "njaan udan thirichu varaam. pokaruthu."
+  },
+  {
+    "id": 587,
+    "category": "Conversational Phrases",
+    "english": "Love you a lot.",
+    "engExample": "Love you a lot. Bye now.",
+    "malayalam": "വളരെ ലവ് ചെയ്യുന്നു.",
+    "transliteration": "valare love cheyyunnu.",
+    "malExample": "വളരെ ലവ് ചെയ്യുന്നു. ഇപ്പോൾ ബൈ.",
+    "malExampleTranslit": "valare love cheyyunnu. ippol bye."
+  },
+  {
+    "id": 588,
+    "category": "Conversational Phrases",
+    "english": "Bye, see you tomorrow.",
+    "engExample": "Bye, see you tomorrow. Take care.",
+    "malayalam": "ബൈ, നാളെ കാണാം.",
+    "transliteration": "bye, naale kaanam.",
+    "malExample": "ബൈ, നാളെ കാണാം. ശ്രദ്ധിക്കണേ.",
+    "malExampleTranslit": "bye, naale kaanam. shraddhikkanne."
+  },
+  {
+    "id": 589,
+    "category": "Conversational Phrases",
+    "english": "How is everything going?",
+    "engExample": "How is everything going? Smoothly?",
+    "malayalam": "എല്ലാം എങ്ങനെ പോകുന്നു?",
+    "transliteration": "ellaam engane pokunnu?",
+    "malExample": "എല്ലാം എങ്ങനെ പോകുന്നു? സുഗമമാണോ?",
+    "malExampleTranslit": "ellaam engane pokunnu? sugamamaano?"
+  },
+  {
+    "id": 590,
+    "category": "Conversational Phrases",
+    "english": "Are you calm now?",
+    "engExample": "Are you calm now? Feeling relaxed?",
+    "malayalam": "ഇപ്പോൾ ശാന്തനാണോ?",
+    "transliteration": "ippol shaanthanaano?",
+    "malExample": "ഇപ്പോൾ ശാന്തനാണോ? റിലാക്സ് തോന്നുന്നുണ്ടോ?",
+    "malExampleTranslit": "ippol shaanthanaano? relax thonunnundo?"
+  },
+  {
+    "id": 591,
+    "category": "Conversational Phrases",
+    "english": "Don't forget your rest.",
+    "engExample": "Don't forget your rest. You deserve it.",
+    "malayalam": "റസ്റ്റ് മറക്കരുത്.",
+    "transliteration": "rest marakkaruthu.",
+    "malExample": "റസ്റ്റ് മറക്കരുത്. നിനക്ക് അർഹതയുണ്ട്.",
+    "malExampleTranslit": "rest marakkaruthu. ninakku arhatayundu."
+  },
+  {
+    "id": 592,
+    "category": "Conversational Phrases",
+    "english": "I'm here whenever you need.",
+    "engExample": "I'm here whenever you need. Call anytime.",
+    "malayalam": "നിനക്ക് വേണ്ടപ്പോൾ ഞാൻ ഇവിടെയുണ്ട്.",
+    "transliteration": "ninakku vendappol njaan ivideyundu.",
+    "malExample": "നിനക്ക് വേണ്ടപ്പോൾ ഞാൻ ഇവിടെയുണ്ട്. എപ്പോൾ വേണമെങ്കിലും വിളിക്ക്.",
+    "malExampleTranslit": "ninakku vendappol njaan ivideyundu. eppol venamenkilum vilikku."
+  },
+  {
+    "id": 593,
+    "category": "Conversational Phrases",
+    "english": "Good night, my love.",
+    "engExample": "Good night, my love. Dream sweet.",
+    "malayalam": "ഗുഡ് നൈറ്റ് എന്റെ പ്രിയം.",
+    "transliteration": "good night ente priyam.",
+    "malExample": "ഗുഡ് നൈറ്റ് എന്റെ പ്രിയം. സ്വീറ്റ് ഡ്രീംസ്.",
+    "malExampleTranslit": "good night ente priyam. sweet dreams."
+  },
+  {
+    "id": 594,
+    "category": "Conversational Phrases",
+    "english": "How is your strength?",
+    "engExample": "How is your strength? Feeling strong?",
+    "malayalam": "ശക്തി എങ്ങനെയുണ്ട്?",
+    "transliteration": "shakthi enganeyundu?",
+    "malExample": "ശക്തി എങ്ങനെയുണ്ട്? ശക്തനാണോ തോന്നുന്നത്?",
+    "malExampleTranslit": "shakthi enganeyundu? shakthanaano thonunnathu?"
+  },
+  {
+    "id": 595,
+    "category": "Conversational Phrases",
+    "english": "Don't worry, be happy.",
+    "engExample": "Don't worry, be happy. Everything is fine.",
+    "malayalam": "വിഷമിക്കണ്ട, സന്തോഷിക്ക്.",
+    "transliteration": "vishamikkenda, santhoshikku.",
+    "malExample": "വിഷമിക്കണ്ട, സന്തോഷിക്ക്. എല്ലാം ശരിയാണ്.",
+    "malExampleTranslit": "vishamikkenda, santhoshikku. ellaam shariyaanu."
+  },
+  {
+    "id": 596,
+    "category": "Conversational Phrases",
+    "english": "I'll talk to you soon.",
+    "engExample": "I'll talk to you soon. Bye.",
+    "malayalam": "ഉടൻ സംസാരിക്കാം.",
+    "transliteration": "udan samsaarikkaam.",
+    "malExample": "ഉടൻ സംസാരിക്കാം. ബൈ.",
+    "malExampleTranslit": "udan samsaarikkaam. bye."
+  },
+  {
+    "id": 597,
+    "category": "Conversational Phrases",
+    "english": "Love you, bye.",
+    "engExample": "Love you, bye. Take care.",
+    "malayalam": "ലവ് യു, ബൈ.",
+    "transliteration": "love you, bye.",
+    "malExample": "ലവ് യു, ബൈ. ശ്രദ്ധിക്കണേ.",
+    "malExampleTranslit": "love you, bye. shraddhikkanne."
+  },
+  {
+    "id": 598,
+    "category": "Conversational Phrases",
+    "english": "How is your day feeling?",
+    "engExample": "How is your day feeling? Good or okay?",
+    "malayalam": "ഇന്നത്തെ ദിവസം എങ്ങനെ തോന്നുന്നു?",
+    "transliteration": "innatthe divasam engane thonunnu?",
+    "malExample": "ഇന്നത്തെ ദിവസം എങ്ങനെ തോന്നുന്നു? നല്ലതാണോ ശരിയാണോ?",
+    "malExampleTranslit": "innatthe divasam engane thonunnu? nallathaanu shariyaano?"
+  },
+  {
+    "id": 599,
+    "category": "Conversational Phrases",
+    "english": "Don't be sad okay?",
+    "engExample": "Don't be sad okay? Smile a little.",
+    "malayalam": "വിഷമിക്കണ്ട ഓക്കേ?",
+    "transliteration": "vishamikkenda okke?",
+    "malExample": "വിഷമിക്കണ്ട ഓക്കേ? ഒന്ന് ചിരിക്ക്.",
+    "malExampleTranslit": "vishamikkenda okke? onnu chirikku."
+  },
+  {
+    "id": 600,
+    "category": "Conversational Phrases",
+    "english": "Bye, see you soon.",
+    "engExample": "Bye, see you soon. Take care.",
+    "malayalam": "ബൈ, ഉടൻ കാണാം.",
+    "transliteration": "bye, udan kaanam.",
+    "malExample": "ബൈ, ഉടൻ കാണാം. ശ്രദ്ധിക്കണേ.",
+    "malExampleTranslit": "bye, udan kaanam. shraddhikkanne."
   }
 ]
