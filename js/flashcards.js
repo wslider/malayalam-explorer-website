@@ -130,16 +130,37 @@ function toggleAutoPlay() {
     clearInterval(autoInterval);
     autoInterval = null;
     playButton.textContent = 'Play ▶️';
-  } else {
-    if (!isFlipped) {
-        flipCard(); // Start by showing Malayalam side
-    }
-    autoInterval = setInterval(() => {
-      goNext();
-      setTimeout(flipCard, 5000); // Flip to Malayalam ~5s after new card
-    }, 15000); // Next card every 15s total cycle
-    playButton.textContent = 'Pause ⏸️';
+    return;
   }
+
+  const card = flashcards[currentIndex];
+  const engLen = card.engExample?.length || 0;
+  const malLen = card.malExample?.length || 0;
+  const longest = Math.max(engLen, malLen);
+
+  let cycleTime = 15000;    // default total cycle
+  let flipDelay = 5000;     // default time before showing Malayalam
+
+  if (longest > 80) {
+    cycleTime = 22000;
+    flipDelay = 8000;
+  }
+  if (longest > 120) {
+    cycleTime = 30000;      // give really long sentences breathing room
+    flipDelay = 11000;
+  }
+
+  // Optional: start on Malayalam side like you already do
+  if (!isFlipped) {
+    flipCard();
+  }
+
+  autoInterval = setInterval(() => {
+    goNext();
+    setTimeout(flipCard, flipDelay);
+  }, cycleTime);
+
+  playButton.textContent = 'Pause ⏸️';
 }
 
 playButton?.addEventListener('click', toggleAutoPlay);
