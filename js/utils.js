@@ -23,6 +23,18 @@ export function navBarLinks() {
     }
 }
 
+export function updateSunMapLink() {
+    const nowUtc = new Date().toString();
+    const isoTxt = nowUtc.slice(0, 16).replace(/[-:]/g, '');
+    const sunMapLink = `https://www.timeanddate.com/scripts/sunmap.php?iso=${isoTxt}`;
+    const sunMapButton = document.getElementById('sunMapButton');
+    sunMapButton.addEventListener('click', () => {
+        const win = window.open(sunMapLink, '_blank');
+        if (!win) {
+            window.open('https://www.timeanddate.com/sun/india/thiruvananthapuram', '_blank');
+        }
+    });
+}
 
 
 export function updateFooter() {

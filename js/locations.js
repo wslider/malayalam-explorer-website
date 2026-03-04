@@ -1,4 +1,4 @@
-import { updateFooter, navBarLinks } from './utils.js';
+import { updateFooter, updateSunMapLink, navBarLinks } from './utils.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Cache DOM elements once
@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     console.warn("Dropdown menu element (#dropMenu) not found");
   }
+
+  // Update Global Sun Map link with current time
+  updateSunMapLink();
 
   const locations = [
     {
