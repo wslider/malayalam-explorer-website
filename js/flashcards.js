@@ -11,7 +11,8 @@ const cardsViewedEl = document.getElementById('cardsViewed');
 const playButton = document.getElementById('playButton');
 
 // Globals
-let flashcards = [];
+let flashcards = [];       // ← original, never mutated after loading
+let deck = [];             // ← working deck (shuffled or original)
 let currentIndex = 0;
 let isFlipped = false;
 let isShuffled = false;
@@ -19,6 +20,60 @@ let autoInterval = null;
 const viewedIds = new Set();
 
 const flashcardJsonData = "data/flashcards.json";
+
+// ────────────────────────────────────────────────
+// LOCAL STORAGE PERSISTENCE
+// ────────────────────────────────────────────────
+
+const STORAGE_KEY = 'malayalam-flashcards-progress-v1';
+
+function saveState() {
+  if (deck.length === 0) return;
+
+  const state = {
+    index: currentIndex,
+    isFlipped: isFlipped,
+    isShuffled: isShuffled,
+    viewedIds: Array.from(viewedIds),
+    deckOrder: isShuffled ? deck.map(card => flashcards.indexOf(card)) : null,
+    timestamp: Date.now()  // optional – useful if you ever want to expire old saves
+  };
+
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+}
+
+function loadSavedState() {
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (!saved) return;
+
+  try {
+    const state = JSON.parse(saved);
+
+    // Restore index
+    if (typeof state.index === 'number' && state.index >= 0 && state.index < deck.length) {
+      currentIndex = state.index;
+    }
+
+    // Restore flip state
+    isFlipped = !!state.isFlipped;
+
+    // Restore viewed
+    if (Array.isArray(state.viewedIds)) {
+      viewedIds.clear();
+      state.viewedIds.forEach(id => viewedIds.add(id));
+    }
+
+    // Restore shuffle order
+    if (state.isShuffled && Array.isArray(state.deckOrder) && state.deckOrder.length === flashcards.length) {
+      isShuffled = true;
+      deck = state.deckOrder.map(originalIndex => flashcards[originalIndex]);
+    }
+
+    console.log(`Restored state: index=${currentIndex}, viewed=${viewedIds.size}, shuffled=${isShuffled}`);
+  } catch (err) {
+    console.warn('Invalid saved state – starting fresh', err);
+  }
+}
 
 // ────────────────────────────────────────────────
 // Load & Display
@@ -31,9 +86,9 @@ async function loadFlashcards() {
     flashcards = await response.json();
 
     if (flashcards.length > 0) {
-      currentIndex = 0;
-      isFlipped = false;
+      deck = [...flashcards];   // start with original order
       resetCardVisibility();
+      loadSavedState();         // apply saved state after deck is ready
       displayCard();
     } else {
       console.warn('No flashcards loaded');
@@ -41,23 +96,22 @@ async function loadFlashcards() {
   } catch (err) {
     console.error('Failed to load flashcards:', err);
     flashcards = [];
+    deck = [];
   }
 }
 
 function displayCard() {
-  if (!flashcards[currentIndex]) return;
+  if (deck.length === 0 || !deck[currentIndex]) return;
 
-  const card = flashcards[currentIndex];
+  const card = deck[currentIndex];
 
-  // English side
-  document.getElementById('category').textContent = card.category || '';
-  document.getElementById('english').textContent = card.english || '';
-  document.getElementById('engExample').textContent = card.engExample || '';
+  document.getElementById('category').textContent     = card.category || '';
+  document.getElementById('english').textContent      = card.english || '';
+  document.getElementById('engExample').textContent   = card.engExample || '';
 
-  // Malayalam side
-  document.getElementById('malayalam').textContent = card.malayalam || '';
-  document.getElementById('translit').textContent = card.transliteration || '';
-  document.getElementById('malExample').textContent = card.malExample || '';
+  document.getElementById('malayalam').textContent         = card.malayalam || '';
+  document.getElementById('translit').textContent          = card.transliteration || '';
+  document.getElementById('malExample').textContent        = card.malExample || '';
   document.getElementById('malExampleTranslit').textContent = card.malExampleTranslit || '';
 
   updateViewedCounter();
@@ -90,12 +144,14 @@ function flipCard() {
   } else {
     resetCardVisibility();
   }
+  saveState();
 }
 
 engCard?.addEventListener('click', flipCard);
 malCard?.addEventListener('click', () => {
   isFlipped = false;
   resetCardVisibility();
+  saveState();
 });
 
 // ────────────────────────────────────────────────
@@ -103,19 +159,21 @@ malCard?.addEventListener('click', () => {
 // ────────────────────────────────────────────────
 
 function goNext() {
-  if (flashcards.length === 0) return;
-  currentIndex = (currentIndex + 1) % flashcards.length;
+  if (deck.length === 0) return;
+  currentIndex = (currentIndex + 1) % deck.length;
   isFlipped = false;
   resetCardVisibility();
   displayCard();
+  saveState();
 }
 
 function goPrev() {
-  if (flashcards.length === 0) return;
-  currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
+  if (deck.length === 0) return;
+  currentIndex = (currentIndex - 1 + deck.length) % deck.length;
   isFlipped = false;
   resetCardVisibility();
   displayCard();
+  saveState();
 }
 
 document.getElementById('nextButton')?.addEventListener('click', goNext);
@@ -133,27 +191,18 @@ function toggleAutoPlay() {
     return;
   }
 
-  const card = flashcards[currentIndex];
+  const card = deck[currentIndex];
   const engLen = card.engExample?.length || 0;
   const malLen = card.malExample?.length || 0;
   const longest = Math.max(engLen, malLen);
 
-  let cycleTime = 15000;    // default total cycle
-  let flipDelay = 5000;     // default time before showing Malayalam
+  let cycleTime = 15000;
+  let flipDelay = 5000;
 
-  if (longest > 80) {
-    cycleTime = 22000;
-    flipDelay = 8000;
-  }
-  if (longest > 120) {
-    cycleTime = 30000;      // give really long sentences breathing room
-    flipDelay = 11000;
-  }
+  if (longest > 80) { cycleTime = 22000; flipDelay = 8000; }
+  if (longest > 120) { cycleTime = 30000; flipDelay = 11000; }
 
-  // Optional: start on Malayalam side like you already do
-  if (!isFlipped) {
-    flipCard();
-  }
+  if (!isFlipped) flipCard();
 
   autoInterval = setInterval(() => {
     goNext();
@@ -170,20 +219,24 @@ playButton?.addEventListener('click', toggleAutoPlay);
 // ────────────────────────────────────────────────
 
 document.getElementById('shuffleButton')?.addEventListener('click', () => {
-  flashcards = [...flashcards].sort(() => Math.random() - 0.5);
+  isShuffled = true;
+  deck = [...flashcards].sort(() => Math.random() - 0.5);
   currentIndex = 0;
   isFlipped = false;
-  viewedIds.clear();
+  viewedIds.clear();           // your original behavior
   resetCardVisibility();
   displayCard();
+  saveState();
 });
 
 document.getElementById('resetButton')?.addEventListener('click', async () => {
+  localStorage.removeItem(STORAGE_KEY);
   viewedIds.clear();
-  await loadFlashcards();
+  await loadFlashcards();      // reloads & resets deck to original
   currentIndex = 0;
   isFlipped = false;
-  if (autoInterval) toggleAutoPlay(); // Stop auto if running
+  isShuffled = false;
+  if (autoInterval) toggleAutoPlay();
   resetCardVisibility();
   displayCard();
 });
@@ -193,33 +246,37 @@ document.getElementById('resetButton')?.addEventListener('click', async () => {
 // ────────────────────────────────────────────────
 
 function updateViewedCounter() {
-  if (!flashcards[currentIndex]) return;
-  const cardId = flashcards[currentIndex].id;
-  const total = flashcards.length;
+  if (deck.length === 0 || !deck[currentIndex]) return;
+  const cardId = deck[currentIndex].id;
+  const total = deck.length;
 
+  let newlyViewed = false;
   if (!viewedIds.has(cardId)) {
     viewedIds.add(cardId);
-    const viewed = viewedIds.size;
-
-    cardsViewedEl.textContent = viewed === total 
-      ? `All ${total} cards viewed! 🎉` 
-      : `${viewed} of ${total} viewed`;
-
-    // Color progression
-    if (viewed === total) {
-      counterContainer.style.backgroundColor = "#003200ff";
-    } else if (viewed > 100) {
-      counterContainer.style.backgroundColor = "#1a0033ff";
-    } else if (viewed > 75) {
-      counterContainer.style.backgroundColor = "#170057ff";
-    } else if (viewed > 50) {
-      counterContainer.style.backgroundColor = "#650000ff";
-    } else if (viewed > 25) {
-      counterContainer.style.backgroundColor = "#043800ff";
-    } else if (viewed > 10) {
-      counterContainer.style.backgroundColor = "#00283cff";
-    }
+    newlyViewed = true;
   }
+
+  const viewed = viewedIds.size;
+
+  cardsViewedEl.textContent = viewed === total 
+    ? `All ${total} cards viewed! 🎉` 
+    : `${viewed} of ${total} viewed`;
+
+  if (viewed === total) {
+    counterContainer.style.backgroundColor = "#003200ff";
+  } else if (viewed > 100) {
+    counterContainer.style.backgroundColor = "#1a0033ff";
+  } else if (viewed > 75) {
+    counterContainer.style.backgroundColor = "#170057ff";
+  } else if (viewed > 50) {
+    counterContainer.style.backgroundColor = "#650000ff";
+  } else if (viewed > 25) {
+    counterContainer.style.backgroundColor = "#043800ff";
+  } else if (viewed > 10) {
+    counterContainer.style.backgroundColor = "#00283cff";
+  }
+
+  if (newlyViewed) saveState();
 }
 
 // ────────────────────────────────────────────────
@@ -227,9 +284,9 @@ function updateViewedCounter() {
 // ────────────────────────────────────────────────
 
 document.getElementById('searchButton')?.addEventListener('click', () => {
-  if (flashcards.length === 0 || !flashcards[currentIndex]) return;
+  if (deck.length === 0 || !deck[currentIndex]) return;
 
-  const card = flashcards[currentIndex];
+  const card = deck[currentIndex];
   const term = isFlipped ? card.malayalam : card.english;
 
   if (term) {
@@ -273,7 +330,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   await loadFlashcards();
 
-  if (flashcards.length > 0) {
+  if (deck.length > 0) {
     displayCard();
   } else {
     if (document.getElementById('english')) {
@@ -283,4 +340,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   startTimer();
   updateFooter();
+
+  // Optional safety net: save periodically
+  setInterval(saveState, 10000);
 });
