@@ -2,14 +2,17 @@ export function navBarLinks() {
     const myLinks = document.getElementById("myLinks");
     const currentDisplay = window.getComputedStyle(myLinks).display;
     const topNavBar = document.getElementById('topNavBar'); 
+    const dropMenu = document.getElementById('dropMenu'); 
 
     if (currentDisplay === "block" || currentDisplay === "flex") {
         myLinks.style.display = "none";
+        dropMenu.innerText = "≡ Menu"
     } else if (window.innerWidth < 768) {
         myLinks.style.display = "flex";
         myLinks.style.flexDirection = "column";
         topNavBar.style.display = "flex";
         topNavBar.style.flexDirection = "column"; 
+        dropMenu.innerText = "X Menu"
     } else {
         myLinks.style.display = "flex";
         myLinks.style.flexDirection = "row";
