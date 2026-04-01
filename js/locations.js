@@ -3,7 +3,6 @@ import { updateFooter, updateSunMapLink, navBarLinks } from './utils.js';
 document.addEventListener('DOMContentLoaded', () => {
   // Cache DOM elements once
   const elements = {
-    dropMenu: document.getElementById('dropMenu'),
     locationName: document.getElementById('locationName'),
     currentTemp: document.getElementById('currentTemp'),
     time: document.getElementById('time'),
@@ -19,11 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  if (elements.dropMenu) {
-    elements.dropMenu.addEventListener('click', navBarLinks);
-  } else {
-    console.warn("Dropdown menu element (#dropMenu) not found");
-  }
 
   // Update Global Sun Map link with current time
   updateSunMapLink();
@@ -109,6 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Move to next location (cycle)
     currentIndex = (currentIndex + 1) % locations.length;
   }
+
+  navBarLinks();
 
   // Initial update
   updateLocation();
