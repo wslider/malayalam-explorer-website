@@ -12,7 +12,7 @@ document.getElementById("infoGreetingText").addEventListener("mouseover", functi
 (Malayalam padikku .. Keralam aduthariyoo)`
 });
 
-document.getElementById('dropMenu').addEventListener('click', navBarLinks); 
+ 
 
 
 // Global variables for shared logic of Greetings
@@ -188,6 +188,8 @@ function updateLocationFigure() {
 
 }
 
+
+navBarLinks(); 
 updateLocationFigure(); 
 setInterval(updateLocationFigure, 10000);
 
