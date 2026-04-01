@@ -23,49 +23,94 @@
         margin: 0; 
     }
 
-/* Navigation menu */
-    .topnav {
-        grid-area: navBar;
-        overflow: hidden;
-        background-color: var(--keralaNight);
+/* Navigation menu base styles*/
+        .topnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; 
+            padding: 1rem 1.5rem;
+            background: var(--keralaNight);        
+            color: var(--mountainFog);
+            min-height: 10vh;
+            width: 100vw; 
+            box-sizing: border-box;
+        }
+    
+       
+
+        .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 1000;
+        position: absolute;
+        right: 1.5rem;
+        top: 0.5rem;
+        }
+
+        
+        .hamburger span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+        transition: all 0.3s ease;
+        }
+
+        /* Hamburger becomes X when menu is open */
+        .hamburger.active span:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 6px);   /* adjust translate values if needed */
+        }
+
+        .hamburger.active span:nth-child(2) {
+          opacity: 0;   /* middle bar disappears */
+        }
+
+        .hamburger.active span:nth-child(3) {
+          transform: rotate(-45deg) translate(7px, -6px);  /* adjust translate values if needed */
+        }
+
+        /* Optional: make transitions smoother on all spans */
+        .hamburger span {
+          display: block;
+          width: 28px;
+          height: 3px;
+          background: white;
+          margin: 6px 0;
+          transition: all 0.35s ease;   /* slightly longer for nicer feel */
+          transform-origin: center;
+        }
+
+        .navLinks {
+        display: none;               
+        flex-direction: column;
+        left: 0;
         width: 100%;
-    }
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        max-height: fit-content;
+        }
 
-        .topnav #myLinks {
-            display: none; /* Hidden by default */
+        .navLinks a { 
+            color: white;
+            text-decoration: none;
+            padding: 1rem 0;
+            font-size: 1.4rem;
+            border-bottom: 1px solid var(--keralaShade)
+        }
+
+        .nav-links a:hover, .nav-links a:focus {
+        background: var(--monsoonCloud);
+        }
+
+        .navLinks.active {
+            display: flex;
             flex-direction: column;
-            background-color: var(--keralaShade);  
         }
-
-        .topnav a {
-            color: var(--mountainFog);
-            padding: 0.8rem; 
-            font-size: 1.5rem; 
-            display: block;
-            text-align: center;
-        }
-
-        .active {
-            background-color: var(--keralaNight);
-            font-weight: 600;
-            color: var(--mountainFog);
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--mountainFog);
-        }
-
-        a:hover {
-            text-decoration: none;
-            font-weight: 700;
-            color: var(--ripeMango);
-        }
-
-        .hiddenContent {
-            display: none;
-        }
-
 
     .mainContainer {
       display: flex; 

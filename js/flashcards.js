@@ -326,7 +326,7 @@ function startTimer() {
 // ────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', async () => {
-  dropMenu?.addEventListener('click', navBarLinks);
+  
 
   await loadFlashcards();
 
@@ -338,6 +338,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
+  navBarLinks()
   startTimer();
   updateFooter();
 

@@ -9,6 +9,10 @@
       --backwaterBlue: #032094;
     }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
         background-color: var(--keralaGreen);
         color: var(--mountainFog); 
