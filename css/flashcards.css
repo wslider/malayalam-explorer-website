@@ -100,7 +100,7 @@
             text-decoration: none;
             padding: 1rem 0;
             font-size: 1.4rem;
-            border-bottom: 1px solid var(--keralaShade)
+            border-bottom: 1px solid var(--ripeMango);
         }
 
         .nav-links a:hover, .nav-links a:focus {
@@ -118,6 +118,7 @@
       justify-content: space-evenly;
       align-items: center;
       gap: 2vh; 
+      margin-top: 3vh;
     }
 
     .cardContainer {
@@ -289,16 +290,33 @@
     }
 
     .topnav {
-      display: flex; 
-      flex-direction: row;
-      font-size: 1.5rem;
-      height: clamp (50px, 7vh, 70px);
-      margin-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height: fit-content; 
+    height: 5vh; 
+    padding: 0;
     }
 
-      .topnav > a {
-          text-align: left;
-      }
+
+    .topnav #myLinks {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    .topnav a {
+      margin-left: 7vw; 
+      margin-right: 15vw; 
+    }
+
+    .hamburger {
+      display: none; 
+    }
+
+    #dropMenu {
+        display: none; 
+    }
     
     .cardContainer {
       min-height: 60vh;

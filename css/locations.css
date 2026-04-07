@@ -101,7 +101,7 @@ body {
             text-decoration: none;
             padding: 1rem 0;
             font-size: 1.4rem;
-            border-bottom: 1px solid var(--keralaShade)
+            border-bottom: 1px solid var(--ripeMango);
         }
 
         .nav-links a:hover, .nav-links a:focus {
@@ -170,7 +170,7 @@ body {
 
       .mapImage {                                 
       height: auto;                  
-      aspect-ratio: 1 / 1; }
+      }
 
 
   .sunMapButtonContainer {
@@ -202,10 +202,14 @@ body {
 
 @media only screen and (min-width: 768px) {
 
-  .topnav {
+
+    .topnav {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        min-height: fit-content; 
+        height: 5vh; 
+        padding: 0;
     }
 
     .topnav #myLinks {
@@ -219,29 +223,15 @@ body {
       margin-right: 15vw; 
     }
 
+    .hamburger {
+      display: none; 
+    }
+
     #dropMenu {
         display: none; 
     }
 
-  .mainContainer {
-    display: flex; 
-    flex-direction: row;
-    justify-content: center; 
-    width: 100vw;
-    min-height: fit-content; 
-    border-top: 3px solid var(--mountainFog); 
-  }
-
-    .container {
-      width: 43%; 
-      min-height: fit-content;
-      border: none; 
-      box-shadow: none;
-      justify-content: flex-start;
-      align-self: baseline;
-    }
-
-    .sunMapButtonContainer, .sunMapButton {
+  .sunMapButtonContainer, .sunMapButton {
     display: none;
     }
 
@@ -252,9 +242,6 @@ body {
       justify-self: center;
     }
 
-    .mapContainer {
-      align-self: flex-start;
-    }
 
     #locationMap {
       background-color: var(--keralaGreen);

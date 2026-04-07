@@ -1,7 +1,7 @@
 :root {
-      --keralaGreen: #004700; 
+      --keralaGreen: #003d00; 
       --keralaNight: #000d08;
-      --keralaShade: #001d08;
+      --keralaShade: #06120a;
       --munnarTeaGarden: #00aa00;
       --ripeMango: #ff6600; 
       --mountainFog: #f0fff8; 
@@ -95,7 +95,7 @@
             text-decoration: none;
             padding: 1rem 0;
             font-size: 1.4rem;
-            border-bottom: 1px solid var(--keralaShade)
+            border-bottom: 1px solid var(--ripeMango);
         }
 
         .nav-links a:hover, .nav-links a:focus {
@@ -145,7 +145,7 @@
         padding: 2%;
         border: solid var(--mountainFog) 2px; 
         box-shadow: 3px 3px #001d08;
-        background-color: #003100c2;
+        background-color: #001f0ce3;
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -207,13 +207,16 @@
         }
 
 
-    .worldClock {
-        align-items: start;
-    }
 
-        .sunMapButton {
-            display: none;  
-        }
+    .sunMapButton {
+    display: block; 
+    font-size: 1.5rem;
+    background-color: var(--backwaterBlue);
+    color: var(--mountainFog);
+    box-shadow: 3px 3px var(--keralaNight);
+    padding: 15px; 
+    border-radius: 15px;
+    }
 
     .footer {
         margin: 25px; 
@@ -221,81 +224,55 @@
         text-align: center;
       }
 
-    @media only screen and (min-width: 768px) {
-
-    .header {
-        max-height: 10vh; 
-        font-size: 0.9rem;
-    }
-  
-
-    .mainContainer {
-        display: grid;
-        grid-template-areas: 
-        "flashcardExp mapDiv" 
-        "locationDiv worldClock"
-        ;
-        grid-template-columns: 50vw 50vw;
-        grid-template-rows: auto auto; 
-    }
-
-    /* default setting for containers within main for tablets and large screens */
-
-    .container {
-        height: 95%; 
-    }
-
-        .flashcardExpContainer {
-            grid-area: flashcardExp;
-        }
-            .flashcardImg {
-                max-width: 30vw;
-            }
-
-        .locationDiv {
-            grid-area: locationDiv; 
-        }
-            .locationImg {
-                max-width: 30vw;
-            }
-
-        .mapDiv {
-            grid-area: mapDiv;
-        }  
-
-        .worldClock {
-            grid-area: worldClock;
-        }
-            .sunMapButton {
-                display: none;  
-            }
-
-    }
-
-    @media only screen and (min-width: 768px) {
     
-    .worldClock {
+
+    @media only screen and (min-width: 768px) {
+
+    .topnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        min-height: fit-content; 
+        height: 5vh; 
+        padding: 0;
+    }
+
+    .topnav #myLinks {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    .topnav a {
+      margin-left: 7vw; 
+      margin-right: 15vw; 
+    }
+
+    .hamburger {
+      display: none; 
+    }
+
+    #dropMenu {
+        display: none; 
+    }
+
+    
+    .footer {
+            display: flex; 
+            flex-direction: row;
             justify-content: space-around; 
             align-items: center;
             font-size: 1.25rem;
             padding: 5%; 
-            min-height: 50vw; 
+            gap: 5vw; 
+            min-height: fit-content; 
         }
     
+    #footer {
+        display: none; 
     }
 
-    @media only screen and (min-width: 992px) {
 
-
-        .sunMapButton {
-            display: block; 
-            font-size: 1.5rem;
-            background-color: var(--backwaterBlue);
-            color: var(--mountainFog);
-            box-shadow: 3px 3px var(--keralaNight);
-            padding: 15px; 
-            border-radius: 15px;
-        }
 
     }
         

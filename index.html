@@ -47,22 +47,14 @@
     </nav>
 
     <header class="header">
-        <h2 class="info" id="infoGreetingText">Learn Malayalam ... Explore Kerala</h2>
+        <h1>Malayalam Explorer</h1>
+        <h2 class="info" id="infoGreetingText">Learn Malayalam ...  & Explore Kerala</h2>
     </header>
 
     <main class="mainContainer">
-    
-        <div class="mapDiv imgContainer container">
-            <figure class="containerImg figure">
-                <a href="https://www.openstreetmap.org/relation/2018151#map=7/10.785/76.707&layers=P" target="_blank">
-                    <img class="image map" id="keralaMap" src="images/kerala-map-square.png" alt="Map of Kerala and South India.">
-                </a>
-                <figcaption class="figCaption">Map of Kerala & Southern India. Click to Open and Navigate in OSM.</figcaption>
-            </figure>
-        </div> 
 
         <div class="flashcardExpContainer container">
-            <h2 class="containerTitle">Learn Through Interactive Flashcards ..</h2>
+            <h2 class="containerTitle">Learn Malayalam Through Interactive Flashcards ..</h2>
             <figure class="containerImg figure">
                 <a href="flashcards.html">
                 <img class="flashcardImg containerImg" id="flashcardExpImg" src="images/flashcards-malayalamSide.png" alt="screenshot of flashcards page showing malayalam translation, flashcard control buttons, and form for creating new flashcards">
@@ -72,7 +64,7 @@
         </div>
 
         <div class="locationDiv container">
-            <h2 class="containerTitle">Explore Featured Locations (coming soon)</h2>
+            <h2 class="containerTitle">Explore Kerala: Discover Featured Locations</h2>
                 <figure class="locationFig containerImg figure" id="locationFig">
                         <a href="https://www.openstreetmap.org/?mlat=8.673&mlon=76.816#map=7/8.673/76.816&layers=P" target="_blank">
                         <img class="locationImg" id="locationImg" src="images/varkala-beach-path.jpg" alt="image of Varkala Beach in Kerala, India">
@@ -80,17 +72,30 @@
                         <figcaption class="figCaption">Varkala Beach, Kerala, India</figcaption>
                 </figure>
         </div>
-              
-        <div class="worldClock container">
-            <h2 class="containerTitle"> World Clock </h2>
-            <h3 class="greeting" id="localTimeGreetingText"></h3>
-            <h3 class="greeting" id="keralaTimeGreetingText"></h3>
+    
+        <div class="mapDiv imgContainer container">
+            <figure class="containerImg figure">
+                <a href="https://www.openstreetmap.org/relation/2018151#map=7/10.785/76.707&layers=P" target="_blank">
+                    <img class="image map" id="keralaMap" src="images/kerala-map-square.png" alt="Map of Kerala and South India.">
+                </a>
+                <figcaption class="figCaption">Map of Kerala & Southern India. Click to Open and Navigate in OSM.</figcaption>
+            </figure>
             <button class="sunMapButton" id="sunMapButton">View Daylight Map</button>
-        </div>
+        </div> 
+
+             
+        
         
     </main>
 
-    <footer class="footer" id="footer"></footer>
+    <footer class="footer">
+            <h3 class="greeting" id="localTimeGreetingText"></h3>
+            <h3 class="greeting" id="keralaTimeGreetingText"></h3>
+        <div id="footer">
+
+        </div>
+
+    </footer>
 
     <script type="module" src="js/script.js"></script>
 </body>
