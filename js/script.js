@@ -1,5 +1,4 @@
-import { navBarLinks } from "./utils.js";
-import { updateFooter } from "./utils.js";
+import { navBarLinks, updateSunMapLink, updateFooter } from "./utils.js";
 
 // Event Listener for Bilingual Header 
 
@@ -192,7 +191,7 @@ function updateLocationFigure() {
 navBarLinks(); 
 updateLocationFigure(); 
 setInterval(updateLocationFigure, 10000);
-
+updateSunMapLink();
 updateFooter(); 
 
 

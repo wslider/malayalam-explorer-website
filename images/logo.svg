@@ -1,0 +1,52 @@
+<svg width="420" height="320" viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+  <title id="title">Malayalam Explorer - Minimalist Night Logo</title>
+  <desc id="desc">Minimalist black mountain silhouette with palm tree and white trail on night sky.</desc>
+  
+  <defs>
+    <!-- Deep night sky gradient -->
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0A1428"/>
+      <stop offset="50%" stop-color="#1C253F"/>
+      <stop offset="100%" stop-color="#0F1A32"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Night sky background -->
+  <rect width="420" height="320" fill="url(#nightSky)"/>
+  
+  <!-- Minimalist black mountain silhouette (M shape - Western Ghats style) -->
+  <!-- Left peak -->
+  <polygon points="40,265 125,85 210,265" fill="#0A0F1F" stroke="#0A0F1F" stroke-width="6"/>
+  
+  <!-- Center valley + right side of M -->
+  <polygon points="125,85 210,265 295,105 380,265" fill="#0A0F1F" stroke="#0A0F1F" stroke-width="6"/>
+  
+  <!-- Rightmost peak (completing the M) -->
+  <polygon points="295,105 380,265 410,210" fill="#0A0F1F" stroke="#0A0F1F" stroke-width="6"/>
+  
+  <!-- Simple minimalist palm tree on the left -->
+  <!-- Trunk -->
+  <path d="M65 265 Q 58 220 62 195" fill="none" stroke="#0A0F1F" stroke-width="9" stroke-linecap="round"/>
+  <!-- Palm fronds -->
+  <path d="M62 195 Q 40 175 35 160" fill="none" stroke="#0A0F1F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M62 195 Q 45 165 55 150" fill="none" stroke="#0A0F1F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M62 195 Q 70 165 85 158" fill="none" stroke="#0A0F1F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M62 195 Q 80 175 95 170" fill="none" stroke="#0A0F1F" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Clean white glowing trail running through the mountains -->
+  <path d="M 95 255 Q 145 205 175 235 Q 215 175 255 210 Q 290 170 340 205" 
+        fill="none" 
+        stroke="#E8F0FF" 
+        stroke-width="11" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Slightly brighter inner trail for subtle glow -->
+  <path d="M 95 255 Q 145 205 175 235 Q 215 175 255 210 Q 290 170 340 205" 
+        fill="none" 
+        stroke="#FFFFFF" 
+        stroke-width="5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+</svg>
