@@ -11,6 +11,10 @@ document.getElementById("infoGreetingText").addEventListener("mouseover", functi
 (Malayalam padikku .. Keralam aduthariyoo)`
 });
 
+document.getElementById("sunMapButton").addEventListener("click", () => {
+  updateSunMapLink()
+  console.log("Sunmap Link Clicked - Hello from the Event Listener")
+}); 
  
 
 
