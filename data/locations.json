@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Munnar",
+      "lat": 10.09,
+      "lon": 77.06,
+      "src": "images/munnar-hillstation.jpg",
+      "alt": "Munnar hill station landscape"
+    },
+    {
+      "name": "Thiruvananthapuram",
+      "lat": 8.52,
+      "lon": 76.94,
+      "src": "images/trivandrum-nairMuseum.jpg",
+      "alt": "Nair Museum in Thiruvananthapuram"
+    },
+    {
+      "name": "Vembanad Lake",
+      "lat": 9.60,
+      "lon": 76.40,
+      "src": "images/vembanad-lake-monsoon-clouds.jpeg",
+      "alt": "Vembanad Lake during monsoon"
+    }
+  ]
