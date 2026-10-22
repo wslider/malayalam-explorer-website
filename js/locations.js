@@ -1,70 +1,63 @@
 import { updateFooter, updateSunMapLink, navBarLinks } from './utils.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Cache DOM elements once
+const LOCATION_JSON = "data/locations.json";
+
+document.addEventListener('DOMContentLoaded', async () => {
+  // Cache DOM elements
   const elements = {
     locationName: document.getElementById('locationName'),
     currentTemp: document.getElementById('currentTemp'),
     time: document.getElementById('time'),
     locationImg: document.getElementById('locationImg'),
-    locationDesc: document.getElementById('locationDesc'), // unused right now
     locationMap: document.getElementById('locationMap'),
   };
 
   // Early exit if critical elements are missing
-  if (!elements.locationName || !elements.currentTemp || !elements.time ||
-      !elements.locationImg || !elements.locationMap) {
+  if (Object.values(elements).some(el => !el)) {
     console.error("One or more critical DOM elements are missing!");
     return;
   }
 
-
-  // Update Global Sun Map link with current time
   updateSunMapLink();
+  navBarLinks();
+  updateFooter();
 
-  const locations = [
-    {
-      name: "Munnar",
-      lat: 10.09,
-      lon: 77.06,
-      src: "images/munnar-hillstation.jpg",
-      alt: "Munnar hill station landscape"
-    },
-    {
-      name: "Thiruvananthapuram",
-      lat: 8.52,
-      lon: 76.94,
-      src: "images/trivandrum-nairMuseum.jpg",
-      alt: "Nair Museum in Thiruvananthapuram"
-    },
-    {
-      name: "Vembanad Lake",
-      lat: 9.60,
-      lon: 76.40,
-      src: "images/vembanad-lake-monsoon-clouds.jpeg",
-      alt: "Vembanad Lake during monsoon"
-    }
-  ];
-
+  let locations = [];
   let currentIndex = 0;
 
+  async function loadLocations() {
+    try {
+      const response = await fetch(LOCATION_JSON);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      locations = await response.json();
+      if (!Array.isArray(locations) || locations.length === 0) {
+        throw new Error("Locations data is empty or invalid");
+      }
+    } catch (err) {
+      console.error('Failed to load locations:', err);
+      locations = [];
+    }
+  }
+
   async function updateLocation() {
+    if (locations.length === 0) {
+      elements.currentTemp.textContent = "—";
+      elements.time.textContent = "no locations";
+      return;
+    }
+
     const loc = locations[currentIndex];
 
-    // Using worker proxy to avoid CORS issues
+    // Open-Meteo via worker proxy (avoids CORS)
     const target = `https://api.open-meteo.com/v1/forecast?latitude=${loc.lat}&longitude=${loc.lon}&current=temperature_2m&temperature_unit=fahrenheit&timezone=Asia%2FKolkata`;
-
     const proxyUrl = `https://malayalam-exp-weather-api.wslider2000.workers.dev/?url=${encodeURIComponent(target)}`;
 
     try {
       const response = await fetch(proxyUrl);
-      if (!response.ok) {
-        throw new Error(`Weather API returned ${response.status}`);
-      }
+      if (!response.ok) throw new Error(`Weather API returned ${response.status}`);
 
       const data = await response.json();
 
-      // Defensive check — sometimes API returns unexpected structure
       if (!data.current?.temperature_2m || !data.current?.time) {
         throw new Error("Incomplete weather data received");
       }
@@ -78,12 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
       elements.time.textContent = `as of ${timeStr} IST`;
 
       elements.locationImg.src = loc.src;
-      elements.locationImg.alt = loc.alt;
+      elements.locationImg.alt = loc.alt || loc.name;
 
-      // Updated map embed with proper escaping and dynamic values
+      // Map embed
+      const bbox = `${loc.lon - 0.5},${loc.lat - 0.5},${loc.lon + 0.5},${loc.lat + 0.5}`;
       elements.locationMap.innerHTML = `
         <iframe class="mapImage image"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=${loc.lon-0.5},${loc.lat-0.5},${loc.lon+0.5},${loc.lat+0.5}&layer=mapnik&marker=${loc.lat},${loc.lon}"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${loc.lat},${loc.lon}"
           style="border:1px solid #555; width:100%; height:280px;">
         </iframe>
         <br>
@@ -93,25 +87,20 @@ document.addEventListener('DOMContentLoaded', () => {
             View Larger Map
           </a>
         </small>`;
-
     } catch (err) {
       console.error("Failed to update weather/location:", err);
       elements.currentTemp.textContent = "—";
       elements.time.textContent = "update failed";
     }
 
-    // Move to next location (cycle)
+    // Cycle to next location
     currentIndex = (currentIndex + 1) % locations.length;
   }
 
-  navBarLinks();
-
-  // Initial update
-  updateLocation();
+  // Load once, then start updates
+  await loadLocations();
+  await updateLocation();
 
   // Refresh every 60 seconds
   setInterval(updateLocation, 60_000);
-
-  // Footer update (assuming it only needs to run once)
-  updateFooter();
 });

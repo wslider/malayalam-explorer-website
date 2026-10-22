@@ -154,13 +154,27 @@ body {
         text-align: center;
     }
 
-    .containerTitle {
-        align-self: center;
+    .locationTextDiv {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-around;
+      gap: 1vh; 
+      margin: 3vh; 
     }
 
-   #currentTemp{
-      font-size: 1.3rem;
-      margin-bottom: 5vh; 
+    .locationTextDiv>h2 {
+      font-size: 1.5rem;
+      margin: 0; 
+    }
+
+    .locationTextDiv>p {
+      margin: 0; 
+      font-size: 1.3rem; 
+    }
+
+    .containerTitle {
+        align-self: center;
     }
 
 
